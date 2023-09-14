@@ -1,4 +1,4 @@
-22210537516503601
+22219011051138647
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -91875,6 +91875,27 @@ varistor
 2
 2
 uC
+1x05_BoardEdge
+
+
+0
+5
+5
+uC
+1x06_BoardEdge
+
+
+0
+6
+6
+uC
+1x08_BoardEdge
+
+
+0
+8
+8
+uC
 Beetle_CM-32U4
 
 
@@ -91888,3 +91909,17 @@ Pololu Breakout
 0
 32
 16
+uC
+air jump
+
+
+0
+0
+0
+uC
+power
+
+
+0
+2
+2
