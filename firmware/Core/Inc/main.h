@@ -65,6 +65,8 @@ void Error_Handler(void);
 #define Memory_CS_GPIO_Port GPIOB
 #define Bias_CS_Pin GPIO_PIN_10
 #define Bias_CS_GPIO_Port GPIOA
+#define LED_Pin GPIO_PIN_5
+#define LED_GPIO_Port GPIOB
 #define Anneal_Enable_Pin GPIO_PIN_0
 #define Anneal_Enable_GPIO_Port GPIOA
 #define Bat_Monitor_Pin GPIO_PIN_13

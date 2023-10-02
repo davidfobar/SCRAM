@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "name": "STM32",
+      "includePath": [
+        "Core/Inc",
+        "Drivers/CMSIS/Device/ST/STM32WLxx/Include",
+        "Drivers/CMSIS/Include",
+        "Drivers/STM32WLxx_HAL_Driver/Inc",
+        "Drivers/STM32WLxx_HAL_Driver/Inc/Legacy"
+      ],
+      "defines": [
+        "CORE_CM4",
+        "STM32WLE5xx",
+        "USE_HAL_DRIVER"
+      ],
+      "compilerPath": "C:\\USERS\\DAVID.FOBAR\\APPDATA\\ROAMING\\CODE\\USER\\GLOBALSTORAGE\\BMD.STM32-FOR-VSCODE\\@XPACK-DEV-TOOLS\\ARM-NONE-EABI-GCC\\12.3.1-1.2.1\\.CONTENT\\BIN\\ARM-NONE-EABI-GCC.EXE"
+    }
+  ],
+  "version": 4
+}

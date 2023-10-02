@@ -359,17 +359,17 @@ static void MX_GPIO_Init(void)
   __HAL_RCC_GPIOC_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(Memory_CS_GPIO_Port, Memory_CS_Pin, GPIO_PIN_RESET);
+  HAL_GPIO_WritePin(GPIOB, Memory_CS_Pin|LED_Pin, GPIO_PIN_RESET);
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, Bias_CS_Pin|Anneal_Enable_Pin|Bias_Enable_Pin|Stim_Enable_Pin, GPIO_PIN_RESET);
 
-  /*Configure GPIO pin : Memory_CS_Pin */
-  GPIO_InitStruct.Pin = Memory_CS_Pin;
+  /*Configure GPIO pins : Memory_CS_Pin LED_Pin */
+  GPIO_InitStruct.Pin = Memory_CS_Pin|LED_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(Memory_CS_GPIO_Port, &GPIO_InitStruct);
+  HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
   /*Configure GPIO pins : Bias_CS_Pin Anneal_Enable_Pin Bias_Enable_Pin Stim_Enable_Pin */
   GPIO_InitStruct.Pin = Bias_CS_Pin|Anneal_Enable_Pin|Bias_Enable_Pin|Stim_Enable_Pin;
