@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
   30:Core/Src/stm32wlxx_hal_msp.c **** 
   31:Core/Src/stm32wlxx_hal_msp.c **** /* USER CODE END TD */
   32:Core/Src/stm32wlxx_hal_msp.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 2
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 2
 
 
   33:Core/Src/stm32wlxx_hal_msp.c **** /* Private define ------------------------------------------------------------*/
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
   39              		.global	HAL_ADC_MspInit
   40              		.syntax unified
   41              		.thumb
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 3
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 3
 
 
   42              		.thumb_func
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
   99:Core/Src/stm32wlxx_hal_msp.c ****     */
  100:Core/Src/stm32wlxx_hal_msp.c ****     GPIO_InitStruct.Pin = SiPM_Temp_Pin|SiPM_Signal_Pin|Bat_Monitor_Pin;
  101:Core/Src/stm32wlxx_hal_msp.c ****     GPIO_InitStruct.Mode = GPIO_MODE_ANALOG;
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 4
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 4
 
 
  102:Core/Src/stm32wlxx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
   32:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   @endverbatim
   33:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   ******************************************************************************
   34:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 5
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 5
 
 
   35:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
   89:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_AHB2_GRP1_PERIPH_GPIOC          RCC_AHB2ENR_GPIOCEN
   90:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_AHB2_GRP1_PERIPH_GPIOH          RCC_AHB2ENR_GPIOHEN
   91:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 6
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 6
 
 
   92:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @}
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  146:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_ALL            (0xFFFFFFFFU)
  147:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_ADC            RCC_APB2ENR_ADCEN
  148:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_TIM1           RCC_APB2ENR_TIM1EN
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 7
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 7
 
 
  149:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #define LL_APB2_GRP1_PERIPH_SPI1           RCC_APB2ENR_SPI1EN
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  203:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @}
  204:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
  205:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 8
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 8
 
 
  206:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  260:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
  261:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
  262:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /* Exported macro ------------------------------------------------------------*/
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 9
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 9
 
 
  263:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  317:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1ENR      DMA2EN        LL_AHB1_GRP1_DisableClock\n
  318:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1ENR      DMAMUX1EN     LL_AHB1_GRP1_DisableClock\n
  319:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1ENR      CRCEN         LL_AHB1_GRP1_DisableClock\n
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 10
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 10
 
 
  320:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  374:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1SMENR    DMAMUX1SMEN   LL_AHB1_GRP1_EnableClockSleep\n
  375:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB1SMENR    CRCSMEN       LL_AHB1_GRP1_EnableClockSleep\n
  376:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 11
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 11
 
 
  377:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         @arg @ref LL_AHB1_GRP1_PERIPH_DMA1
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  431:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
  432:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /** @defgroup BUS_LL_EF_AHB2 AHB2
  433:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @{
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 12
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 12
 
 
  434:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  488:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
  489:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** __STATIC_INLINE void LL_AHB2_GRP1_DisableClock(uint32_t Periphs)
  490:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 13
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 13
 
 
  491:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   CLEAR_BIT(RCC->AHB2ENR, Periphs);
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  545:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** __STATIC_INLINE void LL_AHB2_GRP1_EnableClockSleep(uint32_t Periphs)
  546:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** {
  547:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   __IO uint32_t tmpreg;
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 14
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 14
 
 
  548:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   SET_BIT(RCC->AHB2SMENR, Periphs);
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  602:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB3ENR      AESEN         LL_AHB3_GRP1_EnableClock\n
  603:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB3ENR      RNGEN         LL_AHB3_GRP1_EnableClock\n
  604:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB3ENR      HSEMEN        LL_AHB3_GRP1_EnableClock\n
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 15
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 15
 
 
  605:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB3ENR      IPCCEN        LL_AHB3_GRP1_EnableClock\n
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  659:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @retval uint32_t
  660:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
  661:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #else
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 16
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 16
 
 
  662:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  716:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         @arg @ref LL_AHB3_GRP1_PERIPH_FLASH
  717:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @retval None
  718:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 17
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 17
 
 
  719:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** #endif /* DUAL_CORE */
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  773:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB3RSTR     RNGRST        LL_AHB3_GRP1_ReleaseReset\n
  774:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB3RSTR     HSEMRST       LL_AHB3_GRP1_ReleaseReset\n
  775:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB3RSTR     IPCCRST       LL_AHB3_GRP1_ReleaseReset\n
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 18
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 18
 
 
  776:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         AHB3RSTR     FLASHRST      LL_AHB3_GRP1_ReleaseReset
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  830:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   __IO uint32_t tmpreg;
  831:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   SET_BIT(RCC->AHB3SMENR, Periphs);
  832:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   /* Delay after an RCC peripheral clock enabling */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 19
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 19
 
 
  833:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   tmpreg = READ_BIT(RCC->AHB3SMENR, Periphs);
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  887:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
  888:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
  889:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 20
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 20
 
 
  890:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @brief  Enable APB1 peripherals clock.
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  944:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
  945:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @brief  Check if APB1 peripheral clock is enabled or not
  946:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @rmtoll APB1ENR1     TIM2EN        LL_APB1_GRP1_IsEnabledClock\n
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 21
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 21
 
 
  947:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         APB1ENR1     RTCAPBEN      LL_APB1_GRP1_IsEnabledClock\n
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
 1001:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         APB1ENR1     DACEN         LL_APB1_GRP1_DisableClock\n
 1002:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         APB1ENR1     LPTIM1EN      LL_APB1_GRP1_DisableClock
 1003:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 22
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 22
 
 
 1004:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
 1058:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP1_PERIPH_LPTIM1
 1059:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
 1060:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @retval None
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 23
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 23
 
 
 1061:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
 1115:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         APB1RSTR2    LPTIM2RST     LL_APB1_GRP2_ReleaseReset
 1116:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         APB1RSTR2    LPTIM3RST     LL_APB1_GRP2_ReleaseReset
 1117:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @param  Periphs This parameter can be a combination of the following values:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 24
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 24
 
 
 1118:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP2_PERIPH_ALL
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
 1172:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         @arg @ref LL_APB1_GRP2_PERIPH_LPTIM3
 1173:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @retval None
 1174:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 25
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 25
 
 
 1175:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** __STATIC_INLINE void LL_APB1_GRP2_EnableClockSleep(uint32_t Periphs)
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
 1229:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** }
 1230:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
 1231:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 26
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 26
 
 
 1232:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @brief  Disable APB1 peripherals clock during Low Power (Sleep) mode.
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
 1286:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
 1287:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @brief  Enable APB2 peripherals clock.
 1288:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   * @rmtoll APB2ENR      ADCEN         LL_APB2_GRP1_EnableClock\n
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 27
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 27
 
 
 1289:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   *         APB2ENR      TIM1EN        LL_APB2_GRP1_EnableClock\n
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  116 003a DA64     		str	r2, [r3, #76]
  454:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
  117              		.loc 2 454 3 view .LVU23
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 28
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 28
 
 
  454:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  163              	.LVL7:
  164              	.LFB853:
  111:Core/Src/stm32wlxx_hal_msp.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 29
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 29
 
 
  112:Core/Src/stm32wlxx_hal_msp.c **** /**
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  189              	.LBI36:
 1310:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** }
 1311:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 30
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 30
 
 
 1312:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** /**
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  201              		.loc 1 133 5 is_stmt 1 view .LVU46
  202 0018 42F21801 		movw	r1, #8216
  203 001c 0248     		ldr	r0, .L12+4
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 31
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 31
 
 
  204              	.LVL11:
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  249 000e 1391     		str	r1, [sp, #76]
  250 0010 1491     		str	r1, [sp, #80]
  251 0012 1591     		str	r1, [sp, #84]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 32
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 32
 
 
  151:Core/Src/stm32wlxx_hal_msp.c ****   RCC_PeriphCLKInitTypeDef PeriphClkInitStruct = {0};
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  188:Core/Src/stm32wlxx_hal_msp.c ****     __HAL_RCC_I2C2_CLK_ENABLE();
  189:Core/Src/stm32wlxx_hal_msp.c ****   /* USER CODE BEGIN I2C2_MspInit 1 */
  190:Core/Src/stm32wlxx_hal_msp.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 33
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 33
 
 
  191:Core/Src/stm32wlxx_hal_msp.c ****   /* USER CODE END I2C2_MspInit 1 */
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  307 0044 43F00103 		orr	r3, r3, #1
  308 0048 E364     		str	r3, [r4, #76]
  454:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 34
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 34
 
 
  309              		.loc 2 454 3 is_stmt 1 view .LVU72
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  347              		.loc 1 174 5 is_stmt 1 view .LVU88
  174:Core/Src/stm32wlxx_hal_msp.c ****     GPIO_InitStruct.Pull = GPIO_NOPULL;
  348              		.loc 1 174 26 is_stmt 0 view .LVU89
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 35
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 35
 
 
  349 006e 1227     		movs	r7, #18
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  385 0096 FFF7FEFF 		bl	HAL_GPIO_Init
  386              	.LVL24:
  188:Core/Src/stm32wlxx_hal_msp.c ****   /* USER CODE BEGIN I2C2_MspInit 1 */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 36
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 36
 
 
  387              		.loc 1 188 5 view .LVU108
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  434              	.LFB855:
  195:Core/Src/stm32wlxx_hal_msp.c **** 
  196:Core/Src/stm32wlxx_hal_msp.c **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 37
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 37
 
 
  197:Core/Src/stm32wlxx_hal_msp.c **** * @brief I2C MSP De-Initialization
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  459              	.LBI44:
 1018:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h **** {
  460              		.loc 2 1018 22 view .LVU126
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 38
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 38
 
 
  461              	.LBB45:
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  503              		.loc 1 234 1 is_stmt 1 view -0
  504              		.cfi_startproc
  505              		@ args = 0, pretend = 0, frame = 96
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 39
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 39
 
 
  506              		@ frame_needed = 0, uses_anonymous_args = 0
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  253:Core/Src/stm32wlxx_hal_msp.c ****     __HAL_RCC_SPI2_CLK_ENABLE();
  254:Core/Src/stm32wlxx_hal_msp.c **** 
  255:Core/Src/stm32wlxx_hal_msp.c ****     __HAL_RCC_GPIOB_CLK_ENABLE();
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 40
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 40
 
 
  256:Core/Src/stm32wlxx_hal_msp.c ****     __HAL_RCC_GPIOA_CLK_ENABLE();
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  558 002e 0893     		str	r3, [sp, #32]
  247:Core/Src/stm32wlxx_hal_msp.c ****     {
  559              		.loc 1 247 5 is_stmt 1 view .LVU148
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 41
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 41
 
 
  247:Core/Src/stm32wlxx_hal_msp.c ****     {
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  599 0050 DA6C     		ldr	r2, [r3, #76]
  600 0052 42F00202 		orr	r2, r2, #2
  601 0056 DA64     		str	r2, [r3, #76]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 42
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 42
 
 
  454:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  640              	.LBB53:
  451:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   SET_BIT(RCC->AHB2ENR, Periphs);
  641              		.loc 2 451 3 view .LVU180
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 43
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 43
 
 
  452:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   /* Delay after an RCC peripheral clock enabling */
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  268:Core/Src/stm32wlxx_hal_msp.c **** 
  679              		.loc 1 268 5 is_stmt 1 view .LVU198
  680 009a 13A9     		add	r1, sp, #76
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 44
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 44
 
 
  681 009c 0F48     		ldr	r0, .L34+4
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  716 00c0 1694     		str	r4, [sp, #88]
  281:Core/Src/stm32wlxx_hal_msp.c ****     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
  717              		.loc 1 281 5 is_stmt 1 view .LVU218
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 45
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 45
 
 
  281:Core/Src/stm32wlxx_hal_msp.c ****     HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  299:Core/Src/stm32wlxx_hal_msp.c ****   if(hspi->Instance==SPI2)
  762              		.loc 1 299 3 is_stmt 1 view .LVU225
  763              		.loc 1 299 10 is_stmt 0 view .LVU226
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 46
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 46
 
 
  764 0002 0268     		ldr	r2, [r0]
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  789              		.loc 1 312 5 is_stmt 1 view .LVU233
  790 0018 4FF48041 		mov	r1, #16384
  791 001c 0748     		ldr	r0, .L40+4
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 47
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 47
 
 
  792              	.LVL56:
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  836 0002 96B0     		sub	sp, sp, #88
  837              		.cfi_def_cfa_offset 96
  838 0004 0446     		mov	r4, r0
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 48
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 48
 
 
  333:Core/Src/stm32wlxx_hal_msp.c ****   GPIO_InitTypeDef GPIO_InitStruct = {0};
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  363:Core/Src/stm32wlxx_hal_msp.c ****     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
  364:Core/Src/stm32wlxx_hal_msp.c **** 
  365:Core/Src/stm32wlxx_hal_msp.c ****   /* USER CODE BEGIN USART1_MspInit 1 */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 49
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 49
 
 
  366:Core/Src/stm32wlxx_hal_msp.c **** 
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  900              		.loc 2 1308 3 view .LVU260
 1308:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h ****   (void)tmpreg;
  901              		.loc 2 1308 12 is_stmt 0 view .LVU261
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 50
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 50
 
 
  902 0044 1A6E     		ldr	r2, [r3, #96]
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  940 0064 0223     		movs	r3, #2
  941 0066 1293     		str	r3, [sp, #72]
  360:Core/Src/stm32wlxx_hal_msp.c ****     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 51
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 51
 
 
  942              		.loc 1 360 5 is_stmt 1 view .LVU278
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  379:Core/Src/stm32wlxx_hal_msp.c **** {
  983              		.loc 1 379 1 view -0
  984              		.cfi_startproc
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 52
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 52
 
 
  985              		@ args = 0, pretend = 0, frame = 0
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  1017              	.LBE61:
  1018              	.LBE60:
  392:Core/Src/stm32wlxx_hal_msp.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 53
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 53
 
 
  1019              		.loc 1 392 5 is_stmt 1 view .LVU297
@@ -3155,37 +3155,37 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 1
  1050              		.file 15 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
  1051              		.file 16 "Core/Inc/main.h"
  1052              		.file 17 "<built-in>"
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s 			page 54
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s 			page 54
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32wlxx_hal_msp.c
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:19     .text.HAL_MspInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:25     .text.HAL_MspInit:00000000 HAL_MspInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:38     .text.HAL_ADC_MspInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:44     .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:150    .text.HAL_ADC_MspInit:0000005c $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:156    .text.HAL_ADC_MspDeInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:162    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:213    .text.HAL_ADC_MspDeInit:00000024 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:219    .text.HAL_I2C_MspInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:225    .text.HAL_I2C_MspInit:00000000 HAL_I2C_MspInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:420    .text.HAL_I2C_MspInit:000000b4 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:426    .text.HAL_I2C_MspDeInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:432    .text.HAL_I2C_MspDeInit:00000000 HAL_I2C_MspDeInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:488    .text.HAL_I2C_MspDeInit:00000030 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:494    .text.HAL_SPI_MspInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:500    .text.HAL_SPI_MspInit:00000000 HAL_SPI_MspInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:737    .text.HAL_SPI_MspInit:000000d8 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:744    .text.HAL_SPI_MspDeInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:750    .text.HAL_SPI_MspDeInit:00000000 HAL_SPI_MspDeInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:811    .text.HAL_SPI_MspDeInit:00000038 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:818    .text.HAL_UART_MspInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:824    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:968    .text.HAL_UART_MspInit:00000084 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:974    .text.HAL_UART_MspDeInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:980    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccexMuIL.s:1031   .text.HAL_UART_MspDeInit:00000024 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:19     .text.HAL_MspInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:25     .text.HAL_MspInit:00000000 HAL_MspInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:38     .text.HAL_ADC_MspInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:44     .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:150    .text.HAL_ADC_MspInit:0000005c $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:156    .text.HAL_ADC_MspDeInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:162    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:213    .text.HAL_ADC_MspDeInit:00000024 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:219    .text.HAL_I2C_MspInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:225    .text.HAL_I2C_MspInit:00000000 HAL_I2C_MspInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:420    .text.HAL_I2C_MspInit:000000b4 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:426    .text.HAL_I2C_MspDeInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:432    .text.HAL_I2C_MspDeInit:00000000 HAL_I2C_MspDeInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:488    .text.HAL_I2C_MspDeInit:00000030 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:494    .text.HAL_SPI_MspInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:500    .text.HAL_SPI_MspInit:00000000 HAL_SPI_MspInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:737    .text.HAL_SPI_MspInit:000000d8 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:744    .text.HAL_SPI_MspDeInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:750    .text.HAL_SPI_MspDeInit:00000000 HAL_SPI_MspDeInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:811    .text.HAL_SPI_MspDeInit:00000038 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:818    .text.HAL_UART_MspInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:824    .text.HAL_UART_MspInit:00000000 HAL_UART_MspInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:968    .text.HAL_UART_MspInit:00000084 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:974    .text.HAL_UART_MspDeInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:980    .text.HAL_UART_MspDeInit:00000000 HAL_UART_MspDeInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccXH9fqt.s:1031   .text.HAL_UART_MspDeInit:00000024 $d
 
 UNDEFINED SYMBOLS
 HAL_GPIO_Init

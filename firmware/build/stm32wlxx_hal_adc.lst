@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
   29:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
   30:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /** @addtogroup STM32WLxx_LL_Driver
   31:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @{
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 2
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 2
 
 
   32:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
   86:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define ADC_REG_TRIG_EDGE_MASK              (((LL_ADC_REG_TRIG_SOFTWARE & ADC_CFGR1_EXTEN) << (4U *
   87:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                              ((ADC_REG_TRIG_EXT_EDGE_DEFAULT)              << (4U *
   88:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                              ((ADC_REG_TRIG_EXT_EDGE_DEFAULT)              << (4U *
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 3
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 3
 
 
   89:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                              ((ADC_REG_TRIG_EXT_EDGE_DEFAULT)              << (4U *
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  143:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
  144:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /* Definition of channels ID bitfield information to be inserted into         */
  145:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /* channels literals definition.                                              */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 4
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 4
 
 
  146:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define ADC_CHANNEL_0_BITFIELD             (ADC_CHSELR_CHSEL0)
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  200:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define ADC_AWD_CR23_CHANNEL_MASK          (ADC_AWD2CR_AWD2CH)
  201:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define ADC_AWD_CR_ALL_CHANNEL_MASK        (ADC_AWD_CR1_CHANNEL_MASK | ADC_AWD_CR23_CHANNEL_MASK)
  202:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 5
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 5
 
 
  203:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define ADC_AWD_CRX_REGOFFSET_POS          (20UL)                      /* Position of bits ADC_AWD_
@@ -298,7 +298,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  257:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /* ADC internal channels related definitions */
  258:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /* Internal voltage reference VrefInt */
  259:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define VREFINT_CAL_ADDR                   ((uint16_t*) (0x1FFF75AAUL)) /* Internal voltage referen
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 6
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 6
 
 
  260:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   address of parameter VREFINT_CAL: VrefInt ADC raw data acquired at temperature 30 DegC (tolerance
@@ -358,7 +358,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  314:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   The setting of these parameters by function @ref LL_ADC_CommonInit()
  315:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         is conditioned to ADC instances state (all ADC instances
  316:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         sharing the same ADC common instance):
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 7
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 7
 
 
  317:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         All ADC instances sharing the same ADC common instance must be
@@ -418,7 +418,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  371:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                              This parameter can be a value of @ref ADC_LL_EC_LP_MOD
  372:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                              This feature can be modified afterwards using unitary 
  373:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                              @ref LL_ADC_SetLowPowerMode(). */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 8
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 8
 
 
  374:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  428:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   uint32_t ContinuousMode;              /*!< Set ADC continuous conversion mode on ADC group regula
  429:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                              conversions are performed in single mode (one conversi
  430:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                              continuous mode (after the first trigger, following co
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 9
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 9
 
 
  431:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                              successively automatically).
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  485:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_IT_CCRDY                    ADC_IER_CCRDYIE    /*!< ADC interruption channel configu
  486:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_IT_EOC                      ADC_IER_EOCIE      /*!< ADC interruption ADC group regul
  487:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_IT_EOS                      ADC_IER_EOSIE      /*!< ADC interruption ADC group regul
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 10
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 10
 
 
  488:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_IT_OVR                      ADC_IER_OVRIE      /*!< ADC interruption ADC group regul
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  542:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_PATH_INTERNAL_VREFINT       (ADC_CCR_VREFEN)       /*!< ADC measurement path to inte
  543:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_PATH_INTERNAL_TEMPSENSOR    (ADC_CCR_TSEN)         /*!< ADC measurement path to inte
  544:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_PATH_INTERNAL_VBAT          (ADC_CCR_VBATEN)       /*!< ADC measurement path to inte
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 11
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 11
 
 
  545:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
@@ -658,7 +658,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  599:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
  600:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /** @defgroup ADC_LL_EC_SAMPLINGTIME_COMMON  ADC instance - Sampling time common to a group of chan
  601:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @{
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 12
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 12
 
 
  602:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
@@ -718,7 +718,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  656:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
  657:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @}
  658:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 13
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 13
 
 
  659:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
@@ -778,7 +778,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  713:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_REG_SEQ_SCAN_ENABLE_4RANKS  (ADC_CHSELR_SQ5)       /*!< ADC group regular sequencer 
  714:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_REG_SEQ_SCAN_ENABLE_5RANKS  (ADC_CHSELR_SQ6)       /*!< ADC group regular sequencer 
  715:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_REG_SEQ_SCAN_ENABLE_6RANKS  (ADC_CHSELR_SQ7)       /*!< ADC group regular sequencer 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 14
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 14
 
 
  716:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_REG_SEQ_SCAN_ENABLE_7RANKS  (ADC_CHSELR_SQ8)       /*!< ADC group regular sequencer 
@@ -838,7 +838,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  770:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /** @defgroup ADC_LL_EC_AWD_NUMBER Analog watchdog - Analog watchdog number
  771:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @{
  772:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 15
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 15
 
 
  773:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define LL_ADC_AWD1                        (ADC_AWD_CR1_CHANNEL_MASK  | ADC_AWD_CR1_REGOFFSET) /*!<
@@ -898,7 +898,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  827:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @}
  828:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
  829:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 16
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 16
 
 
  830:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /** @defgroup ADC_LL_EC_OVS_DISCONT_MODE  Oversampling - Discontinuous mode
@@ -958,7 +958,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  884:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         not timeout values.
  885:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         For details on delays values, refer to descriptions in source code
  886:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         above each literal definition.
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 17
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 17
 
 
  887:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @{
@@ -1018,7 +1018,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  941:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @}
  942:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
  943:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 18
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 18
 
 
  944:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
@@ -1078,7 +1078,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  998:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_10
  999:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_11
 1000:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_12
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 19
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 19
 
 
 1001:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_13
@@ -1138,7 +1138,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1055:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
 1056:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
 1057:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @brief  Helper macro to get ADC channel in literal format LL_ADC_CHANNEL_x
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 20
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 20
 
 
 1058:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         from number in decimal format.
@@ -1198,7 +1198,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1112:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         because internal and external channels share the same channel
 1113:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         number in ADC registers. The differentiation is made only with
 1114:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         parameters definitions of driver.
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 21
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 21
 
 
 1115:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  __CHANNEL__ This parameter can be one of the following values:
@@ -1258,7 +1258,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1169:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_6
 1170:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_7
 1171:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_8
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 22
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 22
 
 
 1172:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_9
@@ -1318,7 +1318,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1226:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  __CHANNEL__ This parameter can be one of the following values:
 1227:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_VREFINT
 1228:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_TEMPSENSOR
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 23
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 23
 
 
 1229:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_VBAT
@@ -1378,7 +1378,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1283:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_AWD_CHANNEL_0_REG
 1284:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_AWD_CHANNEL_1_REG
 1285:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_AWD_CHANNEL_2_REG
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 24
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 24
 
 
 1286:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_AWD_CHANNEL_3_REG
@@ -1438,7 +1438,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1340:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *            (LL_ADC_RESOLUTION_8B,
 1341:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             LL_ADC_GetAnalogWDThresholds(<ADCx param>, LL_ADC_AWD_THRESHOLD_HIGH)
 1342:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *            );
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 25
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 25
 
 
 1343:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  __ADC_RESOLUTION__ This parameter can be one of the following values:
@@ -1498,7 +1498,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1397:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         Value "1" if at least one ADC instance sharing the same ADC common instance
 1398:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         is enabled.
 1399:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 26
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 26
 
 
 1400:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** #define __LL_ADC_IS_ENABLED_ALL_COMMON_INSTANCE(__ADCXY_COMMON__)              \
@@ -1558,7 +1558,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1454:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  __ADC_RESOLUTION__ This parameter can be one of the following values:
 1455:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_RESOLUTION_12B
 1456:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_RESOLUTION_10B
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 27
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 27
 
 
 1457:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_RESOLUTION_8B
@@ -1618,7 +1618,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1511:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *                Avg_Slope = (TS_CAL2 - TS_CAL1)
 1512:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *                            / (TS_CAL2_TEMP - TS_CAL1_TEMP)
 1513:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *                TS_CAL1   = equivalent TS_ADC_DATA at temperature
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 28
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 28
 
 
 1514:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *                            TEMP_DEGC_CAL1 (calibrated in factory)
@@ -1678,7 +1678,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1568:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   Computation is using temperature sensor typical values
 1569:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         (refer to device datasheet).
 1570:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   Calculation formula:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 29
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 29
 
 
 1571:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           Temperature = (TS_TYP_CALx_VOLT(uV) - TS_ADC_DATA * Conversion_uV)
@@ -1738,7 +1738,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1625:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   ) / (int32_t)(__TEMPSENSOR_TYP_AVGSLOPE__)                                \
 1626:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****  ) + (int32_t)(__TEMPSENSOR_CALX_TEMP__)                                    \
 1627:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** )
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 30
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 30
 
 
 1628:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
@@ -1798,7 +1798,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1682:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
 1683:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
 1684:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 31
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 31
 
 
 1685:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @}
@@ -1858,7 +1858,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1739:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CLOCK_ASYNC_DIV8   (1)
 1740:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CLOCK_ASYNC_DIV10  (1)
 1741:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CLOCK_ASYNC_DIV12  (1)
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 32
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 32
 
 
 1742:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CLOCK_ASYNC_DIV16  (1)
@@ -1918,7 +1918,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1796:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE void LL_ADC_SetCommonPathInternalCh(ADC_Common_TypeDef *ADCxy_COMMON, uint32_t Path
 1797:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
 1798:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   MODIFY_REG(ADCxy_COMMON->CCR, ADC_CCR_VREFEN | ADC_CCR_TSEN | ADC_CCR_VBATEN, PathInternal);
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 33
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 33
 
 
 1799:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
@@ -1978,7 +1978,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1853:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         This check can be done with function @ref LL_ADC_IsEnabled() for each
 1854:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         ADC instance or by using helper macro helper macro
 1855:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @ref __LL_ADC_IS_ENABLED_ALL_COMMON_INSTANCE().
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 34
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 34
 
 
 1856:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll CCR      VREFEN         LL_ADC_SetCommonPathInternalChRem\n
@@ -2038,7 +2038,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1910:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ClockSource This parameter can be one of the following values:
 1911:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CLOCK_SYNC_PCLK_DIV4
 1912:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CLOCK_SYNC_PCLK_DIV2
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 35
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 35
 
 
 1913:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CLOCK_SYNC_PCLK_DIV1 (2)
@@ -2098,7 +2098,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1967:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  CalibrationFactor Value between Min_Data=0x00 and Max_Data=0x7F
 1968:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @retval None
 1969:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 36
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 36
 
 
 1970:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE void LL_ADC_SetCalibrationFactor(ADC_TypeDef *ADCx, uint32_t CalibrationFactor)
@@ -2158,7 +2158,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2024:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE uint32_t LL_ADC_GetResolution(ADC_TypeDef *ADCx)
 2025:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
 2026:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   return (uint32_t)(READ_BIT(ADCx->CFGR1, ADC_CFGR1_RES));
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 37
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 37
 
 
 2027:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
@@ -2218,7 +2218,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2081:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             (by CPU to free the IRQ pending event or by DMA).
 2082:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             Auto wait will work but fort a very short time, discarding
 2083:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             its intended benefit (except specific case of high load of CPU
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 38
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 38
 
 
 2084:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             or DMA transfers which can justify usage of auto wait).
@@ -2278,7 +2278,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2138:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             (by CPU to free the IRQ pending event or by DMA).
 2139:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             Auto wait will work but fort a very short time, discarding
 2140:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             its intended benefit (except specific case of high load of CPU
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 39
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 39
 
 
 2141:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             or DMA transfers which can justify usage of auto wait).
@@ -2338,7 +2338,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2195:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_TRIGGER_FREQ_LOW
 2196:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @retval None
 2197:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 40
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 40
 
 
 2198:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE void LL_ADC_SetTriggerFrequencyMode(ADC_TypeDef *ADCx, uint32_t TriggerFrequencyMod
@@ -2398,7 +2398,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2252:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_SAMPLINGTIME_7CYCLES_5
 2253:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_SAMPLINGTIME_12CYCLES_5
 2254:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_SAMPLINGTIME_19CYCLES_5
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 41
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 41
 
 
 2255:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_SAMPLINGTIME_39CYCLES_5
@@ -2458,7 +2458,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2309:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         internal (SW start) or from external peripheral (timer event,
 2310:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         external interrupt line).
 2311:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   On this STM32 series, setting trigger source to external trigger
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 42
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 42
 
 
 2312:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         also set trigger polarity to rising edge
@@ -2518,7 +2518,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2366:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_REG_TRIG_EXT_EXTI_LINE11
 2367:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
 2368:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE uint32_t LL_ADC_REG_GetTriggerSource(ADC_TypeDef *ADCx)
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 43
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 43
 
 
 2369:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
@@ -2578,7 +2578,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2423:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
 2424:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @retval Returned value can be one of the following values:
 2425:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_REG_TRIG_EXT_RISING
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 44
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 44
 
 
 2426:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_REG_TRIG_EXT_FALLING
@@ -2638,7 +2638,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2480:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           @ref LL_ADC_REG_SetSequencerLength().
 2481:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         - sequencer configured to not fully configurable:
 2482:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           sequencer length and each rank affectation to a channel
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 45
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 45
 
 
 2483:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           are fixed by channel HW number.
@@ -2698,7 +2698,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2537:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         for more details.
 2538:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   Sequencer disabled is equivalent to sequencer of 1 rank:
 2539:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         ADC conversion on only 1 channel.
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 46
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 46
 
 
 2540:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   On this STM32 series, setting of this feature is conditioned to
@@ -2758,7 +2758,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2594:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           Sequencer ranks are selected using
 2595:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           function "LL_ADC_REG_SetSequencerChannels()".
 2596:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *          To set scan direction differently, refer to function
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 47
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 47
 
 
 2597:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *          @ref LL_ADC_REG_SetSequencerScanDirection().
@@ -2818,7 +2818,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2651:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         refer to function @ref LL_ADC_REG_SetSequencerConfigurable().
 2652:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   On some other STM32 series, this setting is not available and
 2653:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         the default scan direction is forward.
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 48
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 48
 
 
 2654:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   On this STM32 series, after modifying sequencer (functions
@@ -2878,7 +2878,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2708:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_REG_SEQ_DISCONT_1RANK
 2709:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @retval None
 2710:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 49
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 49
 
 
 2711:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE void LL_ADC_REG_SetSequencerDiscont(ADC_TypeDef *ADCx, uint32_t SeqDiscont)
@@ -2938,7 +2938,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2765:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         CHSELR   SQ7            LL_ADC_REG_SetSequencerRanks\n
 2766:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         CHSELR   SQ8            LL_ADC_REG_SetSequencerRanks
 2767:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 50
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 50
 
 
 2768:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  Rank This parameter can be one of the following values:
@@ -2998,7 +2998,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2822:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         fully configurable: sequencer length and each rank
 2823:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         affectation to a channel are configurable.
 2824:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         Refer to description of function @ref LL_ADC_REG_SetSequencerLength().
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 51
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 51
 
 
 2825:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   Depending on devices and packages, some channels may not be available.
@@ -3058,7 +3058,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2879:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *
 2880:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         (1) On STM32WL, parameter can be set in ADC group sequencer
 2881:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             only if sequencer is set in mode "not fully configurable",
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 52
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 52
 
 
 2882:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             refer to function @ref LL_ADC_REG_SetSequencerConfigurable().\n
@@ -3118,7 +3118,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2936:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         CHSELR   CHSEL4         LL_ADC_REG_SetSequencerChannels\n
 2937:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         CHSELR   CHSEL5         LL_ADC_REG_SetSequencerChannels\n
 2938:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         CHSELR   CHSEL6         LL_ADC_REG_SetSequencerChannels\n
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 53
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 53
 
 
 2939:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         CHSELR   CHSEL7         LL_ADC_REG_SetSequencerChannels\n
@@ -3178,7 +3178,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2993:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           rank of each channel is fixed by channel HW number
 2994:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           (channel 0 fixed on rank 0, channel 1 fixed on rank1, ...).
 2995:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         - Set channels selected by adding them to the current sequencer
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 54
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 54
 
 
 2996:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           configuration.
@@ -3238,7 +3238,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3050:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_5
 3051:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_6
 3052:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_7
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 55
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 55
 
 
 3053:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_8
@@ -3298,7 +3298,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3107:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         TempSensor, ...), measurement paths to internal channels must be
 3108:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         enabled separately.
 3109:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         This can be done using function @ref LL_ADC_SetCommonPathInternalCh().
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 56
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 56
 
 
 3110:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   On this STM32 series, setting of this feature is conditioned to
@@ -3358,7 +3358,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3164:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
 3165:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE void LL_ADC_REG_SetSequencerChRem(ADC_TypeDef *ADCx, uint32_t Channel)
 3166:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 57
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 57
 
 
 3167:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   /* Parameter "Channel" is used with masks because containing                */
@@ -3418,7 +3418,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3221:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_2
 3222:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_3
 3223:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_4
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 58
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 58
 
 
 3224:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_CHANNEL_5
@@ -3478,7 +3478,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3278:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         continuous mode and sequencer discontinuous mode.
 3279:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   On this STM32 series, setting of this feature is conditioned to
 3280:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         ADC state:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 59
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 59
 
 
 3281:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         ADC must be disabled.
@@ -3538,7 +3538,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3335:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         CFGR1    DMACFG         LL_ADC_REG_SetDMATransfer
 3336:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
 3337:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  DMATransfer This parameter can be one of the following values:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 60
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 60
 
 
 3338:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_REG_DMA_TRANSFER_NONE
@@ -3598,7 +3598,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3392:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         ADC must be disabled.
 3393:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll CFGR1    OVRMOD         LL_ADC_REG_SetOverrun
 3394:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 61
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 61
 
 
 3395:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  Overrun This parameter can be one of the following values:
@@ -3658,7 +3658,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3449:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         on group regular.
 3450:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll SMPR     SMPSEL0        LL_ADC_SetChannelSamplingTime\n
 3451:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         SMPR     SMPSEL1        LL_ADC_SetChannelSamplingTime\n
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 62
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 62
 
 
 3452:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         SMPR     SMPSEL2        LL_ADC_SetChannelSamplingTime\n
@@ -3718,7 +3718,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3506:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   MODIFY_REG(ADCx->SMPR,
 3507:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****              (Channel << ADC_SMPR_SMPSEL0_BITOFFSET_POS),
 3508:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****              (Channel << ADC_SMPR_SMPSEL0_BITOFFSET_POS) & (SamplingTimeY & ADC_SAMPLING_TIME_CH_MA
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 63
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 63
 
 
 3509:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****             );
@@ -3778,7 +3778,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3563:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *
 3564:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         (1) On STM32WL, parameter can be set in ADC group sequencer
 3565:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             only if sequencer is set in mode "not fully configurable",
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 64
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 64
 
 
 3566:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             refer to function @ref LL_ADC_REG_SetSequencerConfigurable().
@@ -3838,7 +3838,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3620:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             LL_ADC_AWD_CHANNELxx_REG_INJ (do not use parameters
 3621:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             LL_ADC_AWD_CHANNELxx_REG and LL_ADC_AWD_CHANNELxx_INJ)
 3622:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           - resolution: resolution is not limited (corresponds to
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 65
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 65
 
 
 3623:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             ADC resolution configured).
@@ -3898,7 +3898,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3671:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
 3672:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   if (AWDy == LL_ADC_AWD1)
   34              		.loc 2 3672 3 view .LVU2
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 66
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 66
 
 
   35              		.loc 2 3672 6 is_stmt 0 view .LVU3
@@ -3958,7 +3958,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
   73 002c 0000C07C 		.word	2092957696
   74              		.cfi_endproc
   75              	.LFE341:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 67
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 67
 
 
   77              		.section	.text.LL_ADC_ConfigAnalogWDThresholds,"ax",%progbits
@@ -4018,7 +4018,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3732:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  AWDy This parameter can be one of the following values:
 3733:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_AWD1
 3734:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_AWD2 (1)
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 68
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 68
 
 
 3735:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_AWD3 (1)
@@ -4078,7 +4078,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3789:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****       }
 3790:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****       else
 3791:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****       {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 69
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 69
 
 
 3792:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****         /* AWD monitoring a single channel */
@@ -4138,7 +4138,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3846:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             LL_ADC_AWD_CHANNELxx_REG_INJ (do not use parameters
 3847:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             LL_ADC_AWD_CHANNELxx_REG and LL_ADC_AWD_CHANNELxx_INJ)
 3848:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *           - resolution: resolution is not limited (corresponds to
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 70
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 70
 
 
 3849:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *             ADC resolution configured).
@@ -4198,7 +4198,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
   97 0006 C1F34051 		ubfx	r1, r1, #21, #1
   98              	.LVL8:
   99              		.loc 2 3891 25 view .LVU17
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 71
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 71
 
 
  100 000a 8C44     		add	ip, ip, r1
@@ -4258,7 +4258,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
   22:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   * If no LICENSE file comes with this software, it is provided AS-IS.
   23:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *
   24:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   ******************************************************************************
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 72
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 72
 
 
   25:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   @verbatim
@@ -4318,7 +4318,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
   79:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
   80:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****              (+++) Example:
   81:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                    Into HAL_ADC_MspInit() (recommended code location) or with
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 73
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 73
 
 
   82:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                    other device clock parameters configuration:
@@ -4378,7 +4378,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  136:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         transfer by DMA.
  137:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  138:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         (++) ADC conversion by polling:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 74
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 74
 
 
  139:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           (+++) Activate the ADC peripheral and start conversions
@@ -4438,7 +4438,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  193:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                (+++) HAL_RCC_OscConfig(&RCC_OscInitStructure);
  194:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  195:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     (#) ADC pins configuration
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 75
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 75
 
 
  196:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****          (++) Disable the clock for the ADC GPIOs
@@ -4498,7 +4498,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  250:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****        (+) MspDeInitCallback              : ADC Msp DeInit callback
  251:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****      [..]
  252:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 76
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 76
 
 
  253:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****      By default, after the HAL_ADC_Init() and when the state is HAL_ADC_STATE_RESET
@@ -4558,7 +4558,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  307:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** /* maximum prescaler.                                                       */
  308:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** /* Ex of profile low frequency : Clock source at 0.1 MHz, ADC clock         */
  309:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** /* prescaler 4, sampling time 7.5 ADC clock cycles, resolution 12 bits.     */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 77
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 77
 
 
  310:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** /* Unit: ms                                                                 */
@@ -4618,7 +4618,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  364:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *         This function initializes the ADC MSP (HAL_ADC_MspInit()) only when
  365:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *         coming from ADC state reset. Following calls to this function can
  366:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *         be used to reconfigure some parameters of ADC_InitTypeDef
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 78
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 78
 
 
  367:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *         structure on the fly, without modifying MSP configuration. If ADC
@@ -4678,7 +4678,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  421:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  422:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     if (hadc->Init.ScanConvMode == ADC_SCAN_ENABLE)
  423:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 79
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 79
 
 
  424:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       assert_param(IS_ADC_REGULAR_NB_CONV(hadc->Init.NbrOfConversion));
@@ -4738,7 +4738,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  478:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       wait_loop_index--;
  479:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     }
  480:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 80
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 80
 
 
  481:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -4798,7 +4798,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  535:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     {
  536:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /* Some parameters of this register are not reset, since they are set   */
  537:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /* by other functions and must be kept in case of usage of this         */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 81
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 81
 
 
  538:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /* function on the fly (update of a parameter of ADC_InitTypeDef        */
@@ -4858,7 +4858,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  592:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                  ADC_CFGR1_CONT    |
  593:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                  ADC_CFGR1_OVRMOD  |
  594:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                  ADC_CFGR1_EXTSEL  |
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 82
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 82
 
 
  595:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                  ADC_CFGR1_EXTEN   |
@@ -4918,7 +4918,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  649:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /*   "HAL_ADC_ConfigChannel()".                                           */
  650:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     if (hadc->Init.ScanConvMode == ADC_SCAN_DISABLE)
  651:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 83
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 83
 
 
  652:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /* Set sequencer scan length by clearing ranks above rank 1             */
@@ -4978,7 +4978,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  706:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  707:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     tmp_hal_status = HAL_ERROR;
  708:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 84
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 84
 
 
  709:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -5038,7 +5038,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  763:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  764:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /* Note: HAL ADC deInit is done independently of ADC conversion stop        */
  765:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /*       and disable return status. In case of status fail, attempt to      */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 85
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 85
 
 
  766:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /*       perform deinitialization anyway and it is up user code in          */
@@ -5098,7 +5098,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  820:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /*  __HAL_RCC_ADC..._FORCE_RESET()/..._RELEASE_RESET()/..._CLK_DISABLE()) */
  821:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /* in function "void HAL_ADC_MspDeInit(ADC_HandleTypeDef *hadc)":         */
  822:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** #if (USE_HAL_ADC_REGISTER_CALLBACKS == 1)
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 86
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 86
 
 
  823:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   if (hadc->MspDeInitCallback == NULL)
@@ -5158,7 +5158,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  140              		.thumb
  141              		.thumb_func
  143              	HAL_ADC_Init:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 87
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 87
 
 
  144              	.LVL12:
@@ -5218,7 +5218,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  402:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   assert_param(IS_ADC_EOC_SELECTION(hadc->Init.EOCSelection));
  180              		.loc 1 402 3 view .LVU42
  403:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   assert_param(IS_ADC_OVERRUN(hadc->Init.Overrun));
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 88
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 88
 
 
  181              		.loc 1 403 3 view .LVU43
@@ -5278,7 +5278,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3909:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         analog watchdog thresholds data require a specific shift.
 3910:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         Use helper macro @ref __LL_ADC_ANALOGWD_SET_THRESHOLD_RESOLUTION().
 3911:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   On this STM32 series, there are 2 kinds of analog watchdog
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 89
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 89
 
 
 3912:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         instance:
@@ -5338,7 +5338,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3966:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE void LL_ADC_SetAnalogWDThresholds(ADC_TypeDef *ADCx, uint32_t AWDy, uint32_t AWDThr
 3967:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                                   uint32_t AWDThresholdValue)
 3968:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 90
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 90
 
 
 3969:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   /* Set bits with content of parameter "AWDThresholdValue" with bits         */
@@ -5398,7 +5398,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4023:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                                    + ((ADC_AWD_CR3_REGOFFSET & AWDy)
 4024:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****                                                        >> (ADC_AWD_CRX_REGOFFSET_BITOFFSET_POS + 1U
 4025:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 91
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 91
 
 
 4026:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   return (uint32_t)(READ_BIT(*preg,
@@ -5458,7 +5458,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4080:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         ADC must be disabled.
 4081:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll CFGR2    TOVS           LL_ADC_SetOverSamplingDiscont
 4082:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 92
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 92
 
 
 4083:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  OverSamplingDiscont This parameter can be one of the following values:
@@ -5518,7 +5518,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4137:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_OVS_SHIFT_RIGHT_4
 4138:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_OVS_SHIFT_RIGHT_5
 4139:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_OVS_SHIFT_RIGHT_6
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 93
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 93
 
 
 4140:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         @arg @ref LL_ADC_OVS_SHIFT_RIGHT_7
@@ -5578,7 +5578,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4194:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
 4195:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
 4196:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 94
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 94
 
 
 4197:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @brief  Enable ADC instance internal voltage regulator.
@@ -5638,7 +5638,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4249:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
 4250:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   return ((READ_BIT(ADCx->CR, ADC_CR_ADVREGEN) == (ADC_CR_ADVREGEN)) ? 1UL : 0UL);
  211              		.loc 2 4250 3 view .LVU64
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 95
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 95
 
 
  212              		.loc 2 4250 12 is_stmt 0 view .LVU65
@@ -5698,7 +5698,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  455:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** #endif /* USE_HAL_ADC_REGISTER_CALLBACKS */
  255              		.loc 1 455 5 is_stmt 1 view .LVU79
  256 0044 FFF7FEFF 		bl	HAL_ADC_MspInit
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 96
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 96
 
 
  257              	.LVL19:
@@ -5758,7 +5758,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  300 0072 E36D     		ldr	r3, [r4, #92]
  301 0074 43F00103 		orr	r3, r3, #1
  302 0078 E365     		str	r3, [r4, #92]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 97
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 97
 
 
  493:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   }
@@ -5818,7 +5818,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4293:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   /*       to not interfere with bits with HW property "rs".                  */
 4294:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   MODIFY_REG(ADCx->CR,
 4295:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****              ADC_CR_BITS_PROPERTY_RS,
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 98
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 98
 
 
 4296:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****              ADC_CR_ADDIS);
@@ -5878,7 +5878,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4350:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @retval None
 4351:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
 4352:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE void LL_ADC_StartCalibration(ADC_TypeDef *ADCx)
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 99
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 99
 
 
 4353:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
@@ -5938,7 +5938,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4407:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
 4408:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
 4409:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 100
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 100
 
 
 4410:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @brief  Stop ADC group regular conversion.
@@ -5998,7 +5998,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  334 0092 40F0BB80 		bne	.L17
  507:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                       HAL_ADC_STATE_REG_BUSY,
  335              		.loc 1 507 5 is_stmt 1 view .LVU107
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 101
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 101
 
 
  336 0096 A36D     		ldr	r3, [r4, #88]
@@ -6058,7 +6058,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  374 00be 216B     		ldr	r1, [r4, #48]
  375 00c0 09B1     		cbz	r1, .L19
  376 00c2 4FF48051 		mov	r1, #4096
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 102
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 102
 
 
  377              	.L19:
@@ -6118,7 +6118,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  414              		.loc 1 582 71 view .LVU140
  415 00f2 2943     		orrs	r1, r1, r5
  582:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                      hadc->Init.ExternalTrigConvEdge);
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 103
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 103
 
 
  416              		.loc 1 582 18 view .LVU141
@@ -6178,7 +6178,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  626:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           ((hadc->Init.ClockPrescaler) != ADC_CLOCK_SYNC_PCLK_DIV2) &&
  457              		.loc 1 626 69 discriminator 1 view .LVU155
  458 012a B3F1804F 		cmp	r3, #1073741824
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 104
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 104
 
 
  459 012e 0CD0     		beq	.L18
@@ -6238,7 +6238,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  502 015c 5369     		ldr	r3, [r2, #20]
  503 015e 23F07003 		bic	r3, r3, #112
  504 0162 43EA0113 		orr	r3, r3, r1, lsl #4
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 105
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 105
 
 
  505 0166 5361     		str	r3, [r2, #20]
@@ -6298,7 +6298,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  691:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                         HAL_ADC_STATE_BUSY_INTERNAL,
  545              		.loc 1 691 7 is_stmt 1 view .LVU181
  546 0186 A36D     		ldr	r3, [r4, #88]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 106
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 106
 
 
  547 0188 23F01203 		bic	r3, r3, #18
@@ -6358,7 +6358,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  589 01c0 92E7     		b	.L21
  590              	.LVL47:
  591              	.L35:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 107
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 107
 
 
  607:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                      (hadc->Init.ClockPrescaler & ADC_CFGR2_CKMODE) |
@@ -6418,7 +6418,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  681:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  633              		.loc 1 681 7 view .LVU207
  634 01fa 0023     		movs	r3, #0
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 108
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 108
 
 
  635 01fc E365     		str	r3, [r4, #92]
@@ -6478,7 +6478,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  682              		.weak	HAL_ADC_MspDeInit
  683              		.syntax unified
  684              		.thumb
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 109
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 109
 
 
  685              		.thumb_func
@@ -6538,7 +6538,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  894:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          @arg @ref HAL_ADC_LEVEL_OUT_OF_WINDOW_3_CB_ID    ADC analog watchdog 3 callback ID
  895:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          @arg @ref HAL_ADC_END_OF_SAMPLING_CB_ID          ADC end of sampling callback ID
  896:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          @arg @ref HAL_ADC_MSPINIT_CB_ID                  ADC Msp Init callback ID
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 110
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 110
 
 
  897:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          @arg @ref HAL_ADC_MSPDEINIT_CB_ID                ADC Msp DeInit callback ID
@@ -6598,7 +6598,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  951:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  952:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       case HAL_ADC_MSPDEINIT_CB_ID :
  953:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         hadc->MspDeInitCallback = pCallback;
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 111
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 111
 
 
  954:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         break;
@@ -6658,7 +6658,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1008:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          @arg @ref HAL_ADC_ERROR_CB_ID                    ADC error callback ID
 1009:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          @arg @ref HAL_ADC_LEVEL_OUT_OF_WINDOW_2_CB_ID    ADC analog watchdog 2 callback ID
 1010:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          @arg @ref HAL_ADC_LEVEL_OUT_OF_WINDOW_3_CB_ID    ADC analog watchdog 3 callback ID
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 112
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 112
 
 
 1011:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          @arg @ref HAL_ADC_END_OF_SAMPLING_CB_ID          ADC end of sampling callback ID
@@ -6718,7 +6718,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1065:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
 1066:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         /* Return error status */
 1067:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         status =  HAL_ERROR;
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 113
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 113
 
 
 1068:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         break;
@@ -6778,7 +6778,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1122:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       (+) Get result of regular channel conversion.
 1123:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       (+) Start conversion of regular group and enable interruptions.
 1124:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       (+) Stop conversion of regular group and disable interruptions.
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 114
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 114
 
 
 1125:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       (+) Handle ADC interrupt request
@@ -6838,7 +6838,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1179:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /* trigger event.                                                       */
 1180:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /* Start ADC group regular conversion */
 1181:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       LL_ADC_REG_StartConversion(hadc->Instance);
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 115
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 115
 
 
 1182:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     }
@@ -6898,7 +6898,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1236:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** }
 1237:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
 1238:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 116
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 116
 
 
 1239:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   * @brief  Wait for regular group conversion to be completed.
@@ -6958,7 +6958,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1269:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /* If end of conversion selected to end of unitary conversion */
 1270:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   else /* ADC_EOC_SINGLE_CONV */
 1271:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 117
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 117
 
 
 1272:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* Verification that ADC configuration is compliant with polling for      */
@@ -7018,7 +7018,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1297:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* Check if timeout is disabled (set to infinite wait) */
 1298:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     if (Timeout != HAL_MAX_DELAY)
  764              		.loc 1 1298 5 is_stmt 1 view .LVU240
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 118
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 118
 
 
  765              		.loc 1 1298 8 is_stmt 0 view .LVU241
@@ -7078,7 +7078,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  806 0056 43F02003 		orr	r3, r3, #32
  807 005a 8365     		str	r3, [r0, #88]
 1283:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 119
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 119
 
 
  808              		.loc 1 1283 7 view .LVU258
@@ -7138,7 +7138,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1326:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     if (__HAL_ADC_GET_FLAG(hadc, ADC_FLAG_EOS))
  840              		.loc 1 1326 5 is_stmt 1 view .LVU270
  841              		.loc 1 1326 9 is_stmt 0 view .LVU271
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 120
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 120
 
 
  842 0074 1A68     		ldr	r2, [r3]
@@ -7198,7 +7198,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1349:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         SET_BIT(hadc->ErrorCode, HAL_ADC_ERROR_INTERNAL);
 1350:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       }
 1351:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 121
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 121
 
 
 1352:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   }
@@ -7258,7 +7258,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  912              	.LVL72:
  913              	.LFB858:
 1366:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 122
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 122
 
 
 1367:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** /**
@@ -7318,7 +7318,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  936              	.LVL73:
  937              		.loc 1 1398 15 view .LVU296
  938 000e 8046     		mov	r8, r0
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 123
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 123
 
 
  939              	.LVL74:
@@ -7378,7 +7378,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  977              		.loc 1 1414 11 view .LVU312
  978              		.loc 1 1414 11 view .LVU313
  979 0042 0023     		movs	r3, #0
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 124
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 124
 
 
  980 0044 86F85430 		strb	r3, [r6, #84]
@@ -7438,7 +7438,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  999              		.loc 1 1449 7 view .LVU319
  1000 0064 8023     		movs	r3, #128
  1001 0066 2360     		str	r3, [r4]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 125
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 125
 
 
 1450:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -7498,7 +7498,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1006 006a 12E0     		b	.L58
  1007              	.L61:
 1422:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 126
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 126
 
 
  1008              		.loc 1 1422 3 view .LVU323
@@ -7558,7 +7558,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1049              		.loc 1 1461 7 view .LVU338
  1050 00a6 F4E7     		b	.L58
  1051              	.L64:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 127
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 127
 
 
 1479:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       {
@@ -7618,7 +7618,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1512:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *         mode), the user must:
 1513:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          1. first clear the EOSMP flag if set with macro __HAL_ADC_CLEAR_FLAG(hadc, ADC_FLAG_EO
 1514:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          2. then enable the EOSMP interrupt with macro __HAL_ADC_ENABLE_IT(hadc, ADC_IT_EOSMP)
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 128
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 128
 
 
 1515:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *          before calling HAL_ADC_Start_IT().
@@ -7678,7 +7678,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1569:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           __HAL_ADC_ENABLE_IT(hadc, ADC_IT_EOC);
 1570:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           break;
 1571:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 129
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 129
 
 
 1572:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -7738,7 +7738,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1626:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* Disable ADC overrun interrupt */
 1627:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     __HAL_ADC_DISABLE_IT(hadc, (ADC_IT_EOC | ADC_IT_EOS | ADC_IT_OVR));
 1628:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 130
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 130
 
 
 1629:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* 2. Disable the ADC peripheral */
@@ -7798,7 +7798,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1683:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
 1684:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* Enable the ADC peripheral */
 1685:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     tmp_hal_status = ADC_Enable(hadc);
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 131
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 131
 
 
 1686:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -7858,7 +7858,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1740:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     tmp_hal_status = HAL_BUSY;
 1741:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   }
 1742:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 132
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 132
 
 
 1743:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   return tmp_hal_status;
@@ -7918,7 +7918,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1797:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* Check if ADC is effectively disabled */
 1798:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     if (tmp_hal_status == HAL_OK)
 1799:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 133
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 133
 
 
 1800:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /* Set ADC state */
@@ -7978,7 +7978,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1098 0002 186C     		ldr	r0, [r3, #64]
  1099              	.LVL78:
 1844:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 134
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 134
 
 
  1100              		.loc 1 1844 1 view .LVU352
@@ -8038,7 +8038,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1886:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* Update state machine on conversion status if not in error state */
 1887:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     if ((hadc->State & HAL_ADC_STATE_ERROR_INTERNAL) == 0UL)
 1888:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 135
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 135
 
 
 1889:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /* Set ADC state */
@@ -8098,7 +8098,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1943:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /*       Therefore, if the preserved data value is needed, it must be     */
 1944:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /*       read preliminarily into HAL_ADC_ConvCpltCallback().              */
 1945:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     __HAL_ADC_CLEAR_FLAG(hadc, (ADC_FLAG_EOC | ADC_FLAG_EOS));
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 136
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 136
 
 
 1946:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   }
@@ -8158,7 +8158,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2000:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   if (((tmp_isr & ADC_FLAG_OVR) == ADC_FLAG_OVR) && ((tmp_ier & ADC_IT_OVR) == ADC_IT_OVR))
 2001:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   {
 2002:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* If overrun is set to overwrite previous data (default setting),        */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 137
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 137
 
 
 2003:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* overrun event is not considered as an error.                           */
@@ -8218,7 +8218,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2057:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   * @brief  Conversion complete callback in non-blocking mode.
 2058:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   * @param hadc ADC handle
 2059:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   * @retval None
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 138
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 138
 
 
 2060:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   */
@@ -8278,7 +8278,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1147              		.section	.text.ADC_DMAHalfConvCplt,"ax",%progbits
  1148              		.align	1
  1149              		.syntax unified
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 139
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 139
 
 
  1150              		.thumb
@@ -8338,7 +8338,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2134:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     [..]  This section provides functions allowing to:
 2135:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       (+) Configure channels on regular group
 2136:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       (+) Configure the analog watchdog
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 140
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 140
 
 
 2137:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -8398,7 +8398,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2191:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   {
 2192:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* Configure channel: depending on rank setting, add it or remove it from */
 2193:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* ADC sequencer.                                                         */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 141
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 141
 
 
 2194:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* If sequencer set to not fully configurable with channel rank set to    */
@@ -8458,7 +8458,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2248:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         /* bypass the configuration processing.                                   */
 2249:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         if ((pConfig->Channel == ADC_CHANNEL_TEMPSENSOR) &&
 2250:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****             ((tmp_config_internal_channel & LL_ADC_PATH_INTERNAL_TEMPSENSOR) == 0UL))
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 142
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 142
 
 
 2251:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         {
@@ -8518,7 +8518,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2305:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
 2306:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         if (pConfig->Channel == ADC_CHANNEL_TEMPSENSOR)
 2307:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 143
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 143
 
 
 2308:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           LL_ADC_SetCommonPathInternalCh(__LL_ADC_COMMON_INSTANCE(hadc->Instance),
@@ -8578,7 +8578,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2362:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   *         effective timing of the new programmed threshold values.
 2363:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   * @param hadc ADC handle
 2364:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   * @param pAnalogWDGConfig Structure of ADC analog watchdog configuration
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 144
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 144
 
 
 2365:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   * @retval HAL status
@@ -8638,7 +8638,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2419:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
 2420:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /* Configuration of analog watchdog:                                    */
 2421:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /*  - Set the analog watchdog enable mode: one or overall group of      */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 145
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 145
 
 
 2422:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       /*    channels.                                                         */
@@ -8698,7 +8698,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2476:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           {
 2477:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****             SET_BIT(hadc->Instance->AWD2CR, (1UL << __LL_ADC_CHANNEL_TO_DECIMAL_NB(pAnalogWDGConfig
 2478:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 146
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 146
 
 
 2479:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           else
@@ -8758,7 +8758,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2533:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         }
 2534:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         else
 2535:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 147
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 147
 
 
 2536:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           LL_ADC_DisableIT_AWD3(hadc->Instance);
@@ -8818,7 +8818,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2590:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   * @{
 2591:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   */
 2592:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 148
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 148
 
 
 2593:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** /**
@@ -8878,7 +8878,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2647:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
 2648:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /* Check the parameters */
 2649:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   assert_param(IS_ADC_ALL_INSTANCE(hadc->Instance));
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 149
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 149
 
 
 2650:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -8938,7 +8938,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2704:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /* enabling phase not yet completed: flag ADC ready not yet set).           */
 2705:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /* Timeout implemented to not be stuck if ADC cannot be enabled (possible   */
 2706:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /* causes: ADC clock not running, ...).                                     */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 150
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 150
 
 
 2707:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   if (LL_ADC_IsEnabled(hadc->Instance) == 0UL)
@@ -8998,7 +8998,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2761:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
 2762:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         if ((HAL_GetTick() - tickstart) > ADC_ENABLE_TIMEOUT)
 2763:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 151
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 151
 
 
 2764:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           /* New check to avoid false timeout detection in case of preemption */
@@ -9058,7 +9058,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2818:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       return HAL_ERROR;
 2819:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     }
 2820:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 152
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 152
 
 
 2821:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     /* Wait for ADC effectively disabled */
@@ -9118,7 +9118,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2875:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         /* ADSTART==0 (no conversion on going)                                */
 2876:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         if (LL_ADC_REG_IsConversionOngoing(hadc->Instance) == 0UL)
 2877:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 153
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 153
 
 
 2878:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****           /* Disable ADC end of single conversion interrupt on group regular */
@@ -9178,7 +9178,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2932:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** {
  1156              		.loc 1 2932 1 is_stmt 1 view -0
  1157              		.cfi_startproc
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 154
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 154
 
 
  1158              		@ args = 0, pretend = 0, frame = 0
@@ -9238,7 +9238,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1202              		.syntax unified
  1203              		.thumb
  1204              		.thumb_func
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 155
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 155
 
 
  1206              	HAL_ADC_ErrorCallback:
@@ -9298,7 +9298,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2956:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
 2957:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   /* Set ADC error code to DMA error */
 2958:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   SET_BIT(hadc->ErrorCode, HAL_ADC_ERROR_DMA);
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 156
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 156
 
 
  1246              		.loc 1 2958 3 view .LVU376
@@ -9358,7 +9358,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2862:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  1287              		.loc 1 2862 5 is_stmt 1 view .LVU386
  1288 000e 836D     		ldr	r3, [r0, #88]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 157
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 157
 
 
  1289              	.LVL92:
@@ -9418,7 +9418,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1328              		.loc 2 4437 12 is_stmt 0 view .LVU403
  1329 002c 9A68     		ldr	r2, [r3, #8]
  1330              		.loc 2 4437 74 view .LVU404
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 158
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 158
 
 
  1331 002e 12F0040F 		tst	r2, #4
@@ -9478,7 +9478,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1374              		.loc 1 2921 11 is_stmt 0 view .LVU416
  1375 006c 026D     		ldr	r2, [r0, #80]
 2921:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 159
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 159
 
 
  1376              		.loc 1 2921 23 view .LVU417
@@ -9538,7 +9538,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1422 0004 0368     		ldr	r3, [r0]
 1854:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   uint32_t tmp_ier = hadc->Instance->IER;
  1423              		.loc 1 1854 12 view .LVU428
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 160
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 160
 
 
  1424 0006 1E68     		ldr	r6, [r3]
@@ -9598,7 +9598,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1462              		.loc 1 1883 6 is_stmt 0 view .LVU444
  1463 0032 16F0040F 		tst	r6, #4
  1464 0036 02D0     		beq	.L89
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 161
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 161
 
 
 1883:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       (((tmp_isr & ADC_FLAG_EOS) == ADC_FLAG_EOS) && ((tmp_ier & ADC_IT_EOS) == ADC_IT_EOS)))
@@ -9658,7 +9658,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1897:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****        )
  1505              		.loc 1 1897 23 view .LVU459
  1506 0064 A27E     		ldrb	r2, [r4, #26]	@ zero_extendqisi2
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 162
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 162
 
 
 1897:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****        )
@@ -9718,7 +9718,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1949:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   {
  1551              		.loc 1 1949 3 view .LVU474
 1949:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 163
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 163
 
 
  1552              		.loc 1 1949 6 is_stmt 0 view .LVU475
@@ -9778,7 +9778,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1591              	.LBB178:
  1592              	.LBI178:
 3376:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 164
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 164
 
 
  1593              		.loc 2 3376 26 is_stmt 1 view .LVU491
@@ -9838,7 +9838,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1635              	.LVL119:
  1636              	.L94:
 1921:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 165
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 165
 
 
  1637              		.loc 1 1921 11 is_stmt 1 view .LVU504
@@ -9898,7 +9898,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1682              	.LVL122:
 1996:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   }
  1683              		.loc 1 1996 5 view .LVU514
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 166
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 166
 
 
  1684 0152 2368     		ldr	r3, [r4]
@@ -9958,7 +9958,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1731 0004 0022     		movs	r2, #0
  1732 0006 0192     		str	r2, [sp, #4]
 2166:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   assert_param(IS_ADC_CHANNEL(pConfig->Channel));
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 167
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 167
 
 
  1733              		.loc 1 2166 3 is_stmt 1 view .LVU524
@@ -10018,7 +10018,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1773 002c 9A65     		str	r2, [r3, #88]
 2337:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   }
  1774              		.loc 1 2337 5 view .LVU543
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 168
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 168
 
 
  1775              	.LVL130:
@@ -10078,7 +10078,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1816              		.loc 1 2220 9 is_stmt 1 view .LVU556
  1817 0050 1C6E     		ldr	r4, [r3, #96]
  1818 0052 00F01F00 		and	r0, r0, #31
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 169
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 169
 
 
  1819 0056 0F25     		movs	r5, #15
@@ -10138,7 +10138,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  1861              	.LVL136:
 2812:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****              ADC_CHSELR_SQ1 << (Rank & ADC_REG_RANK_ID_SQRX_MASK),
  1862              		.loc 2 2812 3 view .LVU569
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 170
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 170
 
 
  1863 0092 A540     		lsls	r5, r5, r4
@@ -10198,7 +10198,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3506:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****              (Channel << ADC_SMPR_SMPSEL0_BITOFFSET_POS),
  1907              		.loc 2 3506 3 is_stmt 0 view .LVU580
  1908 00b6 22F07C42 		bic	r2, r2, #-67108864
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 171
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 171
 
 
  1909 00ba 22F0FF02 		bic	r2, r2, #255
@@ -10258,7 +10258,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
   29:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic push
   30:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wsign-conversion"
   31:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wconversion"
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 172
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 172
 
 
   32:Drivers/CMSIS/Include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wunused-parameter"
@@ -10318,7 +10318,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
   86:Drivers/CMSIS/Include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT16_READ
   87:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic push
   88:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wpacked"
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 173
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 173
 
 
   89:Drivers/CMSIS/Include/cmsis_gcc.h ****   #pragma GCC diagnostic ignored "-Wattributes"
@@ -10378,7 +10378,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  143:Drivers/CMSIS/Include/cmsis_gcc.h ****     uint32_t  wlen;
  144:Drivers/CMSIS/Include/cmsis_gcc.h ****   } __zero_table_t;
  145:Drivers/CMSIS/Include/cmsis_gcc.h ****   
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 174
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 174
 
 
  146:Drivers/CMSIS/Include/cmsis_gcc.h ****   extern const __copy_table_t __copy_table_start__;
@@ -10438,7 +10438,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  200:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  201:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  202:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 175
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 175
 
 
  203:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Disable IRQ Interrupts
@@ -10498,7 +10498,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  257:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Writes the given value to the non-secure Control Register when in secure state.
  258:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    control  Control Register value to set
  259:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 176
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 176
 
 
  260:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __TZ_set_CONTROL_NS(uint32_t control)
@@ -10558,7 +10558,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  314:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PSP(void)
  315:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  316:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 177
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 177
 
 
  317:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -10618,7 +10618,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  371:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  372:Drivers/CMSIS/Include/cmsis_gcc.h ****   __ASM volatile ("MRS %0, msp" : "=r" (result) );
  373:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 178
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 178
 
 
  374:Drivers/CMSIS/Include/cmsis_gcc.h **** }
@@ -10678,7 +10678,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  428:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  429:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  430:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 179
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 179
 
 
  431:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -10738,7 +10738,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  485:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE ) && (__ARM_FEATURE_CMSE == 3))
  486:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  487:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Set Priority Mask (non-secure)
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 180
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 180
 
 
  488:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Assigns the given value to the non-secure Priority Mask Register when in secure state.
@@ -10798,7 +10798,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  542:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
  543:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __TZ_get_BASEPRI_NS(void)
  544:Drivers/CMSIS/Include/cmsis_gcc.h **** {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 181
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 181
 
 
  545:Drivers/CMSIS/Include/cmsis_gcc.h ****   uint32_t result;
@@ -10858,7 +10858,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  599:Drivers/CMSIS/Include/cmsis_gcc.h ****   return(result);
  600:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  601:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 182
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 182
 
 
  602:Drivers/CMSIS/Include/cmsis_gcc.h **** 
@@ -10918,7 +10918,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  656:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Process Stack Pointer Limit (PSPLIM).
  657:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               PSPLIM Register value
  658:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 183
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 183
 
 
  659:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE uint32_t __get_PSPLIM(void)
@@ -10978,7 +10978,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  713:Drivers/CMSIS/Include/cmsis_gcc.h **** }
  714:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  715:Drivers/CMSIS/Include/cmsis_gcc.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 184
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 184
 
 
  716:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (defined (__ARM_FEATURE_CMSE  ) && (__ARM_FEATURE_CMSE   == 3))
@@ -11038,7 +11038,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  770:Drivers/CMSIS/Include/cmsis_gcc.h **** {
  771:Drivers/CMSIS/Include/cmsis_gcc.h **** #if (!(defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1)))
  772:Drivers/CMSIS/Include/cmsis_gcc.h ****   // without main extensions, the non-secure MSPLIM is RAZ/WI
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 185
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 185
 
 
  773:Drivers/CMSIS/Include/cmsis_gcc.h ****   return 0U;
@@ -11098,7 +11098,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  827:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  828:Drivers/CMSIS/Include/cmsis_gcc.h **** /**
  829:Drivers/CMSIS/Include/cmsis_gcc.h ****   \brief   Get FPSCR
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 186
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 186
 
 
  830:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Returns the current value of the Floating Point Status/Control register.
@@ -11158,7 +11158,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  884:Drivers/CMSIS/Include/cmsis_gcc.h **** */
  885:Drivers/CMSIS/Include/cmsis_gcc.h **** 
  886:Drivers/CMSIS/Include/cmsis_gcc.h **** /* Define macros for porting to both thumb1 and thumb2.
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 187
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 187
 
 
  887:Drivers/CMSIS/Include/cmsis_gcc.h ****  * For thumb1, use low register (r0-r7), specified by constraint "l"
@@ -11218,7 +11218,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  941:Drivers/CMSIS/Include/cmsis_gcc.h ****   \details Acts as a special kind of Data Memory Barrier.
  942:Drivers/CMSIS/Include/cmsis_gcc.h ****            It completes when all explicit memory accesses before this instruction complete.
  943:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 188
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 188
 
 
  944:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE void __DSB(void)
@@ -11278,7 +11278,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  998:Drivers/CMSIS/Include/cmsis_gcc.h ****   \param [in]    value  Value to reverse
  999:Drivers/CMSIS/Include/cmsis_gcc.h ****   \return               Reversed value
 1000:Drivers/CMSIS/Include/cmsis_gcc.h ****  */
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 189
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 189
 
 
 1001:Drivers/CMSIS/Include/cmsis_gcc.h **** __STATIC_FORCEINLINE int16_t __REVSH(int16_t value)
@@ -11338,7 +11338,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1052:Drivers/CMSIS/Include/cmsis_gcc.h **** #if ((defined (__ARM_ARCH_7M__      ) && (__ARM_ARCH_7M__      == 1)) || \
 1053:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__ARM_ARCH_7EM__     ) && (__ARM_ARCH_7EM__     == 1)) || \
 1054:Drivers/CMSIS/Include/cmsis_gcc.h ****      (defined (__ARM_ARCH_8M_MAIN__ ) && (__ARM_ARCH_8M_MAIN__ == 1))    )
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 190
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 190
 
 
 1055:Drivers/CMSIS/Include/cmsis_gcc.h ****    __ASM volatile ("rbit %0, %1" : "=r" (result) : "r" (value) );
@@ -11398,7 +11398,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1090:Drivers/CMSIS/Include/cmsis_gcc.h ****   {
 1091:Drivers/CMSIS/Include/cmsis_gcc.h ****     return 32U;
 1092:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 191
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 191
 
 
 1093:Drivers/CMSIS/Include/cmsis_gcc.h ****   return __builtin_clz(value);
@@ -11458,7 +11458,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2266:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                  && ((tmp_config_internal_channel & LL_ADC_PATH_INTERNAL_VBAT) == 0UL))
  1993              		.loc 1 2266 14 is_stmt 1 view .LVU609
 2266:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                  && ((tmp_config_internal_channel & LL_ADC_PATH_INTERNAL_VBAT) == 0UL))
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 192
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 192
 
 
  1994              		.loc 1 2266 17 is_stmt 0 view .LVU610
@@ -11518,7 +11518,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2036 011a 9209     		lsrs	r2, r2, #6
  2037 011c 4649     		ldr	r1, .L142+24
  2038 011e A1FB0212 		umull	r1, r2, r1, r2
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 193
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 193
 
 
  2039 0122 9209     		lsrs	r2, r2, #6
@@ -11578,7 +11578,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2080 0150 22F0E072 		bic	r2, r2, #29360128
  2081 0154 1143     		orrs	r1, r1, r2
  2082              	.LVL160:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 194
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 194
 
 
 1798:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
@@ -11638,7 +11638,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2125 017a 59E7     		b	.L110
  2126              	.LVL165:
  2127              	.L111:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 195
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 195
 
 
 1799:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
@@ -11698,7 +11698,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2304:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  2169              		.loc 1 2304 9 is_stmt 1 view .LVU661
  2170              	.LVL169:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 196
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 196
 
 
  2171              	.LBB206:
@@ -11758,7 +11758,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1798:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
  2211              		.loc 2 1798 3 view .LVU676
  2212 01c0 00F11040 		add	r0, r0, #-1879048192
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 197
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 197
 
 
  2213 01c4 00F58830 		add	r0, r0, #69632
@@ -11818,7 +11818,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1799:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
  2257              		.loc 2 1799 1 view .LVU687
  2258 01f6 1BE7     		b	.L110
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 198
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 198
 
 
  2259              	.LVL178:
@@ -11878,7 +11878,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2302              	.LVL184:
 2182:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  2303              		.loc 1 2182 3 view .LVU699
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 199
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 199
 
 
  2304 021c 0BE7     		b	.L108
@@ -11938,7 +11938,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2356              		@ frame_needed = 0, uses_anonymous_args = 0
  2357              		@ link register save eliminated.
 2620:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 200
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 200
 
 
  2358              		.loc 1 2620 3 view .LVU706
@@ -11998,7 +11998,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2404 000a 2AD0     		beq	.L151
  2405 000c 0446     		mov	r4, r0
  2406              	.LVL191:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 201
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 201
 
 
  2407              		.loc 2 4437 74 view .LVU720
@@ -12058,7 +12058,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2667:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     {
  2448              		.loc 1 2667 5 is_stmt 1 view .LVU734
  2449              	.L149:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 202
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 202
 
 
 2667:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     {
@@ -12118,7 +12118,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2688:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** }
  2488              		.loc 1 2688 10 view .LVU751
  2489 005e 0020     		movs	r0, #0
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 203
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 203
 
 
  2490 0060 00E0     		b	.L147
@@ -12178,7 +12178,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2536              	.LBB227:
 4310:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
  2537              		.loc 2 4310 3 view .LVU762
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 204
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 204
 
 
 4310:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
@@ -12238,7 +12238,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2578 002c 294B     		ldr	r3, .L169+4
  2579 002e D3F80837 		ldr	r3, [r3, #1800]
  2580              	.LVL204:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 205
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 205
 
 
 1892:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
@@ -12298,7 +12298,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2620              		.loc 1 2736 24 is_stmt 0 view .LVU791
  2621 0060 019B     		ldr	r3, [sp, #4]
  2622 0062 013B     		subs	r3, r3, #1
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 206
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 206
 
 
  2623 0064 0193     		str	r3, [sp, #4]
@@ -12358,7 +12358,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4308:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
  2663              		.loc 2 4308 26 view .LVU806
  2664              	.LBB233:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 207
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 207
 
 
 4310:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
@@ -12418,7 +12418,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2704              		.loc 1 2765 14 view .LVU821
  2705 00ac 13F0010F 		tst	r3, #1
  2706 00b0 E4D1     		bne	.L160
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 208
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 208
 
 
 2768:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -12478,7 +12478,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2755              		.cfi_startproc
  2756              		@ args = 0, pretend = 0, frame = 0
  2757              		@ frame_needed = 0, uses_anonymous_args = 0
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 209
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 209
 
 
 1140:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -12538,7 +12538,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2798              		.loc 1 1154 8 is_stmt 0 discriminator 2 view .LVU846
  2799 0020 C0B9     		cbnz	r0, .L173
 1159:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****                         HAL_ADC_STATE_READY | HAL_ADC_STATE_REG_EOC | HAL_ADC_STATE_REG_OVR | HAL_A
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 210
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 210
 
 
  2800              		.loc 1 1159 7 is_stmt 1 view .LVU847
@@ -12598,7 +12598,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2842 0056 84F85430 		strb	r3, [r4, #84]
  2843 005a FAE7     		b	.L172
  2844              	.LVL225:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 211
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 211
 
 
  2845              	.L174:
@@ -12658,7 +12658,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2891              		.loc 2 4437 3 view .LVU870
  2892              		.loc 2 4437 12 is_stmt 0 view .LVU871
  2893 0002 9B68     		ldr	r3, [r3, #8]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 212
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 212
 
 
  2894              	.LVL231:
@@ -12718,7 +12718,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2936 003c 1160     		str	r1, [r2]
 1556:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  2937              		.loc 1 1556 7 view .LVU885
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 213
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 213
 
 
 1556:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -12778,7 +12778,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  2977              		.loc 2 4404 3 view .LVU900
  2978 006c 9368     		ldr	r3, [r2, #8]
  2979 006e 23F00043 		bic	r3, r3, #-2147483648
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 214
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 214
 
 
  2980 0072 23F01703 		bic	r3, r3, #23
@@ -12838,7 +12838,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3024 0098 F0E7     		b	.L181
  3025              		.cfi_endproc
  3026              	.LFE859:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 215
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 215
 
 
  3028              		.section	.text.HAL_ADC_Start_DMA,"ax",%progbits
@@ -12898,7 +12898,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1667:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  3075              		.loc 1 1667 5 view .LVU923
  3076 0012 94F85430 		ldrb	r3, [r4, #84]	@ zero_extendqisi2
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 216
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 216
 
 
  3077 0016 012B     		cmp	r3, #1
@@ -12958,7 +12958,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3117              	.L196:
 4294:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****              ADC_CR_BITS_PROPERTY_RS,
  3118              		.loc 2 4294 3 is_stmt 0 view .LVU938
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 217
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 217
 
 
  3119              	.LBE249:
@@ -13018,7 +13018,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1705:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  3158              		.loc 1 1705 46 view .LVU954
  3159 0070 1249     		ldr	r1, .L200+4
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 218
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 218
 
 
  3160 0072 1163     		str	r1, [r2, #48]
@@ -13078,7 +13078,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3199              		.loc 2 4404 3 view .LVU969
  3200 009e 9368     		ldr	r3, [r2, #8]
  3201 00a0 23F00043 		bic	r3, r3, #-2147483648
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 219
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 219
 
 
  3202 00a4 23F01703 		bic	r3, r3, #23
@@ -13138,7 +13138,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3251              		.cfi_offset 5, -8
  3252              		.cfi_offset 14, -4
  3253 0002 0446     		mov	r4, r0
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 220
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 220
 
 
 2793:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   const uint32_t tmp_adc_is_disable_on_going = LL_ADC_IsDisableOngoing(hadc->Instance);
@@ -13198,7 +13198,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2804:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     {
  3293              		.loc 1 2804 5 is_stmt 1 view .LVU992
 2804:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****     {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 221
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 221
 
 
  3294              		.loc 1 2804 24 is_stmt 0 view .LVU993
@@ -13258,7 +13258,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3336 004e 1A60     		str	r2, [r3]
 2823:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  3337              		.loc 1 2823 5 view .LVU1006
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 222
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 222
 
 
 2823:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -13318,7 +13318,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3375              		.loc 1 2836 11 view .LVU1023
  3376 007c E36D     		ldr	r3, [r4, #92]
  3377 007e 43F00103 		orr	r3, r3, #1
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 223
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 223
 
 
  3378 0082 E365     		str	r3, [r4, #92]
@@ -13378,7 +13378,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3425              		.cfi_offset 14, -4
  730:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  3426              		.loc 1 730 3 is_stmt 1 view .LVU1033
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 224
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 224
 
 
  733:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   {
@@ -13438,7 +13438,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  796:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  3467              		.loc 1 796 3 is_stmt 1 view .LVU1048
  796:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 225
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 225
 
 
  3468              		.loc 1 796 7 is_stmt 0 view .LVU1049
@@ -13498,7 +13498,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3504              		.loc 1 804 26 view .LVU1067
  3505 0066 03F0F023 		and	r3, r3, #-268374016
  3506 006a D362     		str	r3, [r2, #44]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 226
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 226
 
 
  807:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -13558,7 +13558,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3543 0094 70BD     		pop	{r4, r5, r6, pc}
  3544              	.LVL275:
  3545              	.L219:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 227
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 227
 
 
  751:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -13618,7 +13618,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3587 00b8 00023E83 		.word	-2093088256
  3588 00bc 00200140 		.word	1073815552
  3589              		.cfi_endproc
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 228
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 228
 
 
  3590              	.LFE852:
@@ -13678,7 +13678,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3632              		.loc 1 1233 3 view .LVU1112
  3633 0018 0023     		movs	r3, #0
  3634 001a 84F85430 		strb	r3, [r4, #84]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 229
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 229
 
 
 1233:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -13738,7 +13738,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3680              	.LVL287:
  3681              	.LFB860:
 1611:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   HAL_StatusTypeDef tmp_hal_status;
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 230
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 230
 
 
  3682              		.loc 1 1611 1 is_stmt 1 view -0
@@ -13798,7 +13798,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3720              	.L239:
 1627:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
  3721              		.loc 1 1627 5 is_stmt 1 view .LVU1141
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 231
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 231
 
 
  3722 0020 2268     		ldr	r2, [r4]
@@ -13858,7 +13858,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3769              		@ args = 0, pretend = 0, frame = 0
  3770              		@ frame_needed = 0, uses_anonymous_args = 0
 1754:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   HAL_StatusTypeDef tmp_hal_status;
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 232
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 232
 
 
  3771              		.loc 1 1754 1 is_stmt 0 view .LVU1151
@@ -13918,7 +13918,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3810              		.loc 1 1783 5 is_stmt 1 view .LVU1166
  3811 0026 2268     		ldr	r2, [r4]
  3812 0028 5368     		ldr	r3, [r2, #4]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 233
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 233
 
 
  3813 002a 23F01003 		bic	r3, r3, #16
@@ -13978,7 +13978,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3854              	.LVL302:
  3855              	.L249:
 1772:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 234
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 234
 
 
  3856              		.loc 1 1772 7 is_stmt 1 view .LVU1180
@@ -14038,7 +14038,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3903              		.cfi_offset 4, -16
  3904              		.cfi_offset 5, -12
  3905              		.cfi_offset 6, -8
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 235
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 235
 
 
  3906              		.cfi_offset 14, -4
@@ -14098,7 +14098,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3940              		.loc 2 4437 3 discriminator 2 view .LVU1210
  3941              		.loc 2 4437 12 is_stmt 0 discriminator 2 view .LVU1211
  3942 0018 8368     		ldr	r3, [r0, #8]
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 236
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 236
 
 
  3943              		.loc 2 4437 74 discriminator 2 view .LVU1212
@@ -14158,7 +14158,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  3986              	.L281:
 2414:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       {
  3987              		.loc 1 2414 7 is_stmt 1 view .LVU1225
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 237
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 237
 
 
  3988              	.LVL312:
@@ -14218,7 +14218,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  4028              	.LBB264:
  4029              	.LBI264:
 3664:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 238
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 238
 
 
  4030              		.loc 2 3664 22 is_stmt 1 view .LVU1240
@@ -14278,7 +14278,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4448:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   return ((READ_BIT(ADCx->CR, ADC_CR_ADSTP) == (ADC_CR_ADSTP)) ? 1UL : 0UL);
 4449:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
 4450:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 239
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 239
 
 
 4451:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
@@ -14338,7 +14338,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4505:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** __STATIC_INLINE uint8_t LL_ADC_REG_ReadConversionData8(ADC_TypeDef *ADCx)
 4506:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
 4507:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   return (uint8_t)(READ_BIT(ADCx->DR, ADC_DR_DATA));
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 240
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 240
 
 
 4508:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
@@ -14398,7 +14398,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4562:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @note   Duration of ADC channel configuration ready: CCRDY handshake
 4563:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         requires 1APB + 2 ADC + 3 APB cycles after the channel configuration
 4564:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   *         has been changed.
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 241
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 241
 
 
 4565:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll ISR      CCRDY          LL_ADC_IsActiveFlag_CCRDY
@@ -14458,7 +14458,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4619:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @brief  Get flag ADC analog watchdog 1 flag
 4620:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll ISR      AWD1           LL_ADC_IsActiveFlag_AWD1
 4621:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 242
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 242
 
 
 4622:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @retval State of bit (1 or 0).
@@ -14518,7 +14518,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4676:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
 4677:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @brief  Clear flag ADC channel configuration ready.
 4678:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll ISR      CCRDY          LL_ADC_ClearFlag_CCRDY
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 243
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 243
 
 
 4679:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
@@ -14578,7 +14578,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4733:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll ISR      AWD1           LL_ADC_ClearFlag_AWD1
 4734:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
 4735:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @retval None
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 244
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 244
 
 
 4736:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
@@ -14638,7 +14638,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4766:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll ISR      EOCAL          LL_ADC_ClearFlag_EOCAL
 4767:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
 4768:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @retval None
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 245
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 245
 
 
 4769:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   */
@@ -14698,7 +14698,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4823:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
 4824:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   SET_BIT(ADCx->IER, LL_ADC_IT_EOS);
 4825:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 246
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 246
 
 
 4826:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
@@ -14758,7 +14758,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4880:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** }
 4881:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
 4882:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 247
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 247
 
 
 4883:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @brief  Enable interruption ADC end of calibration.
@@ -14818,7 +14818,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 4937:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** /**
 4938:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @brief  Disable interruption ADC group regular overrun.
 4939:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @rmtoll IER      OVRIE          LL_ADC_DisableIT_OVR
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 248
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 248
 
 
 4940:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h ****   * @param  ADCx ADC instance
@@ -14878,7 +14878,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 3664:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** {
  4107              		.loc 2 3664 22 view .LVU1264
  4108              	.LBB271:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 249
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 249
 
 
 3670:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
@@ -14938,7 +14938,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2442:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         {
  4148              		.loc 1 2442 12 is_stmt 0 view .LVU1280
  4149 00e4 002E     		cmp	r6, #0
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 250
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 250
 
 
  4150 00e6 D9D1     		bne	.L258
@@ -14998,7 +14998,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  4192 0114 C0F8A030 		str	r3, [r0, #160]
  4193 0118 16E0     		b	.L266
  4194              	.L263:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 251
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 251
 
 
  4195              	.LVL334:
@@ -15058,7 +15058,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 1091:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
  4239              		.loc 3 1091 12 view .LVU1306
  4240 012c FAE7     		b	.L265
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 252
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 252
 
 
  4241              	.LVL339:
@@ -15118,7 +15118,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  4285              	.LBB286:
 1091:Drivers/CMSIS/Include/cmsis_gcc.h ****   }
  4286              		.loc 3 1091 12 view .LVU1320
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 253
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 253
 
 
  4287 013e 2023     		movs	r3, #32
@@ -15178,7 +15178,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
 2530:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         {
  4328              		.loc 1 2530 29 is_stmt 0 view .LVU1334
  4329 0160 2B7B     		ldrb	r3, [r5, #12]	@ zero_extendqisi2
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 254
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 254
 
 
 2530:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****         {
@@ -15238,7 +15238,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  4358 0174 0022     		movs	r2, #0
  4359 0176 FFF7FEFF 		bl	LL_ADC_SetAnalogWDMonitChannels
  4360              	.LVL350:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 255
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 255
 
 
 2493:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****       }
@@ -15298,7 +15298,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  4402 019c 0026     		movs	r6, #0
  4403              	.LBB299:
  4404              	.LBB298:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 256
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 256
 
 
 4979:Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h **** 
@@ -15358,7 +15358,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  4448              	.LBE304:
 2369:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c ****   uint32_t tmp_awd_high_threshold_shifted;
  4449              		.loc 1 2369 21 is_stmt 0 view .LVU1367
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 257
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 257
 
 
  4450 01b8 0026     		movs	r6, #0
@@ -15418,7 +15418,7 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  4489              		.loc 1 2568 3 view .LVU1382
  4490              	.LVL363:
  4491              	.L251:
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 258
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 258
 
 
 2569:Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c **** 
@@ -15478,88 +15478,88 @@ ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 1
  4538              		.file 8 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_def.h"
  4539              		.file 9 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma.h"
  4540              		.file 10 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_adc.h"
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 259
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 259
 
 
  4541              		.file 11 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_adc_ex.h"
  4542              		.file 12 "Drivers/CMSIS/Device/ST/STM32WLxx/Include/system_stm32wlxx.h"
  4543              		.file 13 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h"
  4544              		.file 14 "Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h"
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 260
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 260
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 stm32wlxx_hal_adc.c
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:19     .text.LL_ADC_SetAnalogWDMonitChannels:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:24     .text.LL_ADC_SetAnalogWDMonitChannels:00000000 LL_ADC_SetAnalogWDMonitChannels
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:73     .text.LL_ADC_SetAnalogWDMonitChannels:0000002c $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:78     .text.LL_ADC_ConfigAnalogWDThresholds:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:83     .text.LL_ADC_ConfigAnalogWDThresholds:00000000 LL_ADC_ConfigAnalogWDThresholds
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:116    .text.HAL_ADC_MspInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:122    .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:137    .text.HAL_ADC_Init:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:143    .text.HAL_ADC_Init:00000000 HAL_ADC_Init
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:673    .text.HAL_ADC_Init:00000220 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:681    .text.HAL_ADC_MspDeInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:687    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:702    .text.HAL_ADC_PollForConversion:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:708    .text.HAL_ADC_PollForConversion:00000000 HAL_ADC_PollForConversion
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:905    .text.HAL_ADC_PollForEvent:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:911    .text.HAL_ADC_PollForEvent:00000000 HAL_ADC_PollForEvent
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1079   .text.HAL_ADC_GetValue:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1085   .text.HAL_ADC_GetValue:00000000 HAL_ADC_GetValue
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1106   .text.HAL_ADC_ConvCpltCallback:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1112   .text.HAL_ADC_ConvCpltCallback:00000000 HAL_ADC_ConvCpltCallback
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1127   .text.HAL_ADC_ConvHalfCpltCallback:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1133   .text.HAL_ADC_ConvHalfCpltCallback:00000000 HAL_ADC_ConvHalfCpltCallback
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1148   .text.ADC_DMAHalfConvCplt:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1153   .text.ADC_DMAHalfConvCplt:00000000 ADC_DMAHalfConvCplt
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1179   .text.HAL_ADC_LevelOutOfWindowCallback:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1185   .text.HAL_ADC_LevelOutOfWindowCallback:00000000 HAL_ADC_LevelOutOfWindowCallback
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1200   .text.HAL_ADC_ErrorCallback:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1206   .text.HAL_ADC_ErrorCallback:00000000 HAL_ADC_ErrorCallback
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1221   .text.ADC_DMAError:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1226   .text.ADC_DMAError:00000000 ADC_DMAError
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1259   .text.ADC_DMAConvCplt:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1264   .text.ADC_DMAConvCplt:00000000 ADC_DMAConvCplt
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1397   .text.HAL_ADC_IRQHandler:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1403   .text.HAL_ADC_IRQHandler:00000000 HAL_ADC_IRQHandler
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1704   .text.HAL_ADC_ConfigChannel:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:1710   .text.HAL_ADC_ConfigChannel:00000000 HAL_ADC_ConfigChannel
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2308   .text.HAL_ADC_ConfigChannel:00000220 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2319   .text.HAL_ADC_GetState:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2325   .text.HAL_ADC_GetState:00000000 HAL_ADC_GetState
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2344   .text.HAL_ADC_GetError:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2350   .text.HAL_ADC_GetError:00000000 HAL_ADC_GetError
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2369   .text.ADC_ConversionStop:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2375   .text.ADC_ConversionStop:00000000 ADC_ConversionStop
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2503   .text.ADC_Enable:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2509   .text.ADC_Enable:00000000 ADC_Enable
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2737   .text.ADC_Enable:000000d0 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2745   .text.HAL_ADC_Start:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2751   .text.HAL_ADC_Start:00000000 HAL_ADC_Start
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2868   .text.HAL_ADC_Start_IT:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:2874   .text.HAL_ADC_Start_IT:00000000 HAL_ADC_Start_IT
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3029   .text.HAL_ADC_Start_DMA:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3035   .text.HAL_ADC_Start_DMA:00000000 HAL_ADC_Start_DMA
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3226   .text.HAL_ADC_Start_DMA:000000b8 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3233   .text.ADC_Disable:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3239   .text.ADC_Disable:00000000 ADC_Disable
-ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s 			page 261
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:19     .text.LL_ADC_SetAnalogWDMonitChannels:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:24     .text.LL_ADC_SetAnalogWDMonitChannels:00000000 LL_ADC_SetAnalogWDMonitChannels
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:73     .text.LL_ADC_SetAnalogWDMonitChannels:0000002c $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:78     .text.LL_ADC_ConfigAnalogWDThresholds:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:83     .text.LL_ADC_ConfigAnalogWDThresholds:00000000 LL_ADC_ConfigAnalogWDThresholds
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:116    .text.HAL_ADC_MspInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:122    .text.HAL_ADC_MspInit:00000000 HAL_ADC_MspInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:137    .text.HAL_ADC_Init:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:143    .text.HAL_ADC_Init:00000000 HAL_ADC_Init
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:673    .text.HAL_ADC_Init:00000220 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:681    .text.HAL_ADC_MspDeInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:687    .text.HAL_ADC_MspDeInit:00000000 HAL_ADC_MspDeInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:702    .text.HAL_ADC_PollForConversion:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:708    .text.HAL_ADC_PollForConversion:00000000 HAL_ADC_PollForConversion
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:905    .text.HAL_ADC_PollForEvent:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:911    .text.HAL_ADC_PollForEvent:00000000 HAL_ADC_PollForEvent
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1079   .text.HAL_ADC_GetValue:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1085   .text.HAL_ADC_GetValue:00000000 HAL_ADC_GetValue
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1106   .text.HAL_ADC_ConvCpltCallback:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1112   .text.HAL_ADC_ConvCpltCallback:00000000 HAL_ADC_ConvCpltCallback
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1127   .text.HAL_ADC_ConvHalfCpltCallback:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1133   .text.HAL_ADC_ConvHalfCpltCallback:00000000 HAL_ADC_ConvHalfCpltCallback
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1148   .text.ADC_DMAHalfConvCplt:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1153   .text.ADC_DMAHalfConvCplt:00000000 ADC_DMAHalfConvCplt
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1179   .text.HAL_ADC_LevelOutOfWindowCallback:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1185   .text.HAL_ADC_LevelOutOfWindowCallback:00000000 HAL_ADC_LevelOutOfWindowCallback
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1200   .text.HAL_ADC_ErrorCallback:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1206   .text.HAL_ADC_ErrorCallback:00000000 HAL_ADC_ErrorCallback
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1221   .text.ADC_DMAError:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1226   .text.ADC_DMAError:00000000 ADC_DMAError
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1259   .text.ADC_DMAConvCplt:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1264   .text.ADC_DMAConvCplt:00000000 ADC_DMAConvCplt
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1397   .text.HAL_ADC_IRQHandler:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1403   .text.HAL_ADC_IRQHandler:00000000 HAL_ADC_IRQHandler
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1704   .text.HAL_ADC_ConfigChannel:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:1710   .text.HAL_ADC_ConfigChannel:00000000 HAL_ADC_ConfigChannel
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2308   .text.HAL_ADC_ConfigChannel:00000220 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2319   .text.HAL_ADC_GetState:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2325   .text.HAL_ADC_GetState:00000000 HAL_ADC_GetState
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2344   .text.HAL_ADC_GetError:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2350   .text.HAL_ADC_GetError:00000000 HAL_ADC_GetError
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2369   .text.ADC_ConversionStop:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2375   .text.ADC_ConversionStop:00000000 ADC_ConversionStop
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2503   .text.ADC_Enable:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2509   .text.ADC_Enable:00000000 ADC_Enable
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2737   .text.ADC_Enable:000000d0 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2745   .text.HAL_ADC_Start:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2751   .text.HAL_ADC_Start:00000000 HAL_ADC_Start
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2868   .text.HAL_ADC_Start_IT:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:2874   .text.HAL_ADC_Start_IT:00000000 HAL_ADC_Start_IT
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3029   .text.HAL_ADC_Start_DMA:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3035   .text.HAL_ADC_Start_DMA:00000000 HAL_ADC_Start_DMA
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3226   .text.HAL_ADC_Start_DMA:000000b8 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3233   .text.ADC_Disable:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3239   .text.ADC_Disable:00000000 ADC_Disable
+ARM GAS  C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s 			page 261
 
 
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3406   .text.HAL_ADC_DeInit:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3412   .text.HAL_ADC_DeInit:00000000 HAL_ADC_DeInit
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3587   .text.HAL_ADC_DeInit:000000b8 $d
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3593   .text.HAL_ADC_Stop:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3599   .text.HAL_ADC_Stop:00000000 HAL_ADC_Stop
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3673   .text.HAL_ADC_Stop_IT:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3679   .text.HAL_ADC_Stop_IT:00000000 HAL_ADC_Stop_IT
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3758   .text.HAL_ADC_Stop_DMA:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3764   .text.HAL_ADC_Stop_DMA:00000000 HAL_ADC_Stop_DMA
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3887   .text.HAL_ADC_AnalogWDGConfig:00000000 $t
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:3893   .text.HAL_ADC_AnalogWDGConfig:00000000 HAL_ADC_AnalogWDGConfig
-C:\Users\DAVID~1.FOB\AppData\Local\Temp\ccIocEgW.s:4526   .text.HAL_ADC_AnalogWDGConfig:000001fc $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3406   .text.HAL_ADC_DeInit:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3412   .text.HAL_ADC_DeInit:00000000 HAL_ADC_DeInit
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3587   .text.HAL_ADC_DeInit:000000b8 $d
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3593   .text.HAL_ADC_Stop:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3599   .text.HAL_ADC_Stop:00000000 HAL_ADC_Stop
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3673   .text.HAL_ADC_Stop_IT:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3679   .text.HAL_ADC_Stop_IT:00000000 HAL_ADC_Stop_IT
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3758   .text.HAL_ADC_Stop_DMA:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3764   .text.HAL_ADC_Stop_DMA:00000000 HAL_ADC_Stop_DMA
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3887   .text.HAL_ADC_AnalogWDGConfig:00000000 $t
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:3893   .text.HAL_ADC_AnalogWDGConfig:00000000 HAL_ADC_AnalogWDGConfig
+C:\Users\DAVID~1.FOB\AppData\Local\Temp\cc3SWaJF.s:4526   .text.HAL_ADC_AnalogWDGConfig:000001fc $d
 
 UNDEFINED SYMBOLS
 SystemCoreClock
