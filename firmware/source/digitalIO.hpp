@@ -1,10 +1,6 @@
 #ifndef __DIGITALIO_H
 #define __DIGITALIO_H
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #include "stm32wlxx_hal.h"
 #include "main.h"
 
@@ -21,7 +17,7 @@ extern "C" {
 
 //wrap them in a namespace so they don't conflict with other functions
 
-namespace dio{
+namespace dio {
     void Memory_CS_Set(void);
     void Memory_CS_Reset(void);
     void Bias_CS_Set(void);
@@ -36,8 +32,4 @@ namespace dio{
     void Stim_Enable_Reset(void);
 }
 
-#ifdef __cplusplus
-}
-#endif
-
-#endif /* __MAIN_H */
+#endif /* __DIGITALIO_H */

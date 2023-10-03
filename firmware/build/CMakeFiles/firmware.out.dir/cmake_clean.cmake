@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/firmware.out.dir/Core/Src/main.c.obj"
-  "CMakeFiles/firmware.out.dir/Core/Src/main.c.obj.d"
+  "CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj"
+  "CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj.d"
   "CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj"
   "CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj.d"
   "CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj"
@@ -55,6 +55,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_ll_adc.c.obj.d"
   "CMakeFiles/firmware.out.dir/source/application.cpp.obj"
   "CMakeFiles/firmware.out.dir/source/application.cpp.obj.d"
+  "CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj"
+  "CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj.d"
   "CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj"
   "firmware.out"
   "firmware.out.pdb"

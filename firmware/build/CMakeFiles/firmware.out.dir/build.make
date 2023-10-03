@@ -69,19 +69,19 @@ include CMakeFiles/firmware.out.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/firmware.out.dir/flags.make
 
-CMakeFiles/firmware.out.dir/Core/Src/main.c.obj: CMakeFiles/firmware.out.dir/flags.make
-CMakeFiles/firmware.out.dir/Core/Src/main.c.obj: ../Core/Src/main.c
-CMakeFiles/firmware.out.dir/Core/Src/main.c.obj: CMakeFiles/firmware.out.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/firmware.out.dir/Core/Src/main.c.obj"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/firmware.out.dir/Core/Src/main.c.obj -MF CMakeFiles/firmware.out.dir/Core/Src/main.c.obj.d -o CMakeFiles/firmware.out.dir/Core/Src/main.c.obj -c /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/main.c
+CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj: CMakeFiles/firmware.out.dir/flags.make
+CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj: ../Core/Src/main.cpp
+CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj: CMakeFiles/firmware.out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj -MF CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj.d -o CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj -c /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/main.cpp
 
-CMakeFiles/firmware.out.dir/Core/Src/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/firmware.out.dir/Core/Src/main.c.i"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/main.c > CMakeFiles/firmware.out.dir/Core/Src/main.c.i
+CMakeFiles/firmware.out.dir/Core/Src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firmware.out.dir/Core/Src/main.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/main.cpp > CMakeFiles/firmware.out.dir/Core/Src/main.cpp.i
 
-CMakeFiles/firmware.out.dir/Core/Src/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/firmware.out.dir/Core/Src/main.c.s"
-	/usr/bin/arm-none-eabi-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/main.c -o CMakeFiles/firmware.out.dir/Core/Src/main.c.s
+CMakeFiles/firmware.out.dir/Core/Src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firmware.out.dir/Core/Src/main.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/main.cpp -o CMakeFiles/firmware.out.dir/Core/Src/main.cpp.s
 
 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj: CMakeFiles/firmware.out.dir/flags.make
 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj: ../Core/Src/stm32wlxx_it.c
@@ -474,9 +474,23 @@ CMakeFiles/firmware.out.dir/source/application.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firmware.out.dir/source/application.cpp.s"
 	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/source/application.cpp -o CMakeFiles/firmware.out.dir/source/application.cpp.s
 
+CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: CMakeFiles/firmware.out.dir/flags.make
+CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: ../source/digitalIO.cpp
+CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: CMakeFiles/firmware.out.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj -MF CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj.d -o CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj -c /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/source/digitalIO.cpp
+
+CMakeFiles/firmware.out.dir/source/digitalIO.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/firmware.out.dir/source/digitalIO.cpp.i"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/source/digitalIO.cpp > CMakeFiles/firmware.out.dir/source/digitalIO.cpp.i
+
+CMakeFiles/firmware.out.dir/source/digitalIO.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/firmware.out.dir/source/digitalIO.cpp.s"
+	/usr/bin/arm-none-eabi-g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/source/digitalIO.cpp -o CMakeFiles/firmware.out.dir/source/digitalIO.cpp.s
+
 # Object files for target firmware.out
 firmware_out_OBJECTS = \
-"CMakeFiles/firmware.out.dir/Core/Src/main.c.obj" \
+"CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj" \
 "CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj" \
 "CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj" \
 "CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj" \
@@ -504,12 +518,13 @@ firmware_out_OBJECTS = \
 "CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj" \
 "CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj" \
 "CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj" \
-"CMakeFiles/firmware.out.dir/source/application.cpp.obj"
+"CMakeFiles/firmware.out.dir/source/application.cpp.obj" \
+"CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj"
 
 # External object files for target firmware.out
 firmware_out_EXTERNAL_OBJECTS =
 
-firmware.out: CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+firmware.out: CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 firmware.out: CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
 firmware.out: CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
 firmware.out: CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
@@ -538,9 +553,10 @@ firmware.out: CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32
 firmware.out: CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
 firmware.out: CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
 firmware.out: CMakeFiles/firmware.out.dir/source/application.cpp.obj
+firmware.out: CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
 firmware.out: CMakeFiles/firmware.out.dir/build.make
 firmware.out: CMakeFiles/firmware.out.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Linking CXX executable firmware.out"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking CXX executable firmware.out"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/firmware.out.dir/link.txt --verbose=$(VERBOSE)
 	arm-none-eabi-size firmware.out
 	arm-none-eabi-objcopy -O ihex firmware.out firmware.hex

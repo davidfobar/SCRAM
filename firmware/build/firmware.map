@@ -45,11 +45,11 @@ Discarded input sections
  .debug_str     0x0000000000000000       0x95 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
  .ARM.attributes
                 0x0000000000000000       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
- .text          0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
- .data          0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
- .bss           0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
- .rodata.CHANNEL_OFFSET_TAB
-                0x0000000000000000        0x7 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+ .rodata._ZL18CHANNEL_OFFSET_TAB
+                0x0000000000000000        0x7 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
  .text          0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
@@ -1387,6 +1387,11 @@ Discarded input sections
  .bss           0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/source/application.cpp.obj
  .rodata._ZL18CHANNEL_OFFSET_TAB
                 0x0000000000000000        0x7 CMakeFiles/firmware.out.dir/source/application.cpp.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+ .rodata._ZL18CHANNEL_OFFSET_TAB
+                0x0000000000000000        0x7 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-atexit.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-atexit.o)
  .text          0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-exit.o)
@@ -1460,7 +1465,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libnosys.a
-LOAD CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+LOAD CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 LOAD CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
 LOAD CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
 LOAD CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
@@ -1489,6 +1494,7 @@ LOAD CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_
 LOAD CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
 LOAD CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
 LOAD CMakeFiles/firmware.out.dir/source/application.cpp.obj
+LOAD CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libm.a
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a
@@ -1514,7 +1520,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
                 0x0000000008000000                g_pfnVectors
                 0x0000000008000138                . = ALIGN (0x8)
 
-.text           0x0000000008000138     0x3c40
+.text           0x0000000008000138     0x3df0
                 0x0000000008000138                . = ALIGN (0x8)
  *(.text)
  .text          0x0000000008000138       0x88 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
@@ -1537,490 +1543,529 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
                 0x000000000800064c                __aeabi_idiv0
  *(.text*)
  .text.LL_AHB2_GRP1_EnableClock
-                0x0000000008000650       0x30 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
- .text.main     0x0000000008000680       0x2a CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                0x0000000008000650       0x30 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+ .text.main     0x0000000008000680       0x2a CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
                 0x0000000008000680                main
  *fill*         0x00000000080006aa        0x2 
- .text.SystemClock_Config
-                0x00000000080006ac       0xb0 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
-                0x00000000080006ac                SystemClock_Config
- .text.MX_ADC_Init
-                0x000000000800075c       0x9c CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
- .text.MX_I2C2_Init
-                0x00000000080007f8       0x7c CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
- .text.MX_SPI2_Init
-                0x0000000008000874       0x7c CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
- .text.MX_USART1_UART_Init
-                0x00000000080008f0       0x98 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
- .text.MX_GPIO_Init
-                0x0000000008000988       0x88 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+ .text._Z18SystemClock_Configv
+                0x00000000080006ac       0xc4 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+                0x00000000080006ac                SystemClock_Config()
+ .text._ZL11MX_ADC_Initv
+                0x0000000008000770       0xa4 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+ .text._ZL12MX_I2C2_Initv
+                0x0000000008000814       0x9c CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+ .text._ZL12MX_SPI2_Initv
+                0x00000000080008b0       0x84 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+ .text._ZL19MX_USART1_UART_Initv
+                0x0000000008000934       0xc0 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+ .text._ZL12MX_GPIO_Initv
+                0x00000000080009f4       0x88 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
  .text.Error_Handler
-                0x0000000008000a10        0xa CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
-                0x0000000008000a10                Error_Handler
+                0x0000000008000a7c        0xa CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+                0x0000000008000a7c                Error_Handler
  .text.NMI_Handler
-                0x0000000008000a1a        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-                0x0000000008000a1a                NMI_Handler
+                0x0000000008000a86        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
+                0x0000000008000a86                NMI_Handler
  .text.HardFault_Handler
-                0x0000000008000a20        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-                0x0000000008000a20                HardFault_Handler
+                0x0000000008000a8c        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
+                0x0000000008000a8c                HardFault_Handler
  .text.MemManage_Handler
-                0x0000000008000a26        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-                0x0000000008000a26                MemManage_Handler
+                0x0000000008000a92        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
+                0x0000000008000a92                MemManage_Handler
  .text.BusFault_Handler
-                0x0000000008000a2c        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-                0x0000000008000a2c                BusFault_Handler
+                0x0000000008000a98        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
+                0x0000000008000a98                BusFault_Handler
  .text.UsageFault_Handler
-                0x0000000008000a32        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-                0x0000000008000a32                UsageFault_Handler
+                0x0000000008000a9e        0x6 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
+                0x0000000008000a9e                UsageFault_Handler
  .text.SVC_Handler
-                0x0000000008000a38        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-                0x0000000008000a38                SVC_Handler
+                0x0000000008000aa4        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
+                0x0000000008000aa4                SVC_Handler
  .text.DebugMon_Handler
-                0x0000000008000a44        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-                0x0000000008000a44                DebugMon_Handler
+                0x0000000008000ab0        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
+                0x0000000008000ab0                DebugMon_Handler
  .text.PendSV_Handler
-                0x0000000008000a50        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-                0x0000000008000a50                PendSV_Handler
+                0x0000000008000abc        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
+                0x0000000008000abc                PendSV_Handler
  .text.SysTick_Handler
-                0x0000000008000a5c        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-                0x0000000008000a5c                SysTick_Handler
+                0x0000000008000ac8        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
+                0x0000000008000ac8                SysTick_Handler
  .text.LL_AHB2_GRP1_EnableClock
-                0x0000000008000a68       0x30 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
+                0x0000000008000ad4       0x30 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
  .text.LL_APB1_GRP1_EnableClock
-                0x0000000008000a98       0x30 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
+                0x0000000008000b04       0x30 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
  .text.LL_APB2_GRP1_EnableClock
-                0x0000000008000ac8       0x30 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
+                0x0000000008000b34       0x30 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
  .text.HAL_MspInit
-                0x0000000008000af8        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
-                0x0000000008000af8                HAL_MspInit
+                0x0000000008000b64        0xc CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
+                0x0000000008000b64                HAL_MspInit
  .text.HAL_ADC_MspInit
-                0x0000000008000b04       0x5c CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
-                0x0000000008000b04                HAL_ADC_MspInit
+                0x0000000008000b70       0x5c CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
+                0x0000000008000b70                HAL_ADC_MspInit
  .text.HAL_I2C_MspInit
-                0x0000000008000b60       0xb8 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
-                0x0000000008000b60                HAL_I2C_MspInit
+                0x0000000008000bcc       0xb8 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
+                0x0000000008000bcc                HAL_I2C_MspInit
  .text.HAL_SPI_MspInit
-                0x0000000008000c18       0xe4 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
-                0x0000000008000c18                HAL_SPI_MspInit
+                0x0000000008000c84       0xe4 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
+                0x0000000008000c84                HAL_SPI_MspInit
  .text.HAL_UART_MspInit
-                0x0000000008000cfc       0x8c CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
-                0x0000000008000cfc                HAL_UART_MspInit
+                0x0000000008000d68       0x8c CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
+                0x0000000008000d68                HAL_UART_MspInit
  .text.LL_ADC_SetSamplingTimeCommonChannels
-                0x0000000008000d88       0x3c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
+                0x0000000008000df4       0x3c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
  .text.LL_ADC_GetSamplingTimeCommonChannels
-                0x0000000008000dc4       0x30 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
+                0x0000000008000e30       0x30 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
  .text.LL_ADC_EnableInternalRegulator
-                0x0000000008000df4       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
+                0x0000000008000e60       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
  .text.LL_ADC_IsInternalRegulatorEnabled
-                0x0000000008000e1a       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
+                0x0000000008000e86       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
  .text.LL_ADC_IsEnabled
-                0x0000000008000e40       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
+                0x0000000008000eac       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
  .text.LL_ADC_REG_IsConversionOngoing
-                0x0000000008000e64       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
+                0x0000000008000ed0       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
  .text.HAL_ADC_Init
-                0x0000000008000e88      0x328 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
-                0x0000000008000e88                HAL_ADC_Init
+                0x0000000008000ef4      0x328 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
+                0x0000000008000ef4                HAL_ADC_Init
  .text.LL_PWR_IsEnabledBkUpAccess
-                0x00000000080011b0       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800121c       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSE_EnableTcxo
-                0x00000000080011d4       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001240       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSE_DisableTcxo
-                0x00000000080011f0       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800125c       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSE_IsEnabledDiv2
-                0x000000000800120c       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001278       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSE_Enable
-                0x000000000800122e       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800129a       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSE_Disable
-                0x000000000800124a       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080012b6       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSE_IsReady
-                0x0000000008001266       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080012d2       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSI_Enable
-                0x0000000008001288       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080012f4       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSI_Disable
-                0x00000000080012a4       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001310       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSI_IsReady
-                0x00000000080012c0       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800132c       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_HSI_SetCalibTrimming
-                0x00000000080012e2       0x28 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800134e       0x28 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_LSE_IsReady
-                0x000000000800130a       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001376       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_LSI_Enable
-                0x000000000800132c       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001398       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_LSI_Disable
-                0x000000000800134c       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080013b8       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_LSI_IsReady
-                0x000000000800136c       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080013d8       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_MSI_Enable
-                0x000000000800138e       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080013fa       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_MSI_Disable
-                0x00000000080013aa       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001416       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_MSI_IsReady
-                0x00000000080013c6       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001432       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_MSI_IsEnabledRangeSelect
-                0x00000000080013e6       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001452       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_MSI_GetRange
-                0x0000000008001406       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001472       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_MSI_GetRangeAfterStandby
-                0x000000000800141c       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001488       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_MSI_SetCalibTrimming
-                0x0000000008001434       0x28 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080014a0       0x28 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_SetSysClkSource
-                0x000000000800145c       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080014c8       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_GetSysClkSource
-                0x0000000008001482       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080014ee       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_SetAHBPrescaler
-                0x0000000008001498       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001504       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_SetAHB3Prescaler
-                0x00000000080014be       0x2c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800152a       0x2c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_SetAPB1Prescaler
-                0x00000000080014ea       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001556       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_SetAPB2Prescaler
-                0x0000000008001510       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800157c       0x26 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_GetAHBPrescaler
-                0x0000000008001536       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080015a2       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_GetAHB3Prescaler
-                0x000000000800154c       0x1a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080015b8       0x1a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_GetAPB1Prescaler
-                0x0000000008001566       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080015d2       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_GetAPB2Prescaler
-                0x000000000800157c       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080015e8       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_PLL_Enable
-                0x0000000008001592       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080015fe       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_PLL_Disable
-                0x00000000080015ae       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800161a       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_PLL_IsReady
-                0x00000000080015ca       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001636       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_PLL_GetN
-                0x00000000080015ec       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001658       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_PLL_GetR
-                0x0000000008001604       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001670       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_PLL_GetDivider
-                0x000000000800161a       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001686       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_PLL_GetMainSource
-                0x0000000008001630       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800169c       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_IsActiveFlag_HPRE
-                0x0000000008001646       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080016b2       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_IsActiveFlag_SHDHPRE
-                0x0000000008001668       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080016d4       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_IsActiveFlag_PPRE1
-                0x000000000800168c       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080016f8       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_IsActiveFlag_PPRE2
-                0x00000000080016ae       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800171a       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.HAL_RCC_OscConfig
-                0x00000000080016d0      0x704 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
-                0x00000000080016d0                HAL_RCC_OscConfig
+                0x000000000800173c      0x704 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x000000000800173c                HAL_RCC_OscConfig
  .text.HAL_RCC_ClockConfig
-                0x0000000008001dd4      0x248 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
-                0x0000000008001dd4                HAL_RCC_ClockConfig
+                0x0000000008001e40      0x248 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008001e40                HAL_RCC_ClockConfig
  .text.HAL_RCC_GetSysClockFreq
-                0x000000000800201c      0x140 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
-                0x000000000800201c                HAL_RCC_GetSysClockFreq
+                0x0000000008002088      0x140 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008002088                HAL_RCC_GetSysClockFreq
  .text.HAL_RCC_GetHCLKFreq
-                0x000000000800215c       0x28 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
-                0x000000000800215c                HAL_RCC_GetHCLKFreq
+                0x00000000080021c8       0x28 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080021c8                HAL_RCC_GetHCLKFreq
  .text.HAL_RCC_GetPCLK1Freq
-                0x0000000008002184       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
-                0x0000000008002184                HAL_RCC_GetPCLK1Freq
+                0x00000000080021f0       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x00000000080021f0                HAL_RCC_GetPCLK1Freq
  .text.HAL_RCC_GetPCLK2Freq
-                0x00000000080021a8       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
-                0x00000000080021a8                HAL_RCC_GetPCLK2Freq
+                0x0000000008002214       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008002214                HAL_RCC_GetPCLK2Freq
  .text.RCC_SetFlashLatencyFromMSIRange
-                0x00000000080021cc       0x60 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008002238       0x60 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.RCC_SetFlashLatency
-                0x000000000800222c      0x104 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+                0x0000000008002298      0x104 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
  .text.LL_RCC_LSE_IsReady
-                0x0000000008002330       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x000000000800239c       0x22 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_SetUSARTClockSource
-                0x0000000008002352       0x30 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x00000000080023be       0x30 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_SetI2SClockSource
-                0x0000000008002382       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x00000000080023ee       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_SetLPUARTClockSource
-                0x00000000080023ac       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x0000000008002418       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_SetI2CClockSource
-                0x00000000080023d6       0x38 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x0000000008002442       0x38 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_SetLPTIMClockSource
-                0x000000000800240e       0x32 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x000000000800247a       0x32 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_SetRNGClockSource
-                0x0000000008002440       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x00000000080024ac       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_SetADCClockSource
-                0x000000000800246a       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x00000000080024d6       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_SetRTCClockSource
-                0x0000000008002494       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x0000000008002500       0x2a CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_GetRTCClockSource
-                0x00000000080024be       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x000000000800252a       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_ForceBackupDomainReset
-                0x00000000080024d6       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x0000000008002542       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
  .text.LL_RCC_ReleaseBackupDomainReset
-                0x00000000080024f6       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
- *fill*         0x0000000008002516        0x2 
+                0x0000000008002562       0x20 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+ *fill*         0x0000000008002582        0x2 
  .text.HAL_RCCEx_PeriphCLKConfig
-                0x0000000008002518      0x234 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
-                0x0000000008002518                HAL_RCCEx_PeriphCLKConfig
+                0x0000000008002584      0x234 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
+                0x0000000008002584                HAL_RCCEx_PeriphCLKConfig
  .text.HAL_GPIO_Init
-                0x000000000800274c      0x2c0 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
-                0x000000000800274c                HAL_GPIO_Init
+                0x00000000080027b8      0x2c0 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
+                0x00000000080027b8                HAL_GPIO_Init
  .text.HAL_GPIO_WritePin
-                0x0000000008002a0c       0x2e CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
-                0x0000000008002a0c                HAL_GPIO_WritePin
- *fill*         0x0000000008002a3a        0x2 
+                0x0000000008002a78       0x2e CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
+                0x0000000008002a78                HAL_GPIO_WritePin
+ *fill*         0x0000000008002aa6        0x2 
  .text.HAL_PWR_EnableBkUpAccess
-                0x0000000008002a3c       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c.obj
-                0x0000000008002a3c                HAL_PWR_EnableBkUpAccess
+                0x0000000008002aa8       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c.obj
+                0x0000000008002aa8                HAL_PWR_EnableBkUpAccess
  .text.HAL_PWREx_GetVoltageRange
-                0x0000000008002a58       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c.obj
-                0x0000000008002a58                HAL_PWREx_GetVoltageRange
+                0x0000000008002ac4       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c.obj
+                0x0000000008002ac4                HAL_PWREx_GetVoltageRange
  .text.__NVIC_SetPriorityGrouping
-                0x0000000008002a70       0x48 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+                0x0000000008002adc       0x48 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
  .text.__NVIC_GetPriorityGrouping
-                0x0000000008002ab8       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+                0x0000000008002b24       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
  .text.__NVIC_SetPriority
-                0x0000000008002ad4       0x54 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+                0x0000000008002b40       0x54 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
  .text.NVIC_EncodePriority
-                0x0000000008002b28       0x64 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+                0x0000000008002b94       0x64 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
  .text.SysTick_Config
-                0x0000000008002b8c       0x44 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+                0x0000000008002bf8       0x44 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
  .text.HAL_NVIC_SetPriorityGrouping
-                0x0000000008002bd0       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
-                0x0000000008002bd0                HAL_NVIC_SetPriorityGrouping
+                0x0000000008002c3c       0x16 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+                0x0000000008002c3c                HAL_NVIC_SetPriorityGrouping
  .text.HAL_NVIC_SetPriority
-                0x0000000008002be6       0x34 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
-                0x0000000008002be6                HAL_NVIC_SetPriority
+                0x0000000008002c52       0x34 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+                0x0000000008002c52                HAL_NVIC_SetPriority
  .text.HAL_SYSTICK_Config
-                0x0000000008002c1a       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
-                0x0000000008002c1a                HAL_SYSTICK_Config
- *fill*         0x0000000008002c32        0x2 
+                0x0000000008002c86       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c.obj
+                0x0000000008002c86                HAL_SYSTICK_Config
+ *fill*         0x0000000008002c9e        0x2 
  .text.HAL_Init
-                0x0000000008002c34       0x40 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
-                0x0000000008002c34                HAL_Init
+                0x0000000008002ca0       0x40 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
+                0x0000000008002ca0                HAL_Init
  .text.HAL_InitTick
-                0x0000000008002c74       0x74 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
-                0x0000000008002c74                HAL_InitTick
+                0x0000000008002ce0       0x74 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
+                0x0000000008002ce0                HAL_InitTick
  .text.HAL_IncTick
-                0x0000000008002ce8       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
-                0x0000000008002ce8                HAL_IncTick
+                0x0000000008002d54       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
+                0x0000000008002d54                HAL_IncTick
  .text.HAL_GetTick
-                0x0000000008002d0c       0x14 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
-                0x0000000008002d0c                HAL_GetTick
+                0x0000000008002d78       0x14 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
+                0x0000000008002d78                HAL_GetTick
  .text.HAL_Delay
-                0x0000000008002d20       0x48 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
-                0x0000000008002d20                HAL_Delay
+                0x0000000008002d8c       0x48 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
+                0x0000000008002d8c                HAL_Delay
  .text.HAL_I2C_Init
-                0x0000000008002d68      0x11e CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c.obj
-                0x0000000008002d68                HAL_I2C_Init
+                0x0000000008002dd4      0x11e CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c.obj
+                0x0000000008002dd4                HAL_I2C_Init
  .text.HAL_I2CEx_ConfigAnalogFilter
-                0x0000000008002e86       0x94 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c.obj
-                0x0000000008002e86                HAL_I2CEx_ConfigAnalogFilter
+                0x0000000008002ef2       0x94 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c.obj
+                0x0000000008002ef2                HAL_I2CEx_ConfigAnalogFilter
  .text.HAL_I2CEx_ConfigDigitalFilter
-                0x0000000008002f1a       0x96 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c.obj
-                0x0000000008002f1a                HAL_I2CEx_ConfigDigitalFilter
+                0x0000000008002f86       0x96 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c.obj
+                0x0000000008002f86                HAL_I2CEx_ConfigDigitalFilter
  .text.HAL_SPI_Init
-                0x0000000008002fb0      0x1a8 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi.c.obj
-                0x0000000008002fb0                HAL_SPI_Init
+                0x000000000800301c      0x1a8 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi.c.obj
+                0x000000000800301c                HAL_SPI_Init
  .text.LL_RCC_GetUSARTClockSource
-                0x0000000008003158       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+                0x00000000080031c4       0x24 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
  .text.LL_RCC_GetLPUARTClockSource
-                0x000000000800317c       0x1e CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+                0x00000000080031e8       0x1e CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
  .text.HAL_UART_Init
-                0x000000000800319a       0xa0 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
-                0x000000000800319a                HAL_UART_Init
- *fill*         0x000000000800323a        0x2 
+                0x0000000008003206       0xa0 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+                0x0000000008003206                HAL_UART_Init
+ *fill*         0x00000000080032a6        0x2 
  .text.UART_SetConfig
-                0x000000000800323c      0x4e8 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
-                0x000000000800323c                UART_SetConfig
+                0x00000000080032a8      0x4e8 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+                0x00000000080032a8                UART_SetConfig
  .text.UART_AdvFeatureConfig
-                0x0000000008003724      0x142 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
-                0x0000000008003724                UART_AdvFeatureConfig
+                0x0000000008003790      0x142 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+                0x0000000008003790                UART_AdvFeatureConfig
  .text.UART_CheckIdleState
-                0x0000000008003866       0x9c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
-                0x0000000008003866                UART_CheckIdleState
+                0x00000000080038d2       0x9c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+                0x00000000080038d2                UART_CheckIdleState
  .text.UART_WaitOnFlagUntilTimeout
-                0x0000000008003902      0x190 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
-                0x0000000008003902                UART_WaitOnFlagUntilTimeout
+                0x000000000800396e      0x190 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+                0x000000000800396e                UART_WaitOnFlagUntilTimeout
  .text.HAL_UARTEx_DisableFifoMode
-                0x0000000008003a92       0x70 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
-                0x0000000008003a92                HAL_UARTEx_DisableFifoMode
+                0x0000000008003afe       0x70 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
+                0x0000000008003afe                HAL_UARTEx_DisableFifoMode
  .text.HAL_UARTEx_SetTxFifoThreshold
-                0x0000000008003b02       0x7c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
-                0x0000000008003b02                HAL_UARTEx_SetTxFifoThreshold
+                0x0000000008003b6e       0x7c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
+                0x0000000008003b6e                HAL_UARTEx_SetTxFifoThreshold
  .text.HAL_UARTEx_SetRxFifoThreshold
-                0x0000000008003b7e       0x7c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
-                0x0000000008003b7e                HAL_UARTEx_SetRxFifoThreshold
- *fill*         0x0000000008003bfa        0x2 
+                0x0000000008003bea       0x7c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
+                0x0000000008003bea                HAL_UARTEx_SetRxFifoThreshold
+ *fill*         0x0000000008003c66        0x2 
  .text.UARTEx_SetNbDataToProcess
-                0x0000000008003bfc       0x98 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
+                0x0000000008003c68       0x98 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
  .text.SystemInit
-                0x0000000008003c94        0xc CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
-                0x0000000008003c94                SystemInit
+                0x0000000008003d00        0xc CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
+                0x0000000008003d00                SystemInit
  .text.Reset_Handler
-                0x0000000008003ca0       0x50 CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
-                0x0000000008003ca0                Reset_Handler
+                0x0000000008003d0c       0x50 CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
+                0x0000000008003d0c                Reset_Handler
  .text.Default_Handler
-                0x0000000008003cf0        0x2 CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
-                0x0000000008003cf0                RTC_Alarm_IRQHandler
-                0x0000000008003cf0                EXTI2_IRQHandler
-                0x0000000008003cf0                TIM1_CC_IRQHandler
-                0x0000000008003cf0                EXTI3_IRQHandler
-                0x0000000008003cf0                LPTIM2_IRQHandler
-                0x0000000008003cf0                I2C3_ER_IRQHandler
-                0x0000000008003cf0                LPTIM3_IRQHandler
-                0x0000000008003cf0                EXTI0_IRQHandler
-                0x0000000008003cf0                I2C2_EV_IRQHandler
-                0x0000000008003cf0                TAMP_STAMP_LSECSS_SSRU_IRQHandler
-                0x0000000008003cf0                SPI1_IRQHandler
-                0x0000000008003cf0                DMA2_Channel2_IRQHandler
-                0x0000000008003cf0                DMA1_Channel4_IRQHandler
-                0x0000000008003cf0                PKA_IRQHandler
-                0x0000000008003cf0                TIM17_IRQHandler
-                0x0000000008003cf0                DMA1_Channel7_IRQHandler
-                0x0000000008003cf0                SUBGHZSPI_IRQHandler
-                0x0000000008003cf0                DMA2_Channel1_IRQHandler
-                0x0000000008003cf0                I2C1_EV_IRQHandler
-                0x0000000008003cf0                SUBGHZ_Radio_IRQHandler
-                0x0000000008003cf0                DMAMUX1_OVR_IRQHandler
-                0x0000000008003cf0                DMA1_Channel6_IRQHandler
-                0x0000000008003cf0                TIM16_IRQHandler
-                0x0000000008003cf0                DMA2_Channel4_IRQHandler
-                0x0000000008003cf0                RCC_IRQHandler
-                0x0000000008003cf0                TIM1_TRG_COM_IRQHandler
-                0x0000000008003cf0                DMA1_Channel1_IRQHandler
-                0x0000000008003cf0                Default_Handler
-                0x0000000008003cf0                DMA2_Channel7_IRQHandler
-                0x0000000008003cf0                EXTI15_10_IRQHandler
-                0x0000000008003cf0                ADC_IRQHandler
-                0x0000000008003cf0                I2C3_EV_IRQHandler
-                0x0000000008003cf0                EXTI9_5_IRQHandler
-                0x0000000008003cf0                RTC_WKUP_IRQHandler
-                0x0000000008003cf0                PVD_PVM_IRQHandler
-                0x0000000008003cf0                SPI2_IRQHandler
-                0x0000000008003cf0                DMA2_Channel5_IRQHandler
-                0x0000000008003cf0                DMA1_Channel5_IRQHandler
-                0x0000000008003cf0                EXTI4_IRQHandler
-                0x0000000008003cf0                RNG_IRQHandler
-                0x0000000008003cf0                DMA1_Channel3_IRQHandler
-                0x0000000008003cf0                COMP_IRQHandler
-                0x0000000008003cf0                HSEM_IRQHandler
-                0x0000000008003cf0                TIM1_UP_IRQHandler
-                0x0000000008003cf0                WWDG_IRQHandler
-                0x0000000008003cf0                LPUART1_IRQHandler
-                0x0000000008003cf0                DMA2_Channel6_IRQHandler
-                0x0000000008003cf0                TIM2_IRQHandler
-                0x0000000008003cf0                TIM1_BRK_IRQHandler
-                0x0000000008003cf0                DAC_IRQHandler
-                0x0000000008003cf0                EXTI1_IRQHandler
-                0x0000000008003cf0                AES_IRQHandler
-                0x0000000008003cf0                USART2_IRQHandler
-                0x0000000008003cf0                I2C2_ER_IRQHandler
-                0x0000000008003cf0                DMA1_Channel2_IRQHandler
-                0x0000000008003cf0                FLASH_IRQHandler
-                0x0000000008003cf0                USART1_IRQHandler
-                0x0000000008003cf0                I2C1_ER_IRQHandler
-                0x0000000008003cf0                LPTIM1_IRQHandler
-                0x0000000008003cf0                DMA2_Channel3_IRQHandler
- .text.LL_GPIO_TogglePin
-                0x0000000008003cf2       0x30 CMakeFiles/firmware.out.dir/source/application.cpp.obj
- .text.setup    0x0000000008003d22        0xc CMakeFiles/firmware.out.dir/source/application.cpp.obj
-                0x0000000008003d22                setup
- *fill*         0x0000000008003d2e        0x2 
- .text.loop     0x0000000008003d30       0x1c CMakeFiles/firmware.out.dir/source/application.cpp.obj
-                0x0000000008003d30                loop
- .text.startup  0x0000000008003d4c       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
+                0x0000000008003d5c        0x2 CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
+                0x0000000008003d5c                RTC_Alarm_IRQHandler
+                0x0000000008003d5c                EXTI2_IRQHandler
+                0x0000000008003d5c                TIM1_CC_IRQHandler
+                0x0000000008003d5c                EXTI3_IRQHandler
+                0x0000000008003d5c                LPTIM2_IRQHandler
+                0x0000000008003d5c                I2C3_ER_IRQHandler
+                0x0000000008003d5c                LPTIM3_IRQHandler
+                0x0000000008003d5c                EXTI0_IRQHandler
+                0x0000000008003d5c                I2C2_EV_IRQHandler
+                0x0000000008003d5c                TAMP_STAMP_LSECSS_SSRU_IRQHandler
+                0x0000000008003d5c                SPI1_IRQHandler
+                0x0000000008003d5c                DMA2_Channel2_IRQHandler
+                0x0000000008003d5c                DMA1_Channel4_IRQHandler
+                0x0000000008003d5c                PKA_IRQHandler
+                0x0000000008003d5c                TIM17_IRQHandler
+                0x0000000008003d5c                DMA1_Channel7_IRQHandler
+                0x0000000008003d5c                SUBGHZSPI_IRQHandler
+                0x0000000008003d5c                DMA2_Channel1_IRQHandler
+                0x0000000008003d5c                I2C1_EV_IRQHandler
+                0x0000000008003d5c                SUBGHZ_Radio_IRQHandler
+                0x0000000008003d5c                DMAMUX1_OVR_IRQHandler
+                0x0000000008003d5c                DMA1_Channel6_IRQHandler
+                0x0000000008003d5c                TIM16_IRQHandler
+                0x0000000008003d5c                DMA2_Channel4_IRQHandler
+                0x0000000008003d5c                RCC_IRQHandler
+                0x0000000008003d5c                TIM1_TRG_COM_IRQHandler
+                0x0000000008003d5c                DMA1_Channel1_IRQHandler
+                0x0000000008003d5c                Default_Handler
+                0x0000000008003d5c                DMA2_Channel7_IRQHandler
+                0x0000000008003d5c                EXTI15_10_IRQHandler
+                0x0000000008003d5c                ADC_IRQHandler
+                0x0000000008003d5c                I2C3_EV_IRQHandler
+                0x0000000008003d5c                EXTI9_5_IRQHandler
+                0x0000000008003d5c                RTC_WKUP_IRQHandler
+                0x0000000008003d5c                PVD_PVM_IRQHandler
+                0x0000000008003d5c                SPI2_IRQHandler
+                0x0000000008003d5c                DMA2_Channel5_IRQHandler
+                0x0000000008003d5c                DMA1_Channel5_IRQHandler
+                0x0000000008003d5c                EXTI4_IRQHandler
+                0x0000000008003d5c                RNG_IRQHandler
+                0x0000000008003d5c                DMA1_Channel3_IRQHandler
+                0x0000000008003d5c                COMP_IRQHandler
+                0x0000000008003d5c                HSEM_IRQHandler
+                0x0000000008003d5c                TIM1_UP_IRQHandler
+                0x0000000008003d5c                WWDG_IRQHandler
+                0x0000000008003d5c                LPUART1_IRQHandler
+                0x0000000008003d5c                DMA2_Channel6_IRQHandler
+                0x0000000008003d5c                TIM2_IRQHandler
+                0x0000000008003d5c                TIM1_BRK_IRQHandler
+                0x0000000008003d5c                DAC_IRQHandler
+                0x0000000008003d5c                EXTI1_IRQHandler
+                0x0000000008003d5c                AES_IRQHandler
+                0x0000000008003d5c                USART2_IRQHandler
+                0x0000000008003d5c                I2C2_ER_IRQHandler
+                0x0000000008003d5c                DMA1_Channel2_IRQHandler
+                0x0000000008003d5c                FLASH_IRQHandler
+                0x0000000008003d5c                USART1_IRQHandler
+                0x0000000008003d5c                I2C1_ER_IRQHandler
+                0x0000000008003d5c                LPTIM1_IRQHandler
+                0x0000000008003d5c                DMA2_Channel3_IRQHandler
+ .text._Z5setupv
+                0x0000000008003d5e        0xc CMakeFiles/firmware.out.dir/source/application.cpp.obj
+                0x0000000008003d5e                setup()
+ .text._Z4loopv
+                0x0000000008003d6a        0xc CMakeFiles/firmware.out.dir/source/application.cpp.obj
+                0x0000000008003d6a                loop()
+ .text._Z13testDigitalIOv
+                0x0000000008003d76       0x80 CMakeFiles/firmware.out.dir/source/application.cpp.obj
+                0x0000000008003d76                testDigitalIO()
+ *fill*         0x0000000008003df6        0x2 
+ .text._ZN3dio13Memory_CS_SetEv
+                0x0000000008003df8       0x18 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003df8                dio::Memory_CS_Set()
+ .text._ZN3dio15Memory_CS_ResetEv
+                0x0000000008003e10       0x18 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003e10                dio::Memory_CS_Reset()
+ .text._ZN3dio11Bias_CS_SetEv
+                0x0000000008003e28       0x16 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003e28                dio::Bias_CS_Set()
+ .text._ZN3dio13Bias_CS_ResetEv
+                0x0000000008003e3e       0x16 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003e3e                dio::Bias_CS_Reset()
+ .text._ZN3dio7LED_SetEv
+                0x0000000008003e54       0x18 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003e54                dio::LED_Set()
+ .text._ZN3dio9LED_ResetEv
+                0x0000000008003e6c       0x18 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003e6c                dio::LED_Reset()
+ .text._ZN3dio17Anneal_Enable_SetEv
+                0x0000000008003e84       0x14 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003e84                dio::Anneal_Enable_Set()
+ .text._ZN3dio19Anneal_Enable_ResetEv
+                0x0000000008003e98       0x14 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003e98                dio::Anneal_Enable_Reset()
+ .text._ZN3dio15Bias_Enable_SetEv
+                0x0000000008003eac       0x14 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003eac                dio::Bias_Enable_Set()
+ .text._ZN3dio17Bias_Enable_ResetEv
+                0x0000000008003ec0       0x14 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003ec0                dio::Bias_Enable_Reset()
+ .text._ZN3dio15Stim_Enable_SetEv
+                0x0000000008003ed4       0x14 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003ed4                dio::Stim_Enable_Set()
+ .text._ZN3dio17Stim_Enable_ResetEv
+                0x0000000008003ee8       0x14 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                0x0000000008003ee8                dio::Stim_Enable_Reset()
+ .text.startup  0x0000000008003efc       0x14 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
  *(.glue_7)
- .glue_7        0x0000000008003d60        0x0 linker stubs
+ .glue_7        0x0000000008003f10        0x0 linker stubs
  *(.glue_7t)
- .glue_7t       0x0000000008003d60        0x0 linker stubs
+ .glue_7t       0x0000000008003f10        0x0 linker stubs
  *(.eh_frame)
- .eh_frame      0x0000000008003d60        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+ .eh_frame      0x0000000008003f10        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.init)
- .init          0x0000000008003d60        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x0000000008003d60                _init
- .init          0x0000000008003d64        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+ .init          0x0000000008003f10        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x0000000008003f10                _init
+ .init          0x0000000008003f14        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
  *(.fini)
- .fini          0x0000000008003d6c        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
-                0x0000000008003d6c                _fini
- .fini          0x0000000008003d70        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
-                0x0000000008003d78                . = ALIGN (0x8)
-                0x0000000008003d78                _etext = .
+ .fini          0x0000000008003f1c        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crti.o
+                0x0000000008003f1c                _fini
+ .fini          0x0000000008003f20        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+                0x0000000008003f28                . = ALIGN (0x8)
+                0x0000000008003f28                _etext = .
 
-.vfp11_veneer   0x0000000008003d78        0x0
- .vfp11_veneer  0x0000000008003d78        0x0 linker stubs
+.vfp11_veneer   0x0000000008003f28        0x0
+ .vfp11_veneer  0x0000000008003f28        0x0 linker stubs
 
-.v4_bx          0x0000000008003d78        0x0
- .v4_bx         0x0000000008003d78        0x0 linker stubs
+.v4_bx          0x0000000008003f28        0x0
+ .v4_bx         0x0000000008003f28        0x0 linker stubs
 
-.iplt           0x0000000008003d78        0x0
- .iplt          0x0000000008003d78        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.iplt           0x0000000008003f28        0x0
+ .iplt          0x0000000008003f28        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.rodata         0x0000000008003d78       0xe8
-                0x0000000008003d78                . = ALIGN (0x8)
+.rodata         0x0000000008003f28       0xe8
+                0x0000000008003f28                . = ALIGN (0x8)
  *(.rodata)
- .rodata        0x0000000008003d78       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
- .rodata        0x0000000008003d94        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-impure.o)
-                0x0000000008003d94                _global_impure_ptr
+ .rodata        0x0000000008003f28       0x1c CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
+ .rodata        0x0000000008003f44        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-impure.o)
+                0x0000000008003f44                _global_impure_ptr
  *(.rodata*)
  .rodata.UARTPrescTable
-                0x0000000008003d98       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
-                0x0000000008003d98                UARTPrescTable
+                0x0000000008003f48       0x18 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
+                0x0000000008003f48                UARTPrescTable
  .rodata.numerator.1
-                0x0000000008003db0        0x8 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
+                0x0000000008003f60        0x8 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
  .rodata.denominator.0
-                0x0000000008003db8        0x8 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
+                0x0000000008003f68        0x8 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
  .rodata.AHBPrescTable
-                0x0000000008003dc0       0x40 CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
-                0x0000000008003dc0                AHBPrescTable
+                0x0000000008003f70       0x40 CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
+                0x0000000008003f70                AHBPrescTable
  .rodata.APBPrescTable
-                0x0000000008003e00       0x20 CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
-                0x0000000008003e00                APBPrescTable
+                0x0000000008003fb0       0x20 CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
+                0x0000000008003fb0                APBPrescTable
  .rodata.MSIRangeTable
-                0x0000000008003e20       0x40 CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
-                0x0000000008003e20                MSIRangeTable
-                0x0000000008003e60                . = ALIGN (0x8)
+                0x0000000008003fd0       0x40 CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
+                0x0000000008003fd0                MSIRangeTable
+                0x0000000008004010                . = ALIGN (0x8)
 
-.ARM.extab      0x0000000008003e60        0x0
-                0x0000000008003e60                . = ALIGN (0x8)
+.ARM.extab      0x0000000008004010        0x0
+                0x0000000008004010                . = ALIGN (0x8)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000008003e60                . = ALIGN (0x8)
+                0x0000000008004010                . = ALIGN (0x8)
 
-.ARM            0x0000000008003e60        0x8
-                0x0000000008003e60                . = ALIGN (0x8)
-                0x0000000008003e60                __exidx_start = .
+.ARM            0x0000000008004010        0x8
+                0x0000000008004010                . = ALIGN (0x8)
+                0x0000000008004010                __exidx_start = .
  *(.ARM.exidx*)
- .ARM.exidx     0x0000000008003e60        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
-                0x0000000008003e68                __exidx_end = .
-                0x0000000008003e68                . = ALIGN (0x8)
+ .ARM.exidx     0x0000000008004010        0x8 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x0000000008004018                __exidx_end = .
+                0x0000000008004018                . = ALIGN (0x8)
 
-.rel.dyn        0x0000000008003e68        0x0
- .rel.iplt      0x0000000008003e68        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+.rel.dyn        0x0000000008004018        0x0
+ .rel.iplt      0x0000000008004018        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
 
-.preinit_array  0x0000000008003e68        0x0
-                0x0000000008003e68                . = ALIGN (0x8)
-                0x0000000008003e68                PROVIDE (__preinit_array_start = .)
+.preinit_array  0x0000000008004018        0x0
+                0x0000000008004018                . = ALIGN (0x8)
+                0x0000000008004018                PROVIDE (__preinit_array_start = .)
  *(.preinit_array*)
-                0x0000000008003e68                PROVIDE (__preinit_array_end = .)
-                0x0000000008003e68                . = ALIGN (0x8)
+                0x0000000008004018                PROVIDE (__preinit_array_end = .)
+                0x0000000008004018                . = ALIGN (0x8)
 
-.init_array     0x0000000008003e68        0x8
-                0x0000000008003e68                . = ALIGN (0x8)
-                0x0000000008003e68                PROVIDE (__init_array_start = .)
+.init_array     0x0000000008004018        0x8
+                0x0000000008004018                . = ALIGN (0x8)
+                0x0000000008004018                PROVIDE (__init_array_start = .)
  *(SORT_BY_NAME(.init_array.*))
  .init_array.00000
-                0x0000000008003e68        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
+                0x0000000008004018        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
  *(.init_array*)
- .init_array    0x0000000008003e6c        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x0000000008003e70                PROVIDE (__init_array_end = .)
-                0x0000000008003e70                . = ALIGN (0x8)
+ .init_array    0x000000000800401c        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0000000008004020                PROVIDE (__init_array_end = .)
+                0x0000000008004020                . = ALIGN (0x8)
 
-.fini_array     0x0000000008003e70        0x8
-                0x0000000008003e70                . = ALIGN (0x8)
-                0x0000000008003e70                PROVIDE (__fini_array_start = .)
+.fini_array     0x0000000008004020        0x8
+                0x0000000008004020                . = ALIGN (0x8)
+                0x0000000008004020                PROVIDE (__fini_array_start = .)
  *(SORT_BY_NAME(.fini_array.*))
  *(.fini_array*)
- .fini_array    0x0000000008003e70        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
-                0x0000000008003e74                PROVIDE (__fini_array_end = .)
-                0x0000000008003e78                . = ALIGN (0x8)
- *fill*         0x0000000008003e74        0x4 
-                0x0000000008003e78                _sidata = LOADADDR (.data)
+ .fini_array    0x0000000008004020        0x4 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
+                0x0000000008004024                PROVIDE (__fini_array_end = .)
+                0x0000000008004028                . = ALIGN (0x8)
+ *fill*         0x0000000008004024        0x4 
+                0x0000000008004028                _sidata = LOADADDR (.data)
 
-.data           0x0000000020000000      0x440 load address 0x0000000008003e78
+.data           0x0000000020000000      0x440 load address 0x0000000008004028
                 0x0000000020000000                . = ALIGN (0x8)
                 0x0000000020000000                _sdata = .
  *(.data)
@@ -2042,29 +2087,29 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
                 0x0000000020000440                _edata = .
 
 .tm_clone_table
-                0x0000000020000440        0x0 load address 0x00000000080042b8
+                0x0000000020000440        0x0 load address 0x0000000008004468
  .tm_clone_table
                 0x0000000020000440        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000440        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000440        0x0 load address 0x00000000080042b8
+.igot.plt       0x0000000020000440        0x0 load address 0x0000000008004468
  .igot.plt      0x0000000020000440        0x0 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
                 0x0000000020000440                . = ALIGN (0x8)
 
-.bss            0x0000000020000440      0x1d0 load address 0x00000000080042b8
+.bss            0x0000000020000440      0x1d0 load address 0x0000000008004468
                 0x0000000020000440                _sbss = .
                 0x0000000020000440                __bss_start__ = _sbss
  *(.bss)
  .bss           0x0000000020000440       0x1c /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
  *(.bss*)
- .bss.hadc      0x000000002000045c       0x64 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+ .bss.hadc      0x000000002000045c       0x64 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
                 0x000000002000045c                hadc
- .bss.hi2c2     0x00000000200004c0       0x54 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+ .bss.hi2c2     0x00000000200004c0       0x54 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
                 0x00000000200004c0                hi2c2
- .bss.hspi2     0x0000000020000514       0x64 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+ .bss.hspi2     0x0000000020000514       0x64 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
                 0x0000000020000514                hspi2
- .bss.huart1    0x0000000020000578       0x94 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+ .bss.huart1    0x0000000020000578       0x94 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
                 0x0000000020000578                huart1
  .bss.uwTick    0x000000002000060c        0x4 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
                 0x000000002000060c                uwTick
@@ -2074,7 +2119,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
                 0x0000000020000610                __bss_end__ = _ebss
                 0x0000000020000610                . = ALIGN (0x8)
 
-RAM1_region     0x0000000020000610        0x0 load address 0x00000000080042b8
+RAM1_region     0x0000000020000610        0x0 load address 0x0000000008004468
                 0x0000000020000610                _sRAM1_region = .
  *(.RAM1_region)
                 0x0000000020000610                . = ALIGN (0x8)
@@ -2111,7 +2156,7 @@ RAM2_region     0x0000000020008000        0x0
  .ARM.attributes
                 0x000000000000001e       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
  .ARM.attributes
-                0x000000000000004c       0x2e CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                0x000000000000004c       0x2e CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
  .ARM.attributes
                 0x000000000000007a       0x2e CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
  .ARM.attributes
@@ -2149,29 +2194,31 @@ RAM2_region     0x0000000020008000        0x0
  .ARM.attributes
                 0x000000000000037b       0x2e CMakeFiles/firmware.out.dir/source/application.cpp.obj
  .ARM.attributes
-                0x00000000000003a9       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-atexit.o)
+                0x00000000000003a9       0x2e CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
  .ARM.attributes
-                0x00000000000003d7       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-fini.o)
+                0x00000000000003d7       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-atexit.o)
  .ARM.attributes
-                0x0000000000000405       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-impure.o)
+                0x0000000000000405       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-fini.o)
  .ARM.attributes
-                0x0000000000000433       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-init.o)
+                0x0000000000000433       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-impure.o)
  .ARM.attributes
-                0x0000000000000461       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-memset.o)
+                0x0000000000000461       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-init.o)
  .ARM.attributes
-                0x000000000000048f       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__atexit.o)
+                0x000000000000048f       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-memset.o)
  .ARM.attributes
-                0x00000000000004bd       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
+                0x00000000000004bd       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__atexit.o)
  .ARM.attributes
-                0x00000000000004eb       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
+                0x00000000000004eb       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
  .ARM.attributes
-                0x0000000000000509       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
+                0x0000000000000519       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_aeabi_uldivmod.o)
  .ARM.attributes
-                0x0000000000000537       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_dvmd_tls.o)
+                0x0000000000000537       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_udivmoddi4.o)
  .ARM.attributes
-                0x0000000000000555       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
+                0x0000000000000565       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
-                0x0000000000000583       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
+                0x0000000000000583       0x2e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtend.o
+ .ARM.attributes
+                0x00000000000005b1       0x1e /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtn.o
 OUTPUT(firmware.out elf32-littlearm)
 LOAD linker stubs
 LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a
@@ -2181,7 +2228,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a
 .comment        0x0000000000000000       0x33
  .comment       0x0000000000000000       0x33 /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/crtbegin.o
                                          0x34 (size before relaxing)
- .comment       0x0000000000000033       0x34 CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
  .comment       0x0000000000000033       0x34 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
  .comment       0x0000000000000033       0x34 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
  .comment       0x0000000000000033       0x34 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
@@ -2199,6 +2246,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m/nofp/libgcc.a
  .comment       0x0000000000000033       0x34 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
  .comment       0x0000000000000033       0x34 CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
  .comment       0x0000000000000033       0x34 CMakeFiles/firmware.out.dir/source/application.cpp.obj
+ .comment       0x0000000000000033       0x34 CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
  .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-atexit.o)
  .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-fini.o)
  .comment       0x0000000000000033       0x34 /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-impure.o)
@@ -2353,7 +2401,7 @@ EXTI2_IRQHandler                                  CMakeFiles/firmware.out.dir/st
 EXTI3_IRQHandler                                  CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
 EXTI4_IRQHandler                                  CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
 EXTI9_5_IRQHandler                                CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
-Error_Handler                                     CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+Error_Handler                                     CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
                                                   CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
 FLASH_IRQHandler                                  CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
 FLASH_PageErase                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash_ex.c.obj
@@ -2383,7 +2431,7 @@ HAL_ADC_GetState                                  CMakeFiles/firmware.out.dir/Dr
 HAL_ADC_GetValue                                  CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
 HAL_ADC_IRQHandler                                CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
 HAL_ADC_Init                                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_ADC_LevelOutOfWindowCallback                  CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c.obj
 HAL_ADC_MspDeInit                                 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
 HAL_ADC_MspInit                                   CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
@@ -2469,13 +2517,14 @@ HAL_GPIO_EXTI_IRQHandler                          CMakeFiles/firmware.out.dir/Dr
 HAL_GPIO_Init                                     CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
                                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
                                                   CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_GPIO_LockPin                                  CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
 HAL_GPIO_ReadPin                                  CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
 HAL_GPIO_TogglePin                                CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
 HAL_GPIO_WriteMultipleStatePin                    CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
 HAL_GPIO_WritePin                                 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_GetDEVID                                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
 HAL_GetHalVersion                                 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
 HAL_GetREVID                                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
@@ -2499,9 +2548,9 @@ HAL_HalfDuplex_EnableReceiver                     CMakeFiles/firmware.out.dir/Dr
 HAL_HalfDuplex_EnableTransmitter                  CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
 HAL_HalfDuplex_Init                               CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
 HAL_I2CEx_ConfigAnalogFilter                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_I2CEx_ConfigDigitalFilter                     CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_I2CEx_DisableFastModePlus                     CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c.obj
 HAL_I2CEx_DisableWakeUp                           CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c.obj
 HAL_I2CEx_EnableFastModePlus                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c.obj
@@ -2518,7 +2567,7 @@ HAL_I2C_GetError                                  CMakeFiles/firmware.out.dir/Dr
 HAL_I2C_GetMode                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c.obj
 HAL_I2C_GetState                                  CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c.obj
 HAL_I2C_Init                                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_I2C_IsDeviceReady                             CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c.obj
 HAL_I2C_ListenCpltCallback                        CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c.obj
 HAL_I2C_MasterRxCpltCallback                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c.obj
@@ -2559,7 +2608,7 @@ HAL_I2C_Slave_Transmit_IT                         CMakeFiles/firmware.out.dir/Dr
 HAL_IncTick                                       CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
                                                   CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
 HAL_Init                                          CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_InitTick                                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
                                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
 HAL_LIN_Init                                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
@@ -2664,7 +2713,7 @@ HAL_RCCEx_PeriphCLKConfig                         CMakeFiles/firmware.out.dir/Dr
 HAL_RCCEx_WakeUpStopCLKConfig                     CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c.obj
 HAL_RCC_CSSCallback                               CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
 HAL_RCC_ClockConfig                               CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_RCC_DeInit                                    CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
 HAL_RCC_EnableCSS                                 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
 HAL_RCC_GetClockConfig                            CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
@@ -2683,7 +2732,7 @@ HAL_RCC_GetSysClockFreq                           CMakeFiles/firmware.out.dir/Dr
 HAL_RCC_MCOConfig                                 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
 HAL_RCC_NMI_IRQHandler                            CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
 HAL_RCC_OscConfig                                 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_RS485Ex_Init                                  CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
 HAL_ResumeTick                                    CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
 HAL_SPIEx_FlushRxFifo                             CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi_ex.c.obj
@@ -2699,7 +2748,7 @@ HAL_SPI_GetError                                  CMakeFiles/firmware.out.dir/Dr
 HAL_SPI_GetState                                  CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi.c.obj
 HAL_SPI_IRQHandler                                CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi.c.obj
 HAL_SPI_Init                                      CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_SPI_MspDeInit                                 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
 HAL_SPI_MspInit                                   CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
 HAL_SPI_Receive                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi.c.obj
@@ -2733,7 +2782,7 @@ HAL_SYSTICK_IRQHandler                            CMakeFiles/firmware.out.dir/Dr
 HAL_SetTickFreq                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
 HAL_SuspendTick                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
 HAL_UARTEx_DisableFifoMode                        CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_UARTEx_DisableStopMode                        CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
 HAL_UARTEx_EnableFifoMode                         CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
 HAL_UARTEx_EnableStopMode                         CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
@@ -2745,9 +2794,9 @@ HAL_UARTEx_RxEventCallback                        CMakeFiles/firmware.out.dir/Dr
 HAL_UARTEx_RxFifoFullCallback                     CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
                                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
 HAL_UARTEx_SetRxFifoThreshold                     CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_UARTEx_SetTxFifoThreshold                     CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_UARTEx_StopModeWakeUpSourceConfig             CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
 HAL_UARTEx_TxFifoEmptyCallback                    CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
                                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
@@ -2773,7 +2822,7 @@ HAL_UART_GetError                                 CMakeFiles/firmware.out.dir/Dr
 HAL_UART_GetState                                 CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
 HAL_UART_IRQHandler                               CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
 HAL_UART_Init                                     CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 HAL_UART_MspDeInit                                CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
 HAL_UART_MspInit                                  CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
                                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj
@@ -2819,7 +2868,7 @@ SUBGHZSPI_IRQHandler                              CMakeFiles/firmware.out.dir/st
 SUBGHZ_Radio_IRQHandler                           CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
 SVC_Handler                                       CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
 SysTick_Handler                                   CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
-SystemClock_Config                                CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+SystemClock_Config()                              CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 SystemCoreClock                                   CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
                                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi.c.obj
                                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
@@ -2911,28 +2960,53 @@ _start                                            /usr/lib/gcc/arm-none-eabi/10.
 atexit                                            /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-atexit.o)
                                                   /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-__call_atexit.o)
                                                   /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+dio::Anneal_Enable_Reset()                        CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::Anneal_Enable_Set()                          CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::Bias_CS_Reset()                              CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::Bias_CS_Set()                                CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::Bias_Enable_Reset()                          CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::Bias_Enable_Set()                            CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::LED_Reset()                                  CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::LED_Set()                                    CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::Memory_CS_Reset()                            CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::Memory_CS_Set()                              CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::Stim_Enable_Reset()                          CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
+dio::Stim_Enable_Set()                            CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/source/application.cpp.obj
 exit                                              /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-exit.o)
                                                   /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 g_pfnVectors                                      CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
-hadc                                              CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+hadc                                              CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 hardware_init_hook                                /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
-hi2c2                                             CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
-hspi2                                             CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
-huart1                                            CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
-loop                                              CMakeFiles/firmware.out.dir/source/application.cpp.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
-main                                              CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+hi2c2                                             CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+hspi2                                             CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+huart1                                            CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+loop()                                            CMakeFiles/firmware.out.dir/source/application.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+main                                              CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
                                                   CMakeFiles/firmware.out.dir/startup_stm32wle5xx.s.obj
                                                   /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 memset                                            /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/libc.a(lib_a-memset.o)
                                                   CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
                                                   /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
 pFlash                                            CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash.c.obj
                                                   CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash_ex.c.obj
-setup                                             CMakeFiles/firmware.out.dir/source/application.cpp.obj
-                                                  CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
+setup()                                           CMakeFiles/firmware.out.dir/source/application.cpp.obj
+                                                  CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
 software_init_hook                                /usr/lib/gcc/arm-none-eabi/10.3.1/../../../arm-none-eabi/lib/thumb/v7e-m/nofp/crt0.o
+testDigitalIO()                                   CMakeFiles/firmware.out.dir/source/application.cpp.obj
 uwTick                                            CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
 uwTickFreq                                        CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
 uwTickPrio                                        CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj

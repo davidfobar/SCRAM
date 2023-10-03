@@ -1,13 +1,8 @@
 #pragma once
 
-#ifdef __cplusplus
-extern "C"
-{
-#endif
+#include "digitalIO.hpp"
 
 void setup();
 void loop();
 
-#ifdef __cplusplus
-}
-#endif
+void testDigitalIO();

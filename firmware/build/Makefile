@@ -129,29 +129,29 @@ firmware.out/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/build
 .PHONY : firmware.out/fast
 
-Core/Src/main.obj: Core/Src/main.c.obj
+Core/Src/main.obj: Core/Src/main.cpp.obj
 .PHONY : Core/Src/main.obj
 
 # target to build an object file
-Core/Src/main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/Core/Src/main.c.obj
-.PHONY : Core/Src/main.c.obj
+Core/Src/main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
+.PHONY : Core/Src/main.cpp.obj
 
-Core/Src/main.i: Core/Src/main.c.i
+Core/Src/main.i: Core/Src/main.cpp.i
 .PHONY : Core/Src/main.i
 
 # target to preprocess a source file
-Core/Src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/Core/Src/main.c.i
-.PHONY : Core/Src/main.c.i
+Core/Src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/Core/Src/main.cpp.i
+.PHONY : Core/Src/main.cpp.i
 
-Core/Src/main.s: Core/Src/main.c.s
+Core/Src/main.s: Core/Src/main.cpp.s
 .PHONY : Core/Src/main.s
 
 # target to generate assembly for a file
-Core/Src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/Core/Src/main.c.s
-.PHONY : Core/Src/main.c.s
+Core/Src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/Core/Src/main.cpp.s
+.PHONY : Core/Src/main.cpp.s
 
 Core/Src/stm32wlxx_hal_msp.obj: Core/Src/stm32wlxx_hal_msp.c.obj
 .PHONY : Core/Src/stm32wlxx_hal_msp.obj
@@ -801,6 +801,30 @@ source/application.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/source/application.cpp.s
 .PHONY : source/application.cpp.s
 
+source/digitalIO.obj: source/digitalIO.cpp.obj
+.PHONY : source/digitalIO.obj
+
+# target to build an object file
+source/digitalIO.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
+.PHONY : source/digitalIO.cpp.obj
+
+source/digitalIO.i: source/digitalIO.cpp.i
+.PHONY : source/digitalIO.i
+
+# target to preprocess a source file
+source/digitalIO.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/source/digitalIO.cpp.i
+.PHONY : source/digitalIO.cpp.i
+
+source/digitalIO.s: source/digitalIO.cpp.s
+.PHONY : source/digitalIO.s
+
+# target to generate assembly for a file
+source/digitalIO.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/firmware.out.dir/build.make CMakeFiles/firmware.out.dir/source/digitalIO.cpp.s
+.PHONY : source/digitalIO.cpp.s
+
 startup_stm32wle5xx.obj: startup_stm32wle5xx.s.obj
 .PHONY : startup_stm32wle5xx.obj
 
@@ -902,6 +926,9 @@ help:
 	@echo "... source/application.obj"
 	@echo "... source/application.i"
 	@echo "... source/application.s"
+	@echo "... source/digitalIO.obj"
+	@echo "... source/digitalIO.i"
+	@echo "... source/digitalIO.s"
 	@echo "... startup_stm32wle5xx.obj"
 .PHONY : help
 

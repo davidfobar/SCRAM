@@ -1,4 +1,4 @@
-#include "digitalIO.h"
+#include "digitalIO.hpp"
 
 // Path: Core/Src/digitalIO.c
 

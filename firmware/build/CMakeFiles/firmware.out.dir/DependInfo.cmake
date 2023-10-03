@@ -29,7 +29,6 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/main.c" "CMakeFiles/firmware.out.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/firmware.out.dir/Core/Src/main.c.obj.d"
   "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/stm32wlxx_hal_msp.c" "CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj" "gcc" "CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj.d"
   "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/stm32wlxx_it.c" "CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj" "gcc" "CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj.d"
   "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/system_stm32wlxx.c" "CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj" "gcc" "CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj.d"
@@ -56,7 +55,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c" "CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj" "gcc" "CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c.obj.d"
   "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c" "CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj" "gcc" "CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_ex.c.obj.d"
   "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_ll_adc.c" "CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_ll_adc.c.obj" "gcc" "CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_ll_adc.c.obj.d"
+  "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/main.cpp" "CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj" "gcc" "CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj.d"
   "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/source/application.cpp" "CMakeFiles/firmware.out.dir/source/application.cpp.obj" "gcc" "CMakeFiles/firmware.out.dir/source/application.cpp.obj.d"
+  "/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/source/digitalIO.cpp" "CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj" "gcc" "CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj.d"
   )
 
 # Targets to which this target links.

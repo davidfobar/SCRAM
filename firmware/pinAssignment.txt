@@ -1,6 +1,6 @@
 Num - Brd USE - STM32WLE5JC Label - E5-HF PIN  - Use                      - AD2 test wire for confirm Digital IO
 1   - GND                         - 2,14,16,22 - GND
-2   - SCL       - PB15            - 5          - SCL
+2   - SCL       - PB15            - 5          - SCL                        
 3   - SDA       - PA15            - 6          - SDA
 4   - A4        - PB4             - 7          - SiPM Signal (ADC)        - W1
 5   - A3        - PB3             - 8          - SiPM Temp (ADC)          - W2
@@ -26,4 +26,4 @@ Num - Brd USE - STM32WLE5JC Label - E5-HF PIN  - Use                      - AD2 
 ANT - RFIO      - *               - 15         - Antenna
 //// Not Accessible on Dev Board ////
 *   - LED       - PB5             - 11
-*   - *         - VDD_TCXO        - 28
+*   - *         - VDD_TCXO        - 28  

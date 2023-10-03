@@ -12,7 +12,7 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 
 
 set(STM32CUBEMX_GENERATED_FILES
-    Core/Src/main.c
+    Core/Src/main.cpp
     Core/Src/stm32wlxx_it.c
     Core/Src/stm32wlxx_hal_msp.c
     Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c
@@ -56,6 +56,8 @@ set(EXECUTABLE ${PROJECT_NAME}.out)
 add_executable(${EXECUTABLE} ${STM32CUBEMX_GENERATED_FILES}
         source/application.cpp
         source/application.hpp
+        source/digitalIO.cpp
+        source/digitalIO.hpp
         )
 
 target_compile_definitions(${EXECUTABLE} PRIVATE
