@@ -39,7 +39,7 @@ namespace dio{
         HAL_GPIO_WritePin(Anneal_Enable_GPIO_Port, Anneal_Enable_Pin, GPIO_PIN_RESET);
     }
 
-    // Bias_Enable
+/*    // Bias_Enable
     void Bias_Enable_Set(void) {
         HAL_GPIO_WritePin(Bias_Enable_GPIO_Port, Bias_Enable_Pin, GPIO_PIN_SET);
     }
@@ -55,5 +55,5 @@ namespace dio{
 
     void Stim_Enable_Reset(void) {
         HAL_GPIO_WritePin(Stim_Enable_GPIO_Port, Stim_Enable_Pin, GPIO_PIN_RESET);
-    }
+    }*/
 }

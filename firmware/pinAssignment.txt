@@ -4,8 +4,8 @@ Num - Brd USE - STM32WLE5JC Label - E5-HF PIN  - Use                      - AD2 
 3   - SDA       - PA15            - 6          - SDA
 4   - A4        - PB4             - 7          - SiPM Signal (ADC)        - W1
 5   - A3        - PB3             - 8          - SiPM Temp (ADC)          - W2
-6   - RX        - PB7             - 9          - LoRa RX (USART1)
-7   - TX        - PB6             - 10         - LoRa TX (USART1)
+6   - RX        - PB7             - 9          - USB RX (USART1)
+7   - TX        - PB6             - 10         - USB TX (USART1)
 8   - D0        - PA0             - 23         - Anneal Enable            - 0
 9   - RX1       - PC0             - 13         - 
 10  - TX1       - PC1             - 12         - MOSI (SPI2)

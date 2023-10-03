@@ -1,13 +1,4 @@
 #include "application.hpp"
-#include "main.h"
-
-void setup() {
-    // For future episodes ;)
-}
-
-void loop() {
-    testDigitalIO();
-}
 
 void testDigitalIO(){
     // set all digital outputs to high
@@ -15,13 +6,13 @@ void testDigitalIO(){
     HAL_Delay(10U);
     dio::Bias_CS_Set();
     HAL_Delay(10U);
-    dio::Bias_Enable_Set();
+    //dio::Bias_Enable_Set();
     HAL_Delay(10U);
     dio::Memory_CS_Set();
     HAL_Delay(10U);
     dio::Anneal_Enable_Set();
     HAL_Delay(10U);
-    dio::Stim_Enable_Set();
+    //dio::Stim_Enable_Set();
     HAL_Delay(200U);
 
     // set all digital outputs to low
@@ -29,12 +20,12 @@ void testDigitalIO(){
     HAL_Delay(10U);
     dio::Bias_CS_Reset();
     HAL_Delay(10U);
-    dio::Bias_Enable_Reset();
+    //dio::Bias_Enable_Reset();
     HAL_Delay(10U);
     dio::Memory_CS_Reset();
     HAL_Delay(10U);
     dio::Anneal_Enable_Reset();
     HAL_Delay(10U);
-    dio::Stim_Enable_Reset();
+    //dio::Stim_Enable_Reset();
     HAL_Delay(200U);
 }

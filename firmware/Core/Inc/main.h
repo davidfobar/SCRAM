@@ -31,6 +31,7 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+void selectADCChannel(uint32_t channel);
 
 /* USER CODE END Includes */
 
@@ -77,6 +78,10 @@ void Error_Handler(void);
 #define Stim_Enable_GPIO_Port GPIOA
 
 /* USER CODE BEGIN Private defines */
+
+#define BAT_MONITOR_ADC ADC_CHANNEL_0
+#define SiPM_TEMP_ADC ADC_CHANNEL_2
+#define SiPM_SIGNAL_ADC ADC_CHANNEL_3
 
 /* USER CODE END Private defines */
 

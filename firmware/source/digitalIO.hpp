@@ -26,10 +26,10 @@ namespace dio {
     void LED_Reset(void);
     void Anneal_Enable_Set(void);
     void Anneal_Enable_Reset(void);
-    void Bias_Enable_Set(void);
-    void Bias_Enable_Reset(void);
-    void Stim_Enable_Set(void);
-    void Stim_Enable_Reset(void);
+    //void Bias_Enable_Set(void);
+    //void Bias_Enable_Reset(void);
+    //void Stim_Enable_Set(void);
+    //void Stim_Enable_Reset(void);
 }
 
 #endif /* __DIGITALIO_H */

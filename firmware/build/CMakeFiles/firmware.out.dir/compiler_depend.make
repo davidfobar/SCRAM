@@ -42,11 +42,35 @@ CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj: ../Core/Src/main.cpp \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
   ../source/application.hpp \
-  ../source/digitalIO.hpp
+  ../source/digitalIO.hpp \
+  /usr/include/newlib/string.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/newlib.h \
+  /usr/include/newlib/_newlib_version.h \
+  /usr/include/newlib/sys/config.h \
+  /usr/include/newlib/machine/ieeefp.h \
+  /usr/include/newlib/sys/features.h \
+  /usr/include/newlib/sys/reent.h \
+  /usr/include/newlib/_ansi.h \
+  /usr/include/newlib/sys/_types.h \
+  /usr/include/newlib/machine/_types.h \
+  /usr/include/newlib/machine/_default_types.h \
+  /usr/include/newlib/sys/lock.h \
+  /usr/include/newlib/sys/cdefs.h \
+  /usr/include/newlib/sys/string.h \
+  /usr/include/newlib/stdio.h \
+  /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h \
+  /usr/include/newlib/sys/types.h \
+  /usr/include/newlib/sys/_stdint.h \
+  /usr/include/newlib/sys/_pthreadtypes.h \
+  /usr/include/newlib/machine/types.h \
+  /usr/include/newlib/sys/stdio.h
 
 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj: ../Core/Src/stm32wlxx_hal_msp.c \
   ../Core/Inc/main.h \
@@ -89,6 +113,8 @@ CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj: ../Core/Src/stm32w
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -134,6 +160,8 @@ CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj: ../Core/Src/stm32wlxx_i
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
@@ -179,6 +207,8 @@ CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj: ../Core/Src/system_
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -223,6 +253,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -267,6 +299,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -311,6 +345,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc_e
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -355,6 +391,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_corte
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -399,6 +437,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -443,6 +483,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma_e
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -487,6 +529,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_exti.
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -531,6 +575,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -575,6 +621,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -619,6 +667,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -663,6 +713,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -707,6 +759,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_e
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -751,6 +805,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -795,6 +851,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_e
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -839,6 +897,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -883,6 +943,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_e
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -927,6 +989,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi.c
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -971,6 +1035,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi_e
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1015,6 +1081,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_tim.c
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1059,6 +1127,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_tim_e
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1103,6 +1173,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1147,6 +1219,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1195,6 +1269,8 @@ CMakeFiles/firmware.out.dir/source/application.cpp.obj: ../source/application.cp
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
@@ -1241,6 +1317,8 @@ CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: ../source/digitalIO.cpp \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h \
+  ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h \
   ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h \
@@ -1257,21 +1335,63 @@ CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: ../source/digitalIO.cpp \
 
 ../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c:
 
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash_ex.c:
+
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_tim_ex.c:
+
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash.c:
+
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:
+
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_exti.c:
+
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma_ex.c:
+
+../source/digitalIO.cpp:
+
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc_ex.c:
+
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c:
+
+../Core/Inc/stm32wlxx_it.h:
+
+../Core/Src/stm32wlxx_hal_msp.c:
+
+/usr/include/newlib/sys/stdio.h:
+
+/usr/include/newlib/sys/_pthreadtypes.h:
+
+/usr/include/newlib/sys/_stdint.h:
+
+../Core/Src/system_stm32wlxx.c:
+
+/usr/include/newlib/sys/string.h:
+
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_gpio_ex.h:
+
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_rcc.h:
 
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c:
+
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_flash_ex.h:
+
 ../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_ex.c:
+
+/usr/include/newlib/sys/cdefs.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_exti.h:
 
-../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_cortex.h:
-
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_pwr.h:
+
+/usr/include/newlib/string.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_adc.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rcc_ex.h:
+
+/usr/include/newlib/sys/_types.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h:
 
@@ -1283,17 +1403,23 @@ CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: ../source/digitalIO.cpp \
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_rcc.h:
 
-/usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
-
 ../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi_ex.c:
+
+/usr/include/newlib/sys/lock.h:
 
 ../Drivers/CMSIS/Include/cmsis_version.h:
 
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_tim_ex.c:
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c:
 
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash.c:
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h:
+
+../Drivers/CMSIS/Device/ST/STM32WLxx/Include/system_stm32wlxx.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h:
+
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_cortex.h:
+
+/usr/include/newlib/sys/features.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_flash.h:
 
@@ -1301,15 +1427,27 @@ CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: ../source/digitalIO.cpp \
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_bus.h:
 
+/usr/include/newlib/_newlib_version.h:
+
+../Core/Src/stm32wlxx_it.c:
+
+../Drivers/CMSIS/Include/core_cm4.h:
+
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_i2c.h:
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h:
+
+/usr/lib/gcc/arm-none-eabi/10.3.1/include/stddef.h:
+
+/usr/include/newlib/sys/reent.h:
 
 ../Core/Inc/main.h:
 
 ../source/digitalIO.hpp:
 
-../Core/Inc/stm32wlxx_hal_conf.h:
-
 ../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.c:
+
+/usr/include/newlib/sys/types.h:
 
 ../Drivers/CMSIS/Include/mpu_armv7.h:
 
@@ -1317,9 +1455,19 @@ CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: ../source/digitalIO.cpp \
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h:
 
+/usr/include/newlib/_ansi.h:
+
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal.h:
 
+/usr/include/newlib/machine/types.h:
+
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_dma.h:
+
+../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c:
+
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h:
+
+../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
 
 ../Drivers/CMSIS/Device/ST/STM32WLxx/Include/stm32wlxx.h:
 
@@ -1333,13 +1481,19 @@ CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: ../source/digitalIO.cpp \
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_gpio.h:
 
+/usr/include/newlib/machine/_types.h:
+
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_adc_ex.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_i2c_ex.h:
 
+/usr/include/newlib/sys/config.h:
+
 ../Drivers/CMSIS/Include/cmsis_gcc.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_tim.c:
+
+/usr/include/newlib/stdio.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_pwr.h:
 
@@ -1349,6 +1503,10 @@ CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: ../source/digitalIO.cpp \
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h:
 
+../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h:
+
+/usr/include/newlib/machine/ieeefp.h:
+
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h:
 
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_def.h:
@@ -1357,42 +1515,8 @@ CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj: ../source/digitalIO.cpp \
 
 ../source/application.hpp:
 
-../Core/Src/stm32wlxx_hal_msp.c:
+/usr/include/newlib/newlib.h:
 
-../Drivers/CMSIS/Include/core_cm4.h:
+../Core/Inc/stm32wlxx_hal_conf.h:
 
-../Core/Src/stm32wlxx_it.c:
-
-../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_flash_ex.h:
-
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_cortex.c:
-
-../Core/Inc/stm32wlxx_it.h:
-
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_ex.c:
-
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_exti.c:
-
-../Core/Src/system_stm32wlxx.c:
-
-../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_adc.h:
-
-../Drivers/CMSIS/Device/ST/STM32WLxx/Include/system_stm32wlxx.h:
-
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c:
-
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c:
-
-../source/digitalIO.cpp:
-
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc_ex.c:
-
-../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_dma.h:
-
-../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
-
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c:
-
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma_ex.c:
-
-../Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash_ex.c:
+/usr/include/newlib/machine/_default_types.h:

@@ -1,8 +1,7 @@
 #pragma once
 
 #include "digitalIO.hpp"
-
-void setup();
-void loop();
+#include "main.h"
+#include "stm32wlxx_hal.h"
 
 void testDigitalIO();

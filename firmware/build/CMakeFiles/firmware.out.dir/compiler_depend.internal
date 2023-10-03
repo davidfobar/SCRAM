@@ -43,11 +43,35 @@ CMakeFiles/firmware.out.dir/Core/Src/main.cpp.obj
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/source/application.hpp
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/source/digitalIO.hpp
+ /usr/include/newlib/string.h
+ /usr/include/newlib/_ansi.h
+ /usr/include/newlib/newlib.h
+ /usr/include/newlib/_newlib_version.h
+ /usr/include/newlib/sys/config.h
+ /usr/include/newlib/machine/ieeefp.h
+ /usr/include/newlib/sys/features.h
+ /usr/include/newlib/sys/reent.h
+ /usr/include/newlib/_ansi.h
+ /usr/include/newlib/sys/_types.h
+ /usr/include/newlib/machine/_types.h
+ /usr/include/newlib/machine/_default_types.h
+ /usr/include/newlib/sys/lock.h
+ /usr/include/newlib/sys/cdefs.h
+ /usr/include/newlib/sys/string.h
+ /usr/include/newlib/stdio.h
+ /usr/lib/gcc/arm-none-eabi/10.3.1/include/stdarg.h
+ /usr/include/newlib/sys/types.h
+ /usr/include/newlib/sys/_stdint.h
+ /usr/include/newlib/sys/_pthreadtypes.h
+ /usr/include/newlib/machine/types.h
+ /usr/include/newlib/sys/stdio.h
 
 CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Core/Src/stm32wlxx_hal_msp.c
@@ -91,6 +115,8 @@ CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_hal_msp.c.obj
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -137,6 +163,8 @@ CMakeFiles/firmware.out.dir/Core/Src/stm32wlxx_it.c.obj
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -183,6 +211,8 @@ CMakeFiles/firmware.out.dir/Core/Src/system_stm32wlxx.c.obj
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -228,6 +258,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.c.obj
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -273,6 +305,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.c
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -318,6 +352,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc_e
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -363,6 +399,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_corte
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -408,6 +446,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma.c
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -453,6 +493,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_dma_e
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -498,6 +540,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_exti.
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -543,6 +587,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -588,6 +634,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_flash
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -633,6 +681,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_gpio.
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -678,6 +728,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c.c
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -723,6 +775,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_i2c_e
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -768,6 +822,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr.c
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -813,6 +869,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_pwr_e
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -858,6 +916,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc.c
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -903,6 +963,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_e
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -948,6 +1010,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi.c
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -993,6 +1057,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_spi_e
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1038,6 +1104,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_tim.c
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1083,6 +1151,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_tim_e
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1128,6 +1198,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart.
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1173,6 +1245,8 @@ CMakeFiles/firmware.out.dir/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_uart_
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1223,6 +1297,8 @@ CMakeFiles/firmware.out.dir/source/application.cpp.obj
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
@@ -1270,6 +1346,8 @@ CMakeFiles/firmware.out.dir/source/digitalIO.cpp.obj
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_exti.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_spi_ex.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim.h
+ /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_tim_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_hal_uart_ex.h
  /mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_system.h
