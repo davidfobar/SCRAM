@@ -1,5 +1,0 @@
-(fp_lib_table
-  (version 7)
-  (lib (name "BMA400")(type "KiCad")(uri "${KIPRJMOD}/BMA400")(options "")(descr ""))
-  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/Library.pretty")(options "")(descr ""))
-)
