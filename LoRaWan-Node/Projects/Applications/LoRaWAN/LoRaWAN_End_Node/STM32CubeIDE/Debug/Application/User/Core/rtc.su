@@ -1,0 +1,3 @@
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/rtc.c:30:6:MX_RTC_Init	56	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/rtc.c:84:6:HAL_RTC_MspInit	72	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/rtc.c:118:6:HAL_RTC_MspDeInit	8	static

@@ -1,0 +1,15 @@
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:1116:17:RCC_PLL_GetFreqDomain_P	0	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:1166:17:RCC_PLL_GetFreqDomain_Q	0	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:114:19:HAL_RCCEx_PeriphCLKConfig	16	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:346:6:HAL_RCCEx_GetPeriphCLKConfig	0	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:417:10:HAL_RCCEx_GetPeriphCLKFreq	8	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:929:6:HAL_RCCEx_WakeUpStopCLKConfig	0	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:943:6:HAL_RCCEx_EnableLSECSS	0	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:953:6:HAL_RCCEx_DisableLSECSS	0	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:969:6:HAL_RCCEx_EnableLSECSS_IT	0	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:1004:13:HAL_RCCEx_LSECSS_Callback	0	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:989:6:HAL_RCCEx_LSECSS_IRQHandler	8	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:1019:6:HAL_RCCEx_EnableLSCO	32	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:1057:6:HAL_RCCEx_DisableLSCO	8	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:1084:6:HAL_RCCEx_EnableMSIPLLMode	0	static
+C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_rcc_ex.c:1094:6:HAL_RCCEx_DisableMSIPLLMode	0	static
