@@ -1,0 +1,13 @@
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:4:6:Enable_Memory_CS	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:8:6:Disable_Memory_CS	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:13:6:Enable_Bias_CS	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:17:6:Disable_Bias_CS	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:22:6:Status_LED_Off	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:26:6:Status_LED_On	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:31:6:Enable_Anneal_LED	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:35:6:Disable_Anneal_LED	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:40:6:Enable_Bias	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:44:6:Disable_Bias	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:49:6:Enable_Stim_LED	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:53:6:Disable_Stim_LED	8	static
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c:57:6:testGPIO	8	static

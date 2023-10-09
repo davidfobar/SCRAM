@@ -5,12 +5,15 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.c \
 ../Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.c 
 
 OBJS += \
+./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.o \
 ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.o 
 
 C_DEPS += \
+./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.d \
 ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.d 
 
 
@@ -21,7 +24,7 @@ Drivers/BSP/STM32WLxx_Nucleo/%.o Drivers/BSP/STM32WLxx_Nucleo/%.su Drivers/BSP/S
 clean: clean-Drivers-2f-BSP-2f-STM32WLxx_Nucleo
 
 clean-Drivers-2f-BSP-2f-STM32WLxx_Nucleo:
-	-$(RM) ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.cyclo ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.d ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.o ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.su
+	-$(RM) ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.cyclo ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.d ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.o ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.su ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.cyclo ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.d ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.o ./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.su
 
 .PHONY: clean-Drivers-2f-BSP-2f-STM32WLxx_Nucleo
 

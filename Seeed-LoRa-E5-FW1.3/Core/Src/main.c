@@ -22,6 +22,7 @@
 #include "app_lorawan.h"
 #include "spi.h"
 #include "gpio.h"
+#include "stm32wlxx_nucleo.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -102,6 +103,8 @@ int main(void)
     MX_LoRaWAN_Process();
 
     /* USER CODE BEGIN 3 */
+    testGPIO();
+    HAL_Delay(500);
   }
   /* USER CODE END 3 */
 }

@@ -21,6 +21,7 @@
 "./Core/Src/usart.o"
 "./Core/Src/usart_if.o"
 "./Core/Startup/startup_stm32wle5jcix.o"
+"./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo.o"
 "./Drivers/BSP/STM32WLxx_Nucleo/stm32wlxx_nucleo_radio.o"
 "./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal.o"
 "./Drivers/STM32WLxx_HAL_Driver/Src/stm32wlxx_hal_adc.o"

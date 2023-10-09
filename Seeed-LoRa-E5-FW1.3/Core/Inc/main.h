@@ -68,8 +68,8 @@ void Error_Handler(void);
 #define Memory_CS_GPIO_Port GPIOB
 #define Bias_CS_Pin GPIO_PIN_10
 #define Bias_CS_GPIO_Port GPIOA
-#define LED2_Pin GPIO_PIN_5
-#define LED2_GPIO_Port GPIOB
+#define Status_LED_Pin GPIO_PIN_5
+#define Status_LED_GPIO_Port GPIOB
 #define Anneal_Enable_Pin GPIO_PIN_0
 #define Anneal_Enable_GPIO_Port GPIOA
 #define Battery_Monitor_ADC_Pin GPIO_PIN_13
@@ -80,8 +80,6 @@ void Error_Handler(void);
 #define Bias_Enable_GPIO_Port GPIOA
 #define Stim_Enable_Pin GPIO_PIN_2
 #define Stim_Enable_GPIO_Port GPIOA
-#define DBG2_Pin GPIO_PIN_10
-#define DBG2_GPIO_Port GPIOB
 #define RF_CTRL1_Pin GPIO_PIN_4
 #define RF_CTRL1_GPIO_Port GPIOA
 #define RF_CTRL2_Pin GPIO_PIN_5
