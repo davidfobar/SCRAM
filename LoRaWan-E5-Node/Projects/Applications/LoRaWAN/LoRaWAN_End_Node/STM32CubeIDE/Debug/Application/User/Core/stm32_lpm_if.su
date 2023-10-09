@@ -1,6 +1,0 @@
-C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/stm32_lpm_if.c:79:6:PWR_EnterOffMode	0	static
-C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/stm32_lpm_if.c:86:6:PWR_ExitOffMode	0	static
-C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/stm32_lpm_if.c:93:6:PWR_EnterStopMode	8	static
-C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/stm32_lpm_if.c:146:6:PWR_ExitSleepMode	8	static
-C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/stm32_lpm_if.c:111:6:PWR_ExitStopMode	8	static
-C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/stm32_lpm_if.c:130:6:PWR_EnterSleepMode	8	static

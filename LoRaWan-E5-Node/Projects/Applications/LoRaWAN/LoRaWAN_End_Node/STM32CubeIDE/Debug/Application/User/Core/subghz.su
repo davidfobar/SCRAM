@@ -1,3 +1,0 @@
-C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/subghz.c:30:6:MX_SUBGHZ_Init	8	static
-C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/subghz.c:51:6:HAL_SUBGHZ_MspInit	16	static
-C:/Users/david.fobar/Documents/GitHub/SCRAM/LoRaWan-E5-Node/Projects/Applications/LoRaWAN/LoRaWAN_End_Node/Core/Src/subghz.c:68:6:HAL_SUBGHZ_MspDeInit	8	static
