@@ -435,7 +435,7 @@ void LoRaWAN_Init(void)
 
 /* USER CODE BEGIN PB_Callbacks */
 
-void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+/*void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
   switch (GPIO_Pin)
   {
@@ -449,7 +449,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
     default:
       break;
   }
-}
+}*/
 
 /* USER CODE END PB_Callbacks */
 

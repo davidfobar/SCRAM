@@ -1,6 +1,5 @@
 ../Drivers/CMSIS/Include/core_cm4.h:1933:34:__NVIC_SystemReset	4	static,ignoring_inline_asm
 ../LoRaWAN/App/lora_app.c:348:6:LoRaWAN_Init	32	static
-../LoRaWAN/App/lora_app.c:438:6:HAL_GPIO_EXTI_Callback	16	static
 ../LoRaWAN/App/lora_app.c:461:13:OnRxData	56	static
 ../LoRaWAN/App/lora_app.c:542:13:SendTxData	80	static
 ../LoRaWAN/App/lora_app.c:655:13:OnTxTimerEvent	16	static

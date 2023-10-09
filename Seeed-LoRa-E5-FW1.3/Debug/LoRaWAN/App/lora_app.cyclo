@@ -1,6 +1,5 @@
 ../Drivers/CMSIS/Include/core_cm4.h:1933:34:__NVIC_SystemReset	1
 ../LoRaWAN/App/lora_app.c:348:6:LoRaWAN_Init	2
-../LoRaWAN/App/lora_app.c:438:6:HAL_GPIO_EXTI_Callback	2
 ../LoRaWAN/App/lora_app.c:461:13:OnRxData	15
 ../LoRaWAN/App/lora_app.c:542:13:SendTxData	10
 ../LoRaWAN/App/lora_app.c:655:13:OnTxTimerEvent	1
