@@ -94,7 +94,7 @@ extern "C" {
 /*!
  * App/Join server IEEE EUI (big endian)
  */
-#define LORAWAN_JOIN_EUI                                   00,00,00,00,00,00,00,00
+#define LORAWAN_JOIN_EUI                                   A1,2C,C3,36,5B,16,77,B1
 
 /*!
  * Device address on the network (big endian)
@@ -105,12 +105,12 @@ extern "C" {
 /*!
  * Application root key
  */
-#define LORAWAN_APP_KEY                                    9B,0C,9A,82,E6,74,A5,11,B9,E5,26,A9,11,87,EB,84
+#define LORAWAN_APP_KEY                                    B5,8A,57,FC,08,91,42,4D,66,DB,AF,B1,B9,7A,27,FF
 
 /*!
  * Network root key
  */
-#define LORAWAN_NWK_KEY                                    8B,0C,9A,82,E6,74,A5,11,B9,E5,26,A9,11,87,EB,84
+#define LORAWAN_NWK_KEY                                    00,00,00,00,00,00,00,00,00,00,00,00,00,00,00,00
 
 /*!
  * Forwarding Network session key
