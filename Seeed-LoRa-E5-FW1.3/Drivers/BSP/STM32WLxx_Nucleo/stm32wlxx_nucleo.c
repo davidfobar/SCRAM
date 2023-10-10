@@ -93,5 +93,3 @@ void testGPIO(void) {
 
 }
 
-
-

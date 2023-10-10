@@ -92,7 +92,8 @@ int16_t SYS_GetTemperatureLevel(void);
 uint16_t SYS_GetBatteryLevel(void);
 
 /* USER CODE BEGIN EFP */
-
+uint32_t ADC_ReadChannels(uint32_t channel);
+uint32_t ADC_ReadChannel(uint32_t channel, uint32_t samplingTime);
 /* USER CODE END EFP */
 
 #ifdef __cplusplus

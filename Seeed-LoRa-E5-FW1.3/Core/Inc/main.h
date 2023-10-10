@@ -87,6 +87,9 @@ void Error_Handler(void);
 
 /* USER CODE BEGIN Private defines */
 
+#define Battery_Monitor_ADC_Channel ADC_CHANNEL_0
+#define SiPM_Temp_ADC_Channel ADC_CHANNEL_2
+#define SiPM_Signal_ADC_Channel ADC_CHANNEL_3
 /* USER CODE END Private defines */
 
 #ifdef __cplusplus

@@ -70,7 +70,7 @@ typedef enum TxEventType_e
 /* Private define ------------------------------------------------------------*/
 /**
   * LEDs period value of the timer in ms
-  */
+  */uint32_t ADC_ReadChannels(uint32_t channel);
 #define LED_PERIOD_TIME 500
 
 /**
