@@ -1,3 +1,0 @@
-/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/build/CMakeFiles/firmware.out.dir
-/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/build/CMakeFiles/edit_cache.dir
-/mnt/c/Users/david.fobar/Documents/GitHub/SCRAM/firmware/build/CMakeFiles/rebuild_cache.dir
