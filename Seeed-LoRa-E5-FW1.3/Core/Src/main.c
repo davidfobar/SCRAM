@@ -22,8 +22,6 @@
 #include "app_lorawan.h"
 #include "spi.h"
 #include "gpio.h"
-#include "stm32wlxx_nucleo.h"
-#include "adc_if.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */

@@ -66,7 +66,7 @@ extern ADC_HandleTypeDef hadc;
   * @param channel channel number to read
   * @return adc measured level value
   */
-uint32_t ADC_ReadChannels(uint32_t channel);
+static uint32_t ADC_ReadChannels(uint32_t channel);
 
 /* USER CODE BEGIN PFP */
 
@@ -179,11 +179,7 @@ uint16_t SYS_GetBatteryLevel(void)
 
 /* USER CODE END PrFD */
 
-uint32_t ADC_ReadChannels(uint32_t channel){
-	return ADC_ReadChannel(channel, 0);
-}
-
-uint32_t ADC_ReadChannel(uint32_t channel, uint32_t samplingTime)
+static uint32_t ADC_ReadChannels(uint32_t channel)
 {
   /* USER CODE BEGIN ADC_ReadChannels_1 */
 
@@ -202,10 +198,7 @@ uint32_t ADC_ReadChannel(uint32_t channel, uint32_t samplingTime)
   /* Configure Regular Channel */
   sConfig.Channel = channel;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-
-  if (samplingTime > 0) {sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;}
-  else {sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;}
-
+  sConfig.SamplingTime = ADC_SAMPLINGTIME_COMMON_1;
   if (HAL_ADC_ConfigChannel(&hadc, &sConfig) != HAL_OK)
   {
     Error_Handler();
