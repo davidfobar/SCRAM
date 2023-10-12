@@ -23,7 +23,6 @@
 #include "lora_app.h"
 #include "sys_app.h"
 #include "stm32_seq.h"
-#include "adc_if.h"
 
 /* USER CODE BEGIN Includes */
 
@@ -85,18 +84,6 @@ void MX_LoRaWAN_Process(void)
   /* USER CODE END MX_LoRaWAN_Process_1 */
   UTIL_SEQ_Run(UTIL_SEQ_DEFAULT);
   /* USER CODE BEGIN MX_LoRaWAN_Process_2 */
-
-  //testGPIO();
-  uint32_t adcVal = 0;
-  Enable_Bias_CS();
-  adcVal = ADC_ReadChannel(Battery_Monitor_ADC_Channel, 1);
-  Disable_Bias_CS();
-  APP_LOG(TS_OFF, VLEVEL_M,"== Battery Monitor ADC: %i \r\n", adcVal);
-  adcVal = ADC_ReadChannel(SiPM_Temp_ADC_Channel, 1);
-  APP_LOG(TS_OFF, VLEVEL_M,"== SiPM Temp ADC: %i \r\n", adcVal);
-  adcVal = ADC_ReadChannel(SiPM_Signal_ADC_Channel, 1);
-  APP_LOG(TS_OFF, VLEVEL_M,"== SiPM Signal ADC: %i \r\n", adcVal);
-  HAL_Delay(500);
 
   /* USER CODE END MX_LoRaWAN_Process_2 */
 }

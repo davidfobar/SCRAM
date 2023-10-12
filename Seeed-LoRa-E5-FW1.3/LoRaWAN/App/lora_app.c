@@ -70,7 +70,7 @@ typedef enum TxEventType_e
 /* Private define ------------------------------------------------------------*/
 /**
   * LEDs period value of the timer in ms
-  */uint32_t ADC_ReadChannels(uint32_t channel);
+  */
 #define LED_PERIOD_TIME 500
 
 /**
@@ -424,7 +424,7 @@ void LoRaWAN_Init(void)
   else
   {
     /* USER CODE BEGIN LoRaWAN_Init_3 */
-
+	EnvSensors_Init();
     /* USER CODE END LoRaWAN_Init_3 */
   }
 
@@ -434,22 +434,6 @@ void LoRaWAN_Init(void)
 }
 
 /* USER CODE BEGIN PB_Callbacks */
-
-/*void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
-{
-  switch (GPIO_Pin)
-  {
-    case  BUT1_Pin:
-    	// XXX: always initialized
-      if (EventType == TX_ON_EVENT || 1)
-      {
-        UTIL_SEQ_SetTask((1 << CFG_SEQ_Task_LoRaSendOnTxTimerOrButtonEvent), CFG_SEQ_Prio_0);
-      }
-      break;
-    default:
-      break;
-  }
-}*/
 
 /* USER CODE END PB_Callbacks */
 
@@ -465,9 +449,6 @@ static void OnRxData(LmHandlerAppData_t *appData, LmHandlerRxParams_t *params)
 
   if (params != NULL)
   {
-#if 0   // XXX:
-    HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET); /* LED_BLUE */
-#endif
 
     UTIL_TIMER_Start(&RxLedTimer);
 
@@ -547,9 +528,6 @@ static void SendTxData(void)
   sensor_t sensor_data;
   UTIL_TIMER_Time_t nextTxIn = 0;
 
-#ifdef CAYENNE_LPP
-  uint8_t channel = 0;
-#else
   uint16_t pressure = 0;
   int16_t temperature = 0;
   uint16_t humidity = 0;
@@ -557,7 +535,6 @@ static void SendTxData(void)
   int32_t latitude = 0;
   int32_t longitude = 0;
   uint16_t altitudeGps = 0;
-#endif /* CAYENNE_LPP */
 
   EnvSensors_Read(&sensor_data);
 
@@ -566,22 +543,6 @@ static void SendTxData(void)
 
   AppData.Port = LORAWAN_USER_APP_PORT;
 
-#ifdef CAYENNE_LPP
-  CayenneLppReset();
-  CayenneLppAddBarometricPressure(channel++, sensor_data.pressure);
-  CayenneLppAddTemperature(channel++, sensor_data.temperature);
-  CayenneLppAddRelativeHumidity(channel++, (uint16_t)(sensor_data.humidity));
-
-  if ((LmHandlerParams.ActiveRegion != LORAMAC_REGION_US915) && (LmHandlerParams.ActiveRegion != LORAMAC_REGION_AU915)
-      && (LmHandlerParams.ActiveRegion != LORAMAC_REGION_AS923))
-  {
-    CayenneLppAddDigitalInput(channel++, GetBatteryLevel());
-    CayenneLppAddDigitalOutput(channel++, AppLedStateOn);
-  }
-
-  CayenneLppCopy(AppData.Buffer);
-  AppData.BufferSize = CayenneLppGetSize();
-#else  /* not CAYENNE_LPP */
   humidity    = (uint16_t)(sensor_data.humidity * 10);            /* in %*10     */
   temperature = (int16_t)(sensor_data.temperature);
   pressure = (uint16_t)(sensor_data.pressure * 100 / 10); /* in hPa / 10 */
@@ -618,14 +579,10 @@ static void SendTxData(void)
   }
 
   AppData.BufferSize = i;
-#endif /* CAYENNE_LPP */
 
   if ((JoinLedTimer.IsRunning) && (LmHandlerJoinStatus() == LORAMAC_HANDLER_SET))
   {
     UTIL_TIMER_Stop(&JoinLedTimer);
-#if 0   // XXX:
-    HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET); /* LED_RED */
-#endif
   }
 
   status = LmHandlerSend(&AppData, LmHandlerParams.IsTxConfirmed, false);
@@ -667,26 +624,11 @@ static void OnTxTimerEvent(void *context)
 }
 
 /* USER CODE BEGIN PrFD_LedEvents */
-static void OnTxTimerLedEvent(void *context)
-{
-#if 0	// XXX: No LED available
-  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET); /* LED_GREEN */
-#endif
-}
+static void OnTxTimerLedEvent(void *context) { }
 
-static void OnRxTimerLedEvent(void *context)
-{
-#if 0   // XXX: No LED available
-  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET); /* LED_BLUE */
-#endif
-}
+static void OnRxTimerLedEvent(void *context) { }
 
-static void OnJoinTimerLedEvent(void *context)
-{
-#if 0   // XXX: No LED available
-  HAL_GPIO_TogglePin(LED3_GPIO_Port, LED3_Pin); /* LED_RED */
-#endif
-}
+static void OnJoinTimerLedEvent(void *context) { }
 
 /* USER CODE END PrFD_LedEvents */
 
@@ -698,9 +640,6 @@ static void OnTxData(LmHandlerTxParams_t *params)
     /* Process Tx event only if its a mcps response to prevent some internal events (mlme) */
     if (params->IsMcpsConfirm != 0)
     {
-#if 0	// XXX: No LED available
-      HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET); /* LED_GREEN */
-#endif
       UTIL_TIMER_Start(&TxLedTimer);
 
       APP_LOG(TS_OFF, VLEVEL_M, "\r\n###### ========== MCPS-Confirm =============\r\n");
@@ -731,9 +670,6 @@ static void OnJoinRequest(LmHandlerJoinParams_t *joinParams)
       UTIL_SEQ_SetTask((1 << CFG_SEQ_Task_LoRaStoreContextEvent), CFG_SEQ_Prio_0);
 
       UTIL_TIMER_Stop(&JoinLedTimer);
-#if 0   // XXX:
-      HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET); /* LED_RED */
-#endif
 
       APP_LOG(TS_OFF, VLEVEL_M, "\r\n###### = JOINED = ");
       if (joinParams->Mode == ACTIVATION_TYPE_ABP)
@@ -881,11 +817,6 @@ static void OnSystemReset(void)
 static void StopJoin(void)
 {
   /* USER CODE BEGIN StopJoin_1 */
-#if 0   // XXX: No LED available
-  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_SET); /* LED_BLUE */
-  HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_SET); /* LED_RED */
-  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_SET); /* LED_GREEN */
-#endif
 
   /* USER CODE END StopJoin_1 */
 
@@ -928,11 +859,7 @@ static void OnStopJoinTimerEvent(void *context)
     UTIL_SEQ_SetTask((1 << CFG_SEQ_Task_LoRaStopJoinEvent), CFG_SEQ_Prio_0);
   }
   /* USER CODE BEGIN OnStopJoinTimerEvent_Last */
-#if 0   // XXX: No LED available
-  HAL_GPIO_WritePin(LED1_GPIO_Port, LED1_Pin, GPIO_PIN_RESET); /* LED_BLUE */
-  HAL_GPIO_WritePin(LED3_GPIO_Port, LED3_Pin, GPIO_PIN_RESET); /* LED_RED */
-  HAL_GPIO_WritePin(LED2_GPIO_Port, LED2_Pin, GPIO_PIN_RESET); /* LED_GREEN */
-#endif
+
   /* USER CODE END OnStopJoinTimerEvent_Last */
 }
 
