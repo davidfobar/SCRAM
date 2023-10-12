@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "LoRa-E5")(type "Legacy")(uri "${KIPRJMOD}/libraries/LoRa-E5_kicad/LoRa-E5.lib")(options "")(descr ""))
+  (lib (name "BMA400")(type "KiCad")(uri "${KIPRJMOD}/libraries/BMA400/BMA400.kicad_sym")(options "")(descr ""))
+)
