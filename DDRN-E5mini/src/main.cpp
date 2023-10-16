@@ -34,6 +34,9 @@ LoRaWANNode node(&radio, &US915);
 void setup() {
   Serial.begin(115200);
 
+  // setup the sensors
+  setupSensors();
+
   // initialize SX1278 with default settings
   Serial.print(F("[SX1278] Initializing ... "));
   radio.setRfSwitchTable(rfswitch_pins, rfswitch_table);

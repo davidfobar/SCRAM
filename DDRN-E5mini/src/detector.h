@@ -3,6 +3,14 @@
 
 #include "Arduino.h"
 
+#define TEMP_ADC_PIN PB3
+#define SIPM_ADC_PIN PB3
+#define ANNEAL_ENABLE_PIN PA0
+#define BIAS_ENABLE_PIN PA3
+#define STIM_ENABLE_PIN PA2
+#define BIAS_CS_PIN PA10
+
+
 class Detector {
   public:
     Detector();

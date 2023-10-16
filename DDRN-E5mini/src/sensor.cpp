@@ -1,8 +1,5 @@
 #include "sensor.h"
 
-extern Adafruit_BMP3XX bmp390;
-extern Adafruit_ADXL343 adxl343;
-
 /** Global variable to determine which interrupt(s) are enabled on the ADXL343. */
 int_config g_int_config_enabled = { 0 };
 
@@ -13,7 +10,11 @@ int_config g_int_config_map = { 0 };
 float seaLevelPressure = 1013.25;
 
 void setupSensors() {
-  if (!bmp390.begin_I2C()) {
+
+  //battery monitor
+  pinMode(BATTERY_MONITOR_ADC_PIN, INPUT);
+
+  if (!bmp390.begin_I2C(DEFAULT_BMP390_ADDRESS, &Wire)) {
     Serial.println("Could not find a valid BMP3 sensor, check wiring!");
     while (1);
   }
