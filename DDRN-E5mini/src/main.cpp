@@ -9,6 +9,7 @@
 STM32WLx radio = new STM32WLx_Module();
 Adafruit_BMP3XX bmp390;
 Adafruit_ADXL343 adxl343(ACCEL_SENSOR_ID);
+Detector detector;
 
 // set RF switch configuration for Nucleo WL55JC1
 // NOTE: other boards may be different!
