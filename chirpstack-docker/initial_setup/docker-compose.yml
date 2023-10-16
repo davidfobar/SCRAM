@@ -1,9 +1,0 @@
-version: "3"
-
-services:
-  initial-setup:
-    build:
-      context: ./script
-      dockerfile: Dockerfile
-    volumes:
-      - ./configuration:/configuration
