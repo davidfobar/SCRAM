@@ -53,6 +53,7 @@ void setup() {
   }
 
   #ifdef INITIAL_CONNECTION
+    delay(1000);
     node.wipe();
   #endif
 
