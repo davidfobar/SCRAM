@@ -43,6 +43,10 @@ long degreesToSteps(float degrees) {
   return degrees * GRATING_STEPS_PER_REVOLUTION * GRATING_MICROSTEPS_PER_STEP * GRATING_GEAR_RATIO / 360;
 }
 
+long wavelengthToSteps(float wavelength) {
+  return (long)(2.239e-04 * pow(wavelength, 3) -3.209e-01 * pow(wavelength, 2) + 3.449e+02 * wavelength -2.984e+04);
+}
+
 void sleepGrating() {
   digitalWrite(GRATING_SLEEP_PIN, LOW);
 }
@@ -171,15 +175,8 @@ void enterAutomationMode(){
         String wavelengthString = command.substring(2);
         float wavelength = wavelengthString.toFloat();
 
-        //calculate the number of steps to move
-        // I have a third order polynomial fit for the number of steps to move as a function of wavelength
-        //a = 2.434e-4
-        //b = -0.3401
-        //c = 347.63
-        //d = -27753
-
         //calculate the step position of that wavelength
-        long steps_pos = 0.0002*pow(wavelength, 3) - 0.3401*pow(wavelength, 2) + 347.63*wavelength - 27753;
+        long steps_pos = wavelengthToSteps(wavelength);
 
         //determine the steps to move from the current position
         long steps = steps_pos - currentGratingPosition;
@@ -395,15 +392,9 @@ int processCommand() {
       Serial.print(wavelength);
       Serial.println(" nm");
 
-      //calculate the number of steps to move
-      // I have a third order polynomial fit for the number of steps to move as a function of wavelength
-      //a = 2.434e-4
-      //b = -0.3401
-      //c = 347.63
-      //d = -27753
 
       //calculate the step position of that wavelength
-      long steps_pos = 0.0002*pow(wavelength, 3) - 0.3401*pow(wavelength, 2) + 347.63*wavelength - 27753;
+      long steps_pos = wavelengthToSteps(wavelength);
 
       //determine the steps to move from the current position
       long steps = steps_pos - currentGratingPosition;

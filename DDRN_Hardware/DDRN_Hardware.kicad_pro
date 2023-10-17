@@ -389,7 +389,10 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "LoRa-E5",
+      "MAX1932"
+    ]
   },
   "meta": {
     "filename": "DDRN_Hardware.kicad_pro",

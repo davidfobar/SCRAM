@@ -17,6 +17,7 @@ extern Adafruit_ADXL343 adxl343;
 #define DEFAULT_BMP390_ADDRESS 0x77
 
 #define BATTERY_MONITOR_ADC_PIN PB13
+#define BATTERY_MONITOR_ENABLE_PIN PB10
 
 void setupSensors();
 void adxl343Interrupt();

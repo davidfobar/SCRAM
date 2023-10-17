@@ -7,12 +7,12 @@ Num - Brd USE - STM32WLE5JC Label - E5-HF PIN  - Use                      - AD2 
 6   - RX        - PB7             - 9          - USB RX (USART1)
 7   - TX        - PB6             - 10         - USB TX (USART1)
 8   - D0        - PA0             - 23         - Anneal Enable            - 0
-9   - RX1       - PC0             - 13         - 
+9   - RX1       - PC0             - 13         - Accelerometer Interrupt
 10  - TX1       - PC1             - 12         - MOSI (SPI2)
 11  - RX2       - PA3             - 18         - Bias Enable              - 1
 12  - TX2       - PA2             - 19         - Stim Enable              - 2
 13  - D9        - PA9             - 21         - SCK (SPI2)
-14  - D10       - PB10            - 20         - 
+14  - D10       - PB10            - 20         - Battery Monitor Enable
 15  - SCK       - PB13            - 24         - Battery Voltage (ADC)
 16  - NSS       - PB9             - 25         - Memory CS                - 3
 17  - MISO      - PB14            - 26         - MISO (SPI2)
