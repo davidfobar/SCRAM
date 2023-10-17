@@ -18,10 +18,10 @@ void setupSensors() {
     Serial.println("Could not find a valid BMP3 sensor, check wiring!");
     while (1);
   }
-  if (!adxl343.begin()){
-    Serial.println("Could not find a valid ADXL343 sensor, check wiring!");
-    while (1);
-  }
+  //if (!adxl343.begin()){
+  //  Serial.println("Could not find a valid ADXL343 sensor, check wiring!");
+  //  while (1);
+  //}
 
   adxl343.setRange(ADXL343_RANGE_16_G);
   pinMode(ACCEL_INT_PIN, INPUT);
