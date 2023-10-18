@@ -119,8 +119,8 @@ int main(void)
   {
   	temperature = envSensors.getTemperature();
   	temperature *= 100;
-  	APP_LOG(TS_ON, VLEVEL_M, "temp: %d.%d \r\n", (uint8_t)temperature/100, (uint8_t)temperature%100);
-  	HAL_Delay(1000);
+  	APP_LOG(TS_ON, VLEVEL_M, "temp: %u.%u \r\n", (uint8_t)temperature/100, (uint8_t)temperature%100);
+  	HAL_Delay(2000);
     /* USER CODE END WHILE */
     //MX_LoRaWAN_Process();
 

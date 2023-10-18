@@ -135,11 +135,8 @@ bool BMP390::performReading(void) {
 
 // Our hardware interface functions
 static void delay_usec(uint32_t us, void *intf_ptr){
-	volatile uint32_t us_count = us * (HAL_RCC_GetHCLKFreq() / 1000000U);
-
-	while (us_count) {
-		us_count--;
-	}
+	uint8_t ms = us/1000;
+	HAL_Delay(ms);
 }
 
 bool BMP390::setTemperatureOversampling(uint8_t oversample) {
