@@ -3,7 +3,7 @@
 #include "sensor.h"
 #include "detector.h"
 
-#define INITIAL_CONNECTION 
+//#define INITIAL_CONNECTION 
 
 // no need to configure pins, signals are routed to the radio internally
 STM32WLx radio = new STM32WLx_Module();
@@ -60,12 +60,12 @@ void setup() {
   // application identifier - pre-LoRaWAN 1.1.0, this was called appEUI
   // when adding new end device in TTN, you will have to enter this number
   // you can pick any number you want, but it has to be unique
-  uint64_t joinEUI = 0x0000000000001234;
+  uint64_t joinEUI = 0x0000000000001234; //0000000000001234
 
   // device identifier - this number can be anything
   // when adding new end device in TTN, you can generate this number,
   // or you can set any value you want, provided it is also unique
-  uint64_t devEUI = 0x0080e115003bb1e0;
+  uint64_t devEUI = 0x0080e115003bb1e0; //0080e115003bb1e0
 
   // select some encryption keys which will be used to secure the communication
   // there are two of them - network key and application key
