@@ -34,6 +34,7 @@ CPP_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Drivers/BSP/Environment_Sensors \
 Drivers/BSP/STM32WLxx_Nucleo \
 Drivers/STM32WLxx_HAL_Driver/Src \
 LoRaWAN/App \

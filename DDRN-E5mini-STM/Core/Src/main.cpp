@@ -17,13 +17,16 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
+#include <env_sensors.hpp>
 #include "main.h"
+#include "i2c.h"
 #include "app_lorawan.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "sys_app.h"
+#include "env_sensors.hpp"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -33,6 +36,7 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -86,16 +90,39 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_LoRaWAN_Init();
+  MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
+/*
+  APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");
 
+  // Try to communicate with the BMP390 sensor
+		uint8_t bmp390_device_id;
+		uint8_t bmp390_device_id_register = 0x00;
+
+    ret = HAL_I2C_Mem_Read(&hi2c2, BMP390_I2C_ADDRESS, bmp390_device_id_register, I2C_MEMADD_SIZE_8BIT, &bmp390_device_id, 1, HAL_MAX_DELAY);
+    if ( ret != HAL_OK ) {
+    	APP_LOG(TS_ON, VLEVEL_M, "BMP390 memory read failed \r\n");
+    } else if ( bmp390_device_id == 0x50 ) {
+    	APP_LOG(TS_ON, VLEVEL_M, "BMP390 memory read success \r\n");
+    } else {
+    	APP_LOG(TS_ON, VLEVEL_M, "Incorrect device ID: %x \r\n", bmp390_device_id);
+    }
+*/
+
+  EnvionmentSensors envSensors(&hi2c2);
+  float temperature = -99;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
+  	temperature = envSensors.getTemperature();
+  	temperature *= 100;
+  	APP_LOG(TS_ON, VLEVEL_M, "temp: %d.%d \r\n", (uint8_t)temperature/100, (uint8_t)temperature%100);
+  	HAL_Delay(1000);
     /* USER CODE END WHILE */
-    MX_LoRaWAN_Process();
+    //MX_LoRaWAN_Process();
 
     /* USER CODE BEGIN 3 */
   }
