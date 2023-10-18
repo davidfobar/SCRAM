@@ -1,3 +1,0 @@
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:3:1:EnvionmentSensors::EnvionmentSensors(I2C_HandleTypeDef*)	2
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:16:7:float EnvionmentSensors::getPressure()	1
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:20:7:float EnvionmentSensors::getTemperature()	1

@@ -13,12 +13,14 @@
 
 #define BMP390_I2C_ADDRESS 0x77<<1
 
+#define DEFAULT_SEALEVELPRESSURE_HPA (1013.25)
+
 class BMP390{
 	public:
 		BMP390(I2C_HandleTypeDef *pntr_hi2c);
 		float readTemperature(); //celsius
 		float readPressure(); //pascals
-		float getAltitude(float seaLevel);
+		float getAltitude(float seaLevel); //seaLevel is in units of
 		bool performReading();
 		bool init();
 

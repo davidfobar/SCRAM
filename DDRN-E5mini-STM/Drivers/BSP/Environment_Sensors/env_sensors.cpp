@@ -20,3 +20,7 @@ float EnvionmentSensors::getPressure(){
 float EnvionmentSensors::getTemperature(){
 	return bmp.readTemperature();
 }
+
+float EnvionmentSensors::getAltitude(float seaLevel){
+  return bmp.getAltitude(seaLevel);
+}

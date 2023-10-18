@@ -1,4 +1,4 @@
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_rcc.h:1257:22:void LL_RCC_LSE_SetDriveCapability(uint32_t)	16	static
-../Core/Src/main.cpp:68:5:int main()	280	static
-../Core/Src/main.cpp:136:6:void SystemClock_Config()	112	static
-../Core/Src/main.cpp:188:6:void Error_Handler()	4	static,ignoring_inline_asm
+../Core/Src/main.cpp:68:5:int main()	288	static
+../Core/Src/main.cpp:147:6:void SystemClock_Config()	112	static
+../Core/Src/main.cpp:199:6:void Error_Handler()	4	static,ignoring_inline_asm

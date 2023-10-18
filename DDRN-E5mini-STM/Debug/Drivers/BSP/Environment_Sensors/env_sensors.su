@@ -1,3 +1,4 @@
 ../Drivers/BSP/Environment_Sensors/env_sensors.cpp:3:1:EnvionmentSensors::EnvionmentSensors(I2C_HandleTypeDef*)	16	static
 ../Drivers/BSP/Environment_Sensors/env_sensors.cpp:16:7:float EnvionmentSensors::getPressure()	16	static
 ../Drivers/BSP/Environment_Sensors/env_sensors.cpp:20:7:float EnvionmentSensors::getTemperature()	16	static
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:24:7:float EnvionmentSensors::getAltitude(float)	16	static

@@ -1,6 +1,6 @@
 ../Drivers/BSP/Environment_Sensors/bmp3.c:699:8:bmp3_init	24	static
 ../Drivers/BSP/Environment_Sensors/bmp3.c:755:8:bmp3_get_regs	72	dynamic
-../Drivers/BSP/Environment_Sensors/bmp3.c:805:8:bmp3_set_regs	72	dynamic
+../Drivers/BSP/Environment_Sensors/bmp3.c:805:8:bmp3_set_regs	64	dynamic
 ../Drivers/BSP/Environment_Sensors/bmp3.c:870:8:bmp3_set_sensor_settings	24	static
 ../Drivers/BSP/Environment_Sensors/bmp3.c:913:8:bmp3_get_sensor_settings	24	static
 ../Drivers/BSP/Environment_Sensors/bmp3.c:942:8:bmp3_set_fifo_settings	24	static

@@ -111,6 +111,8 @@ int main(void)
 
   EnvionmentSensors envSensors(&hi2c2);
   float temperature = -99;
+  float pressure = -99;
+  float altitude = -99;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -119,7 +121,16 @@ int main(void)
   {
   	temperature = envSensors.getTemperature();
   	temperature *= 100;
-  	APP_LOG(TS_ON, VLEVEL_M, "temp: %u.%u \r\n", (uint8_t)temperature/100, (uint8_t)temperature%100);
+
+  	pressure = envSensors.getPressure();
+  	pressure *= 100;
+
+  	altitude = envSensors.getAltitude(1021.56);
+  	altitude *= 100;
+
+  	APP_LOG(TS_ON, VLEVEL_M, "temp: %d.%02d [C]\r\n", (int)temperature / 100, (int)temperature % 100);
+  	APP_LOG(TS_ON, VLEVEL_M, "pressure: %d.%02d [Pa]\r\n", (int)pressure / 100, (int)pressure % 100);
+  	APP_LOG(TS_ON, VLEVEL_M, "altitude: %d.%02d [m?]\r\n", (int)altitude / 100, (int)altitude % 100);
   	HAL_Delay(2000);
     /* USER CODE END WHILE */
     //MX_LoRaWAN_Process();

@@ -9,8 +9,9 @@ class EnvionmentSensors {
 	public:
 		EnvionmentSensors(I2C_HandleTypeDef *pntr_hi2c);
 
-		float getPressure();
-		float getTemperature();
+		float getPressure(); //returns pressure in [Pa]
+		float getTemperature(); //returns temperature in units of [C]
+		float getAltitude(float seaLevel); //returns the estimated altitude provided the SSL air pressure in units of hPA
 
 	private:
 		BMP390 bmp;

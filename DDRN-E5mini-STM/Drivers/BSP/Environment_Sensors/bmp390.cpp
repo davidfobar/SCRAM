@@ -61,6 +61,9 @@ float BMP390::readPressure(void) {
 }
 
 float BMP390::getAltitude(float seaLevel) {
+	if (seaLevel < 0){ //use default sealevel
+	  seaLevel = DEFAULT_SEALEVELPRESSURE_HPA;
+	}
   // Equation taken from BMP180 datasheet (page 16):
   //  http://www.adafruit.com/datasheets/BST-BMP180-DS000-09.pdf
 
@@ -68,7 +71,7 @@ float BMP390::getAltitude(float seaLevel) {
   // at high altitude. See this thread for more information:
   //  http://forums.adafruit.com/viewtopic.php?f=22&t=58064
 
-  float atmospheric = readPressure() / 100.0F;
+  float atmospheric = readPressure() / 100.0F; //convert to units of hPa
   return 44330.0 * (1.0 - std::pow(atmospheric / seaLevel, 0.1903));
 }
 
