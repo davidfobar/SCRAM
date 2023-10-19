@@ -1,6 +1,6 @@
 #include <env_sensors.hpp>
 
-EnvionmentSensors::EnvionmentSensors(I2C_HandleTypeDef *pntr_hi2c) : bmp(pntr_hi2c) {
+EnvionmentSensors::EnvionmentSensors(I2C_HandleTypeDef *pntr_hi2c) : bmp(pntr_hi2c), lsm_accel(pntr_hi2c) {
   if(bmp.init()){
   	APP_LOG(TS_ON, VLEVEL_M, "bmp390 setup valid \r\n");
   } else {

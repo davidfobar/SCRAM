@@ -92,22 +92,6 @@ int main(void)
   MX_LoRaWAN_Init();
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
-/*
-  APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");
-
-  // Try to communicate with the BMP390 sensor
-		uint8_t bmp390_device_id;
-		uint8_t bmp390_device_id_register = 0x00;
-
-    ret = HAL_I2C_Mem_Read(&hi2c2, BMP390_I2C_ADDRESS, bmp390_device_id_register, I2C_MEMADD_SIZE_8BIT, &bmp390_device_id, 1, HAL_MAX_DELAY);
-    if ( ret != HAL_OK ) {
-    	APP_LOG(TS_ON, VLEVEL_M, "BMP390 memory read failed \r\n");
-    } else if ( bmp390_device_id == 0x50 ) {
-    	APP_LOG(TS_ON, VLEVEL_M, "BMP390 memory read success \r\n");
-    } else {
-    	APP_LOG(TS_ON, VLEVEL_M, "Incorrect device ID: %x \r\n", bmp390_device_id);
-    }
-*/
 
   EnvionmentSensors envSensors(&hi2c2);
   float temperature = -99;

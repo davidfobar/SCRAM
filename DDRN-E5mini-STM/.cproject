@@ -43,8 +43,9 @@
 								</option>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.1686710496" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="../Core/Inc"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Environment_Sensors/LSM303"/>
 									<listOptionValue builtIn="false" value="../Drivers/BSP/Detector"/>
-									<listOptionValue builtIn="false" value="../Drivers/BSP/Environment_Sensors"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Environment_Sensors/BMP390"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers/BSP/STM32WLxx_Nucleo}&quot;"/>
 									<listOptionValue builtIn="false" value="../Drivers/STM32WLxx_HAL_Driver/Inc"/>
 									<listOptionValue builtIn="false" value="../Drivers/STM32WLxx_HAL_Driver/Inc/Legacy"/>
@@ -73,6 +74,8 @@
 								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level.1779964076" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
 								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.includepaths.613897251" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="../Core/Inc"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Environment_Sensors/BMP390"/>
+									<listOptionValue builtIn="false" value="../Drivers/BSP/Environment_Sensors/LSM303"/>
 									<listOptionValue builtIn="false" value="../Drivers/BSP/Environment_Sensors"/>
 									<listOptionValue builtIn="false" value="../Drivers/BSP/Detector"/>
 									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/Drivers/BSP/STM32WLxx_Nucleo}&quot;"/>

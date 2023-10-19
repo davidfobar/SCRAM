@@ -33,6 +33,8 @@ CPP_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Drivers/BSP/Environment_Sensors/BMP390 \
+Drivers/BSP/Environment_Sensors/LSM303 \
 Drivers/BSP/Environment_Sensors \
 Drivers/BSP/STM32WLxx_Nucleo \
 Drivers/STM32WLxx_HAL_Driver/Src \
