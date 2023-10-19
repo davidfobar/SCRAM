@@ -3,6 +3,7 @@
 
 #include "sys_app.h"
 #include "bmp390.hpp"
+#include "lsm303_accel.hpp"
 #include "main.h"
 
 class EnvionmentSensors {
@@ -13,8 +14,10 @@ class EnvionmentSensors {
 		float getTemperature(); //returns temperature in units of [C]
 		float getAltitude(float seaLevel); //returns the estimated altitude provided the SSL air pressure in units of hPA
 
+		lsm303AccelData getAccelData();
 	private:
 		BMP390 bmp;
+		LSM303_Accel lsm_accel;
 };
 
 #endif //ENV_SENSORS_H
