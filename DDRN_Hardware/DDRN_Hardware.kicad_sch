@@ -3182,14 +3182,14 @@
     )
   )
 
-  (sheet (at 83.82 17.78) (size 43.18 34.29) (fields_autoplaced)
+  (sheet (at 82.55 26.67) (size 43.18 34.29) (fields_autoplaced)
     (stroke (width 0.1524) (type solid))
     (fill (color 0 0 0 0.0000))
     (uuid 093913dc-1b92-415c-84e5-d20b43b2fcf2)
-    (property "Sheetname" "E5_mini_dev_items" (at 83.82 17.0684 0)
+    (property "Sheetname" "E5_mini_dev_items" (at 82.55 25.9584 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "E5_mini_dev_items.kicad_sch" (at 83.82 52.6546 0)
+    (property "Sheetfile" "E5_mini_dev_items.kicad_sch" (at 82.55 61.5446 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances

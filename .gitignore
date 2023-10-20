@@ -65,4 +65,4 @@ _autosave-*
 *-save.kicad_pcb
 fp-info-cache
 # Allow kicad library files
-!./DDRN_Hardware/**/*.lib
+!DDRN_Hardware/**/*.lib
