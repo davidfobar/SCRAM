@@ -1,7 +1,7 @@
 #include <lsm303_accel.hpp>
 
-LSM303_Accel::LSM303_Accel(I2C_HandleTypeDef *pntr_hi2c) {
-  pntr_hi2c = pntr_hi2c;
+LSM303_Accel::LSM303_Accel(I2C_HandleTypeDef *_pntr_hi2c) {
+  pntr_hi2c = _pntr_hi2c;
 
   // Initialize the raw accel data
   data.x = 0;
@@ -9,32 +9,29 @@ LSM303_Accel::LSM303_Accel(I2C_HandleTypeDef *pntr_hi2c) {
   data.z = 0;
 }
 
-bool LSM303_Accel::write(const uint8_t reg, const uint8_t *data, const uint8_t len){
-  if (HAL_I2C_Mem_Write(pntr_hi2c, lsm303_I2C_addr, reg, I2C_MEMADD_SIZE_8BIT, (uint8_t *)data, len, HAL_MAX_DELAY) != HAL_OK) {
+bool LSM303_Accel::write(const uint8_t reg_location, const uint8_t *data, const uint8_t len){
+  if (HAL_I2C_Mem_Write((I2C_HandleTypeDef *) pntr_hi2c, LSM303_ADDRESS_ACCEL, reg_location, I2C_MEMADD_SIZE_8BIT, (uint8_t *)data, len, HAL_MAX_DELAY) != HAL_OK) {
+    // Error handling: You can handle write errors here
+  	APP_LOG(TS_ON, VLEVEL_M,"Error writing \r\n");
+    return false;
+  }
+  return true;
+}
+
+bool LSM303_Accel::read(const uint8_t reg_location, uint8_t *data, const uint8_t len){
+  if (HAL_I2C_Mem_Read((I2C_HandleTypeDef *) pntr_hi2c, LSM303_ADDRESS_ACCEL, reg_location, I2C_MEMADD_SIZE_8BIT, (uint8_t *)data, len, HAL_MAX_DELAY) != HAL_OK) {
     // Error handling: You can handle write errors here
     return false;
   }
   return true;
 }
 
-bool LSM303_Accel::read(const uint8_t reg, uint8_t *data, const uint8_t len){
-  if (HAL_I2C_Mem_Read(pntr_hi2c, lsm303_I2C_addr, reg, I2C_MEMADD_SIZE_8BIT, (uint8_t *)data, len, HAL_MAX_DELAY) != HAL_OK) {
-    // Error handling: You can handle write errors here
-    return false;
-  }
-  return true;
-}
-
-bool LSM303_Accel::init(uint8_t i2c_address) {
-  lsm303_I2C_addr = i2c_address;
+bool LSM303_Accel::init() {
   uint8_t len = 1;
 
-  APP_LOG(TS_ON, VLEVEL_M, "attempt to connect lsm303: %x\r\n", lsm303_I2C_addr);
   uint8_t reg_data = 0x57; // Enable the accelerometer (100Hz)
   if ( write(LSM303_REGISTER_ACCEL_CTRL_REG1_A, &reg_data, len) ){
-    APP_LOG(TS_ON, VLEVEL_M, "wrote to lsm303\r\n");
     if ( read(LSM303_REGISTER_ACCEL_WHO_AM_I, &reg_data, len) ) {
-      APP_LOG(TS_ON, VLEVEL_M, "read from lsm303: %d\r\n", reg_data);
       if (reg_data == 0x33) return true; //confirm that we are talking
     }
   }

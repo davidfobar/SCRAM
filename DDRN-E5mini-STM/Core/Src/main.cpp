@@ -92,8 +92,6 @@ int main(void)
   MX_LoRaWAN_Init();
   MX_I2C2_Init();
   /* USER CODE BEGIN 2 */
-<<<<<<< HEAD
-=======
 
   APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");
 
@@ -108,14 +106,13 @@ int main(void)
     	APP_LOG(TS_ON, VLEVEL_M, "BMP390 memory read success \r\n");
     } else {
     	APP_LOG(TS_ON, VLEVEL_M, "Incorrect device ID: %x \r\n", bmp390_device_id);
-    }
-
->>>>>>> 348dd56 (confirmed STM LoRaWAN)
+    }*/
 
   EnvionmentSensors envSensors(&hi2c2);
+
   float temperature = -99;
   float pressure = -99;
-  float altitude = -99;*/
+  float altitude = -99;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -134,10 +131,15 @@ int main(void)
 
   	APP_LOG(TS_ON, VLEVEL_M, "temp: %d.%02d [C]\r\n", (int)temperature / 100, (int)temperature % 100);
   	APP_LOG(TS_ON, VLEVEL_M, "pressure: %d.%02d [Pa]\r\n", (int)pressure / 100, (int)pressure % 100);
-  	APP_LOG(TS_ON, VLEVEL_M, "altitude: %d.%02d [m?]\r\n", (int)altitude / 100, (int)altitude % 100);
-  	HAL_Delay(2000);*/
+  	APP_LOG(TS_ON, VLEVEL_M, "altitude: %d.%02d [m?]\r\n", (int)altitude / 100, (int)altitude % 100);*/
+
+  	lsm303AccelData a = envSensors.getAccelData();
+  	float ax = a.x*100;
+  	APP_LOG(TS_ON, VLEVEL_M, "ax: %d.%02d [m/s^2]\r\n", (int)ax / 100, (int)ax % 100);
+
+  	HAL_Delay(100);
     /* USER CODE END WHILE */
-    MX_LoRaWAN_Process();
+    //MX_LoRaWAN_Process();
 
     /* USER CODE BEGIN 3 */
   }

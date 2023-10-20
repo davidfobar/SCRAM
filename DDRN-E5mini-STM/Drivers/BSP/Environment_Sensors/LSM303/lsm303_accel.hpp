@@ -4,7 +4,7 @@
 #include "main.h"
 #include "sys_app.h"
 
-#define LSM303_ADDRESS_ACCEL (0x32) //!< I2C address/bits, 0011001x
+#define LSM303_ADDRESS_ACCEL (0x19 << 1) //!< I2C address/bits, 0011001x
 #define GRAVITY_EARTH (9.80665F) /**< Earth's gravity in m/s^2 */
 
 /*!
@@ -87,7 +87,7 @@ class LSM303_Accel {
 public:
   LSM303_Accel(I2C_HandleTypeDef *pntr_hi2c);
 
-  bool init(uint8_t i2c_addr = LSM303_ADDRESS_ACCEL);
+  bool init();
 
   void setRange(lsm303_accel_range_t);
   lsm303_accel_range_t getRange(void);

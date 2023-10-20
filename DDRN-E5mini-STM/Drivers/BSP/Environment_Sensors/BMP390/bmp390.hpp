@@ -7,6 +7,7 @@
 
 #include "bmp3.h"
 #include "main.h"
+#include "sys_app.h"
 
 #ifndef BSP_ENVIRONMENT_SENSORS_BMP390_H_
 #define BSP_ENVIRONMENT_SENSORS_BMP390_H_

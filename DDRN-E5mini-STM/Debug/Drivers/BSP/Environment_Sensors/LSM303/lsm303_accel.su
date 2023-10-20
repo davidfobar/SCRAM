@@ -1,12 +1,12 @@
 ../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:3:1:LSM303_Accel::LSM303_Accel(I2C_HandleTypeDef*)	16	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:12:6:bool LSM303_Accel::write(uint8_t, const uint8_t*, uint8_t)	48	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:20:6:bool LSM303_Accel::read(uint8_t, uint8_t*, uint8_t)	48	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:28:6:bool LSM303_Accel::init(uint8_t)	32	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:44:6:void LSM303_Accel::setRange(lsm303_accel_range_t)	24	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:60:22:lsm303_accel_range_t LSM303_Accel::getRange()	24	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:75:6:void LSM303_Accel::setMode(lsm303_accel_mode_t)	24	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:107:21:lsm303_accel_mode_t LSM303_Accel::getMode()	24	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:142:17:lsm303AccelData LSM303_Accel::getAccelData()	48	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:183:7:float LSM303_Accel::getLSB(lsm303_accel_mode_t)	24	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:244:9:uint8_t LSM303_Accel::getShift(lsm303_accel_mode_t)	24	static
-../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:267:6:void LSM303_Accel::interruptsActiveHigh(bool)	24	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:12:6:bool LSM303_Accel::write(uint8_t, const uint8_t*, uint8_t)	40	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:21:6:bool LSM303_Accel::read(uint8_t, uint8_t*, uint8_t)	40	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:29:6:bool LSM303_Accel::init()	24	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:41:6:void LSM303_Accel::setRange(lsm303_accel_range_t)	24	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:57:22:lsm303_accel_range_t LSM303_Accel::getRange()	24	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:72:6:void LSM303_Accel::setMode(lsm303_accel_mode_t)	24	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:104:21:lsm303_accel_mode_t LSM303_Accel::getMode()	24	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:139:17:lsm303AccelData LSM303_Accel::getAccelData()	48	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:180:7:float LSM303_Accel::getLSB(lsm303_accel_mode_t)	24	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:241:9:uint8_t LSM303_Accel::getShift(lsm303_accel_mode_t)	24	static
+../Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.cpp:264:6:void LSM303_Accel::interruptsActiveHigh(bool)	24	static

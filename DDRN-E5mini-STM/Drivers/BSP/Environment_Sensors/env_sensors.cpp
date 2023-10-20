@@ -1,7 +1,15 @@
 #include <env_sensors.hpp>
 
-EnvionmentSensors::EnvionmentSensors(I2C_HandleTypeDef *pntr_hi2c) : bmp(pntr_hi2c), lsm_accel(pntr_hi2c) {
-  if(bmp.init()){
+EnvionmentSensors::EnvionmentSensors(I2C_HandleTypeDef *pntr_hi2c) : lsm_accel(pntr_hi2c), bmp(pntr_hi2c) {
+	APP_LOG(TS_ON, VLEVEL_M, "env sensors i2c interface: %d \r\n", pntr_hi2c);
+	if( lsm_accel.init() ){
+		APP_LOG(TS_ON, VLEVEL_M, "lsm303 setup valid \r\n");
+	} else {
+		APP_LOG(TS_ON, VLEVEL_M, "lsm303 setup failed \r\n");
+	}
+
+
+  if( bmp.init() ){
   	APP_LOG(TS_ON, VLEVEL_M, "bmp390 setup valid \r\n");
   } else {
   	APP_LOG(TS_ON, VLEVEL_M, "bmp390 setup failed \r\n");
@@ -10,6 +18,7 @@ EnvionmentSensors::EnvionmentSensors(I2C_HandleTypeDef *pntr_hi2c) : bmp(pntr_hi
 	bmp.setPressureOversampling(BMP3_OVERSAMPLING_4X);
 	bmp.setIIRFilterCoeff(BMP3_IIR_FILTER_COEFF_3);
 	bmp.setOutputDataRate(BMP3_ODR_50_HZ);
+
 
 }
 
@@ -24,3 +33,8 @@ float EnvionmentSensors::getTemperature(){
 float EnvionmentSensors::getAltitude(float seaLevel){
   return bmp.getAltitude(seaLevel);
 }
+
+lsm303AccelData EnvionmentSensors::getAccelData(){
+  return lsm_accel.getAccelData();
+}
+
