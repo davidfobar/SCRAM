@@ -1,68 +1,94 @@
-#C++
-
-# Netlist files (exported from Eeschema)
-*.net
-
-# Autorouter files (exported from Pcbnew)
-*.dsn
-*.ses
-
-# Exported BOM files
-*.xml
-*.csv
-
-#C++
-# Prerequisites
-*.d
-
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+DDRN-E5mini-PIO/
 
 #KiCad
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
 # Temporary files
-*.000
-*.bak
-*.bck
-*.kicad_pcb-bak
-*.kicad_sch-bak
-*-backups
-*.kicad_prl
-*.sch-bak
-*~
-_autosave-*
-*.tmp
-*-save.pro
-*-save.kicad_pcb
-fp-info-cache
-# Allow kicad library files
-!DDRN_Hardware/**/*.lib
+DDRN-Hardware/*.000
+DDRN-Hardware/*.bak
+DDRN-Hardware/*.bck
+DDRN-Hardware/*.kicad_pcb-bak
+DDRN-Hardware/*.kicad_sch-bak
+DDRN-Hardware/*-backups
+DDRN-Hardware/*.kicad_prl
+DDRN-Hardware/*.sch-bak
+DDRN-Hardware/*~
+DDRN-Hardware/_autosave-*
+DDRN-Hardware/*.tmp
+DDRN-Hardware/*-save.pro
+DDRN-Hardware/*-save.kicad_pcb
+DDRN-Hardware/fp-info-cache
+
+# Netlist files (exported from Eeschema)
+DDRN-Hardware/*.net
+
+# Autorouter files (exported from Pcbnew)
+DDRN-Hardware/*.dsn
+DDRN-Hardware/*.ses
+
+# Exported BOM files
+DDRN-Hardware/*.xml
+DDRN-Hardware/*.csv
+
+##STM32CubeIDE
+# Ignore STM32CubeIDE Project Files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/.settings/
+DDRN-E5mini-STM/.project
+DDRN-E5mini-STM/.cproject
+DDRN-E5mini-STM/.launch
+
+# Ignore STM32CubeIDE Debug Configuration Files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/Debug/
+
+# Ignore STM32CubeIDE generated build and output files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/bin/
+DDRN-E5mini-STM/build/
+DDRN-E5mini-STM/Debug/
+DDRN-E5mini-STM/Release/
+
+# Ignore STM32CubeIDE generated .metadata folder only if it's in DDRN-E5mini-STM
+DDRN-E5mini-STM/.metadata/
+
+# Ignore STM32CubeIDE generated .cproject and .project files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/.cproject
+DDRN-E5mini-STM/.project
+
+# Ignore STM32CubeIDE generated .markers folder only if it's in DDRN-E5mini-STM
+DDRN-E5mini-STM/.markers/
+
+# Ignore STM32CubeIDE generated .syncinfo folder only if it's in DDRN-E5mini-STM
+DDRN-E5mini-STM/.syncinfo/
+
+# Ignore STM32CubeIDE generated .wstp folder only if it's in DDRN-E5mini-STM
+DDRN-E5mini-STM/.wstp/
+
+# Ignore STM32CubeIDE generated Virtual Folders only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/Virtual/
+
+# Ignore STM32CubeIDE generated .log files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/*.log
+
+# Ignore STM32CubeIDE generated .trace files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/*.trace
+
+# Ignore STM32CubeIDE generated .tlog files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/*.tlog
+
+# Ignore STM32CubeIDE generated .pcr files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/*.pcr
+
+# Ignore STM32CubeIDE generated .context files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/*.context
+
+# Ignore STM32CubeIDE generated .pydevproject files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/*.pydevproject
+
+# Ignore STM32CubeIDE generated .bak files only if they are in DDRN-E5mini-STM
+DDRN-E5mini-STM/*.bak
+
+# Ignore STM32CubeIDE generated RemoteSystemsTempFiles folder only if it's in DDRN-E5mini-STM
+DDRN-E5mini-STM/RemoteSystemsTempFiles/
+
+# Ignore STM32CubeIDE generated ProjectBuilders folder only if it's in DDRN-E5mini-STM
+DDRN-E5mini-STM/ProjectBuilders/
