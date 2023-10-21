@@ -16,8 +16,8 @@ class EnvionmentSensors {
 
 		lsm303AccelData getAccelData();
 	private:
-		BMP390 bmp;
 		LSM303_Accel lsm_accel;
+		BMP390 bmp;
 };
 
 #endif //ENV_SENSORS_H
