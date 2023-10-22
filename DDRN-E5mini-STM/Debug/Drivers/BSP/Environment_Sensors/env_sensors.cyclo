@@ -1,5 +1,6 @@
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:3:1:EnvionmentSensors::EnvionmentSensors(I2C_HandleTypeDef*)	3
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:25:7:float EnvionmentSensors::getPressure()	1
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:29:7:float EnvionmentSensors::getTemperature()	1
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:33:7:float EnvionmentSensors::getAltitude(float)	1
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:37:17:lsm303AccelData EnvionmentSensors::getAccelData()	1
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:6:1:EnvionmentSensors::EnvionmentSensors()	1
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:8:6:bool EnvionmentSensors::init(I2C_HandleTypeDef*)	3
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:31:7:float EnvionmentSensors::getPressure()	1
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:35:7:float EnvionmentSensors::getTemperature()	1
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:39:7:float EnvionmentSensors::getAltitude(float)	1
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:43:17:lsm303AccelData EnvionmentSensors::getAccelData()	1

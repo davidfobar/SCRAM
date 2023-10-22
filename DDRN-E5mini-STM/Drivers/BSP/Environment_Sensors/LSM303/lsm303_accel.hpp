@@ -85,9 +85,9 @@ typedef enum mode {
 */
 class LSM303_Accel {
 public:
-  LSM303_Accel(I2C_HandleTypeDef *pntr_hi2c);
+  LSM303_Accel();
 
-  bool init();
+  bool init(I2C_HandleTypeDef *pntr_hi2c);
 
   void setRange(lsm303_accel_range_t);
   lsm303_accel_range_t getRange(void);

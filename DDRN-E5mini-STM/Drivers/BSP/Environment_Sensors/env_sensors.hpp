@@ -8,7 +8,9 @@
 
 class EnvionmentSensors {
 	public:
-		EnvionmentSensors(I2C_HandleTypeDef *pntr_hi2c);
+		EnvionmentSensors();
+
+		bool init(I2C_HandleTypeDef *pntr_hi2c);
 
 		float getPressure(); //returns pressure in [Pa]
 		float getTemperature(); //returns temperature in units of [C]

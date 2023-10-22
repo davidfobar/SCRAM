@@ -1,25 +1,31 @@
 #include <env_sensors.hpp>
 
-EnvionmentSensors::EnvionmentSensors(I2C_HandleTypeDef *pntr_hi2c) : lsm_accel(pntr_hi2c), bmp(pntr_hi2c) {
+
+//#define IGNORE_ENV_SENSORS
+
+EnvionmentSensors::EnvionmentSensors(){ }
+
+bool EnvionmentSensors::init(I2C_HandleTypeDef *pntr_hi2c){
 	APP_LOG(TS_ON, VLEVEL_M, "env sensors i2c interface: %d \r\n", pntr_hi2c);
-	if( lsm_accel.init() ){
+	if( lsm_accel.init(pntr_hi2c) ){
 		APP_LOG(TS_ON, VLEVEL_M, "lsm303 setup valid \r\n");
 	} else {
 		APP_LOG(TS_ON, VLEVEL_M, "lsm303 setup failed \r\n");
+		return false;
 	}
 
-
-  if( bmp.init() ){
-  	APP_LOG(TS_ON, VLEVEL_M, "bmp390 setup valid \r\n");
-  } else {
-  	APP_LOG(TS_ON, VLEVEL_M, "bmp390 setup failed \r\n");
-  }
-  bmp.setTemperatureOversampling(BMP3_OVERSAMPLING_8X);
+	if( bmp.init(pntr_hi2c) ){
+		APP_LOG(TS_ON, VLEVEL_M, "bmp390 setup valid \r\n");
+	} else {
+		APP_LOG(TS_ON, VLEVEL_M, "bmp390 setup failed \r\n");
+		return false;
+	}
+	bmp.setTemperatureOversampling(BMP3_OVERSAMPLING_8X);
 	bmp.setPressureOversampling(BMP3_OVERSAMPLING_4X);
 	bmp.setIIRFilterCoeff(BMP3_IIR_FILTER_COEFF_3);
 	bmp.setOutputDataRate(BMP3_ODR_50_HZ);
 
-
+	return true;
 }
 
 float EnvionmentSensors::getPressure(){

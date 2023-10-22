@@ -1,7 +1,7 @@
 #include <lsm303_accel.hpp>
 
-LSM303_Accel::LSM303_Accel(I2C_HandleTypeDef *_pntr_hi2c) {
-  pntr_hi2c = _pntr_hi2c;
+LSM303_Accel::LSM303_Accel() {
+  pntr_hi2c = NULL;
 
   // Initialize the raw accel data
   data.x = 0;
@@ -26,7 +26,8 @@ bool LSM303_Accel::read(const uint8_t reg_location, uint8_t *data, const uint8_t
   return true;
 }
 
-bool LSM303_Accel::init() {
+bool LSM303_Accel::init(I2C_HandleTypeDef *_pntr_hi2c) {
+	pntr_hi2c = _pntr_hi2c;
   uint8_t len = 1;
 
   uint8_t reg_data = 0x57; // Enable the accelerometer (100Hz)

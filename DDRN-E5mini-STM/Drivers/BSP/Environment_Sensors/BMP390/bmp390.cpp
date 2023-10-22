@@ -13,7 +13,7 @@ static int8_t bmp390_i2c_read(uint8_t reg_addr, uint8_t *reg_data, uint32_t len,
 static int8_t validate_trimming_param(struct bmp3_dev *dev);
 static int8_t cal_crc(uint8_t seed, uint8_t data);
 
-BMP390::BMP390(I2C_HandleTypeDef *pntr_hi2c) {
+BMP390::BMP390() {
   _meas_end = 0;
   _filterEnabled = _tempOSEnabled = _presOSEnabled = false;
   temperature = -999;
@@ -23,12 +23,14 @@ BMP390::BMP390(I2C_HandleTypeDef *pntr_hi2c) {
   the_sensor.intf = BMP3_I2C_INTF;
   the_sensor.read = &bmp390_i2c_read;
   the_sensor.write = &bmp390_i2c_write;
-  the_sensor.intf_ptr = (void *)pntr_hi2c;
+  the_sensor.intf_ptr = (void *)NULL;
   the_sensor.dummy_byte = 0;
   the_sensor.delay_us = &delay_usec;
 }
 
-bool BMP390::init(){
+bool BMP390::init(I2C_HandleTypeDef *pntr_hi2c){
+	the_sensor.intf_ptr = (void *)pntr_hi2c;
+
 	int8_t rslt = BMP3_OK;
 	/* Reset the sensor */
 	rslt = bmp3_soft_reset(&the_sensor);

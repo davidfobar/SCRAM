@@ -17,10 +17,10 @@
   */
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
-#include <env_sensors.hpp>
 #include "main.h"
 #include "i2c.h"
 #include "app_lorawan.h"
+#include "spi.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -47,6 +47,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+
+EnvionmentSensors bsp_env_sensors;
 
 /* USER CODE END PV */
 
@@ -89,12 +91,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_LoRaWAN_Init();
   MX_I2C2_Init();
+  MX_SPI2_Init();
+  MX_LoRaWAN_Init();
   /* USER CODE BEGIN 2 */
 
   APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");
-
+  bsp_env_sensors.init(&hi2c2);
   // Try to communicate with the BMP390 sensor
 	/*	uint8_t bmp390_device_id;
 		uint8_t bmp390_device_id_register = 0x00;
@@ -108,11 +111,11 @@ int main(void)
     	APP_LOG(TS_ON, VLEVEL_M, "Incorrect device ID: %x \r\n", bmp390_device_id);
     }*/
 
-  EnvionmentSensors envSensors(&hi2c2);
 
-  float temperature = -99;
-  float pressure = -99;
-  float altitude = -99;
+
+  //float temperature = -99;
+  //float pressure = -99;
+  //float altitude = -99;
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -133,13 +136,12 @@ int main(void)
   	APP_LOG(TS_ON, VLEVEL_M, "pressure: %d.%02d [Pa]\r\n", (int)pressure / 100, (int)pressure % 100);
   	APP_LOG(TS_ON, VLEVEL_M, "altitude: %d.%02d [m?]\r\n", (int)altitude / 100, (int)altitude % 100);*/
 
-  	lsm303AccelData a = envSensors.getAccelData();
-  	float ax = a.x*100;
-  	APP_LOG(TS_ON, VLEVEL_M, "ax: %d.%02d [m/s^2]\r\n", (int)ax / 100, (int)ax % 100);
+  	//lsm303AccelData a = envSensors.getAccelData();
+  	//float ax = a.x*100;
+  	//APP_LOG(TS_ON, VLEVEL_M, "ax: %d.%02d [m/s^2]\r\n", (int)ax / 100, (int)ax % 100);
 
-  	HAL_Delay(100);
     /* USER CODE END WHILE */
-    //MX_LoRaWAN_Process();
+    MX_LoRaWAN_Process();
 
     /* USER CODE BEGIN 3 */
   }
@@ -166,9 +168,12 @@ void SystemClock_Config(void)
 
   /** Initializes the CPU, AHB and APB buses clocks
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_LSE|RCC_OSCILLATORTYPE_MSI;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI|RCC_OSCILLATORTYPE_LSE
+                              |RCC_OSCILLATORTYPE_MSI;
   RCC_OscInitStruct.LSEState = RCC_LSE_ON;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
   RCC_OscInitStruct.MSIState = RCC_MSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.MSICalibrationValue = RCC_MSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.MSIClockRange = RCC_MSIRANGE_11;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
@@ -209,6 +214,7 @@ void Error_Handler(void)
   __disable_irq();
   while (1)
   {
+  	APP_LOG(TS_ON, VLEVEL_M, "HAL error");
   }
   /* USER CODE END Error_Handler_Debug */
 }

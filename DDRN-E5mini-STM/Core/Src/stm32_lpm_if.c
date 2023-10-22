@@ -122,7 +122,7 @@ void PWR_ExitStopMode(void)
   /* Resume not retained USARTx and DMA */
   vcom_Resume();
   /* USER CODE BEGIN ExitStopMode_2 */
-
+  
   /* USER CODE END ExitStopMode_2 */
 }
 

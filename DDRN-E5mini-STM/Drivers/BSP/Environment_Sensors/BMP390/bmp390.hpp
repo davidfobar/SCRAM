@@ -18,12 +18,12 @@
 
 class BMP390{
 	public:
-		BMP390(I2C_HandleTypeDef *pntr_hi2c);
+		BMP390();
 		float readTemperature(); //celsius
 		float readPressure(); //pascals
 		float getAltitude(float seaLevel); //seaLevel is in units of
 		bool performReading();
-		bool init();
+		bool init(I2C_HandleTypeDef *pntr_hi2c);
 
 	  bool setTemperatureOversampling(uint8_t os);
 	  bool setPressureOversampling(uint8_t os);
