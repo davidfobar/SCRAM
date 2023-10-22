@@ -55,4 +55,6 @@
     (solder_mask_margin 0.102) (tstamp 21e4437d-c749-4798-b35a-765b3c41bceb))
   (pad "12" smd rect (at -0.8 -2 90) (size 1.5 0.35) (layers "F.Cu" "F.Paste" "F.Mask")
     (solder_mask_margin 0.102) (tstamp 62f1f356-9043-4761-a83b-fa4a0b45adb0))
+  (pad "13" smd rect (at 0 0) (size 1.5 1.5) (property pad_prop_heatsink) (layers "F.Cu" "F.Paste" "F.Mask")
+    (thermal_bridge_angle 45) (tstamp 134e69e4-7f53-4762-a4c9-038a72a38216))
 )

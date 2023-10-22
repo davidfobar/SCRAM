@@ -91,9 +91,9 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_LoRaWAN_Init();
   MX_I2C2_Init();
   MX_SPI2_Init();
-  MX_LoRaWAN_Init();
   /* USER CODE BEGIN 2 */
 
   APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");

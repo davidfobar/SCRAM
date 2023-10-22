@@ -48,6 +48,8 @@
 
 /* USER CODE BEGIN PV */
 
+EnvionmentSensors bsp_env_sensors;
+
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -89,13 +91,13 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_LoRaWAN_Init();
   MX_I2C2_Init();
   MX_SPI2_Init();
+  MX_LoRaWAN_Init();
   /* USER CODE BEGIN 2 */
 
   APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");
-
+  bsp_env_sensors.init(&hi2c2);
   // Try to communicate with the BMP390 sensor
 	/*	uint8_t bmp390_device_id;
 		uint8_t bmp390_device_id_register = 0x00;
@@ -109,7 +111,7 @@ int main(void)
     	APP_LOG(TS_ON, VLEVEL_M, "Incorrect device ID: %x \r\n", bmp390_device_id);
     }*/
 
-  EnvionmentSensors envSensors(&hi2c2);
+
 
   //float temperature = -99;
   //float pressure = -99;
@@ -138,7 +140,6 @@ int main(void)
   	//float ax = a.x*100;
   	//APP_LOG(TS_ON, VLEVEL_M, "ax: %d.%02d [m/s^2]\r\n", (int)ax / 100, (int)ax % 100);
 
-  	HAL_Delay(100);
     /* USER CODE END WHILE */
     MX_LoRaWAN_Process();
 
