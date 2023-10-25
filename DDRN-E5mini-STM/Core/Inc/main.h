@@ -91,6 +91,9 @@ void Error_Handler(void);
 #define RF_CTRL2_Pin GPIO_PIN_5
 #define RF_CTRL2_GPIO_Port GPIOA
 
+#define SiPM_TEMP_ADC_CHANNEL ADC_CHANNEL_2
+#define SiPM_SIGNAL_ADC_CHANNEL ADC_CHANNEL_3
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
