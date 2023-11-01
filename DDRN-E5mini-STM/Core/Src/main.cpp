@@ -21,12 +21,13 @@
 #include "i2c.h"
 #include "app_lorawan.h"
 #include "spi.h"
-#include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "sys_app.h"
 #include "env_sensors.hpp"
+#include "expMode.h"
+#include "gpio.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -36,6 +37,12 @@
 
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
+
+// Set the default LoRaWAN usage here, upon reset the device will use this setting
+// if Boot Mode pin is not drawn low by the user button
+// setting this to 1 is recommended for detector experiments
+// setting this to 0 is recommended for LoRaWAN experiments
+#define DEFAULT_DISBALE_LORA 1 
 
 /* USER CODE END PD */
 
@@ -87,59 +94,38 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
 
+  // initialize the GPIOs this is to allow the probing of the Boot Mode pin to determine
+  // if the user button was pressed during reset
+  MX_GPIO_Init();
+
+  // check to see if the boot mode pin is drawn low (button pressed)
+  int boot_mode = HAL_GPIO_ReadPin(Boot_Mode_GPIO_Port, Boot_Mode_Pin);
+
+  //enable LoRaWAN or experiment mode as required
+  bool experimentMode = false;
+  if (DEFAULT_DISBALE_LORA && boot_mode == 0) MX_LoRaWAN_Init();
+  if (DEFAULT_DISBALE_LORA && boot_mode == 1) experimentMode = true;
+  if (!DEFAULT_DISBALE_LORA && boot_mode == 0) experimentMode = true;
+  if (!DEFAULT_DISBALE_LORA && boot_mode == 1) MX_LoRaWAN_Init();  
+
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_LoRaWAN_Init();
   MX_I2C2_Init();
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
 
   APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");
   bsp_env_sensors.init(&hi2c2);
-  // Try to communicate with the BMP390 sensor
-	/*	uint8_t bmp390_device_id;
-		uint8_t bmp390_device_id_register = 0x00;
 
-    ret = HAL_I2C_Mem_Read(&hi2c2, BMP390_I2C_ADDRESS, bmp390_device_id_register, I2C_MEMADD_SIZE_8BIT, &bmp390_device_id, 1, HAL_MAX_DELAY);
-    if ( ret != HAL_OK ) {
-    	APP_LOG(TS_ON, VLEVEL_M, "BMP390 memory read failed \r\n");
-    } else if ( bmp390_device_id == 0x50 ) {
-    	APP_LOG(TS_ON, VLEVEL_M, "BMP390 memory read success \r\n");
-    } else {
-    	APP_LOG(TS_ON, VLEVEL_M, "Incorrect device ID: %x \r\n", bmp390_device_id);
-    }*/
-
-
-
-  //float temperature = -99;
-  //float pressure = -99;
-  //float altitude = -99;
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  if (experimentMode) enterExperimentMode();
+
   while (1)
   {
-  	/*temperature = envSensors.getTemperature();
-  	temperature *= 100;
-
-  	pressure = envSensors.getPressure();
-  	pressure *= 100;
-
-  	float sealevelPressure = 1020.0;
-  	altitude = envSensors.getAltitude(sealevelPressure);
-  	altitude *= 100;
-
-  	APP_LOG(TS_ON, VLEVEL_M, "temp: %d.%02d [C]\r\n", (int)temperature / 100, (int)temperature % 100);
-  	APP_LOG(TS_ON, VLEVEL_M, "pressure: %d.%02d [Pa]\r\n", (int)pressure / 100, (int)pressure % 100);
-  	APP_LOG(TS_ON, VLEVEL_M, "altitude: %d.%02d [m?]\r\n", (int)altitude / 100, (int)altitude % 100);*/
-
-  	//lsm303AccelData a = envSensors.getAccelData();
-  	//float ax = a.x*100;
-  	//APP_LOG(TS_ON, VLEVEL_M, "ax: %d.%02d [m/s^2]\r\n", (int)ax / 100, (int)ax % 100);
-
     /* USER CODE END WHILE */
     MX_LoRaWAN_Process();
 

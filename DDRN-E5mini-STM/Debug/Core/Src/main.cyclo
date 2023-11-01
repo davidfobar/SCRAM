@@ -1,6 +1,6 @@
 ../Drivers/STM32WLxx_HAL_Driver/Inc/stm32wlxx_ll_rcc.h:1257:22:void LL_RCC_LSE_SetDriveCapability(uint32_t)	1
-../Core/Src/main.cpp:70:5:int main()	1
-../Core/Src/main.cpp:155:6:void SystemClock_Config()	3
-../Core/Src/main.cpp:210:6:void Error_Handler()	1
-../Core/Src/main.cpp:220:1:void __static_initialization_and_destruction_0(int, int)	3
-../Core/Src/main.cpp:220:1:cpp)	1
+../Core/Src/main.cpp:77:5:int main()	4
+../Core/Src/main.cpp:141:6:void SystemClock_Config()	3
+../Core/Src/main.cpp:196:6:void Error_Handler()	1
+../Core/Src/main.cpp:206:1:void __static_initialization_and_destruction_0(int, int)	3
+../Core/Src/main.cpp:206:1:cpp)	1

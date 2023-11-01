@@ -37,6 +37,12 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
+// Set the default LoRaWAN usage here, upon reset the device will use this setting
+// if Boot Mode pin is not drawn low by the user button
+// setting this to 1 is recommended for detector experiments
+// setting this to 0 is recommended for LoRaWAN experiments
+#define DEFAULT_DISBALE_LORA 1 
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -87,13 +93,32 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
 
+  // initialize the GPIOs and then redefine the GPIO init function to do nothing
+  // this is to allow the probing of the Boot Mode pin to determine if the user
+  // button was pressed during reset
+  MX_GPIO_Init();
+
+  // check to see if the boot mode pin is drawn low (button pressed)
+  int boot_mode = HAL_GPIO_ReadPin(Boot_Mode_GPIO_Port, Boot_Mode_Pin);
+
+  if (DEFAULT_DISBALE_LORA && boot_mode == 0) MX_LoRaWAN_Init();
+  if (DEFAULT_DISBALE_LORA && boot_mode == 1) ;
+  if (!DEFAULT_DISBALE_LORA && boot_mode == 0) ;
+  if (!DEFAULT_DISBALE_LORA && boot_mode == 1) MX_LoRaWAN_Init();  
+
+  // redefine the GPIO init function to do nothing
+  MX_GPIO_Init = [](void) {};
+
+  //redefine teh lora init function to do nothing
+  MX_LoRaWAN_Init = [](void) {};
+
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_LoRaWAN_Init();
   MX_I2C2_Init();
   MX_SPI2_Init();
-  MX_LoRaWAN_Init();
   /* USER CODE BEGIN 2 */
 
   APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");

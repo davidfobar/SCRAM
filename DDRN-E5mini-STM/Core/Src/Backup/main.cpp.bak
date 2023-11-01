@@ -37,6 +37,12 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 
+// Set the default LoRaWAN usage here, upon reset the device will use this setting
+// if Boot Mode pin is not drawn low by the user button
+// setting this to 1 is recommended for detector experiments
+// setting this to 0 is recommended for LoRaWAN experiments
+#define DEFAULT_DISBALE_LORA 1 
+
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -47,6 +53,8 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
+
+EnvionmentSensors bsp_env_sensors;
 
 /* USER CODE END PV */
 
@@ -85,6 +93,25 @@ int main(void)
 
   /* USER CODE BEGIN SysInit */
 
+  // initialize the GPIOs and then redefine the GPIO init function to do nothing
+  // this is to allow the probing of the Boot Mode pin to determine if the user
+  // button was pressed during reset
+  MX_GPIO_Init();
+
+  // check to see if the boot mode pin is drawn low (button pressed)
+  int boot_mode = HAL_GPIO_ReadPin(Boot_Mode_GPIO_Port, Boot_Mode_Pin);
+
+  if (DEFAULT_DISBALE_LORA && boot_mode == 0) MX_LoRaWAN_Init();
+  if (DEFAULT_DISBALE_LORA && boot_mode == 1) ;
+  if (!DEFAULT_DISBALE_LORA && boot_mode == 0) ;
+  if (!DEFAULT_DISBALE_LORA && boot_mode == 1) MX_LoRaWAN_Init();  
+
+  // redefine the GPIO init function to do nothing
+  MX_GPIO_Init = [](void) {};
+
+  //redefine teh lora init function to do nothing
+  MX_LoRaWAN_Init = [](void) {};
+
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
@@ -95,7 +122,7 @@ int main(void)
   /* USER CODE BEGIN 2 */
 
   APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");
-
+  bsp_env_sensors.init(&hi2c2);
   // Try to communicate with the BMP390 sensor
 	/*	uint8_t bmp390_device_id;
 		uint8_t bmp390_device_id_register = 0x00;
@@ -109,7 +136,7 @@ int main(void)
     	APP_LOG(TS_ON, VLEVEL_M, "Incorrect device ID: %x \r\n", bmp390_device_id);
     }*/
 
-  EnvionmentSensors envSensors(&hi2c2);
+
 
   //float temperature = -99;
   //float pressure = -99;
@@ -138,7 +165,6 @@ int main(void)
   	//float ax = a.x*100;
   	//APP_LOG(TS_ON, VLEVEL_M, "ax: %d.%02d [m/s^2]\r\n", (int)ax / 100, (int)ax % 100);
 
-  	HAL_Delay(100);
     /* USER CODE END WHILE */
     MX_LoRaWAN_Process();
 

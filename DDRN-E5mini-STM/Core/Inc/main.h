@@ -80,8 +80,8 @@ void Error_Handler(void);
 #define USARTx_TX_GPIO_Port GPIOB
 #define Accel_Int_Pin GPIO_PIN_0
 #define Accel_Int_GPIO_Port GPIOC
-#define Bias_Enable_Pin GPIO_PIN_3
-#define Bias_Enable_GPIO_Port GPIOA
+#define Boot_Mode_Pin GPIO_PIN_3
+#define Boot_Mode_GPIO_Port GPIOA
 #define Stim_Enable_Pin GPIO_PIN_2
 #define Stim_Enable_GPIO_Port GPIOA
 #define Anneal_Enable_Pin GPIO_PIN_10
