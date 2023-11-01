@@ -144,6 +144,8 @@ void LoRaWAN_Init(void);
 
 /* USER CODE BEGIN EFP */
 
+void disableLoRaWAN(void);
+
 /* USER CODE END EFP */
 
 #ifdef __cplusplus

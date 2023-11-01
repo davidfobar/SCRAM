@@ -30,6 +30,7 @@ RM := rm -rf
 -include Drivers/BSP/Environment_Sensors/LSM303/subdir.mk
 -include Drivers/BSP/Environment_Sensors/BMP390/subdir.mk
 -include Drivers/BSP/Environment_Sensors/subdir.mk
+-include Drivers/BSP/Detector/subdir.mk
 -include Core/Startup/subdir.mk
 -include Core/Src/subdir.mk
 -include objects.mk

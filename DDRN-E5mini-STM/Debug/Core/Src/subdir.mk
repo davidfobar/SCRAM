@@ -19,7 +19,6 @@ C_SRCS += \
 ../Core/Src/subghz.c \
 ../Core/Src/sys_app.c \
 ../Core/Src/sys_debug.c \
-../Core/Src/sys_sensors.c \
 ../Core/Src/syscalls.c \
 ../Core/Src/sysmem.c \
 ../Core/Src/system_stm32wlxx.c \
@@ -46,7 +45,6 @@ C_DEPS += \
 ./Core/Src/subghz.d \
 ./Core/Src/sys_app.d \
 ./Core/Src/sys_debug.d \
-./Core/Src/sys_sensors.d \
 ./Core/Src/syscalls.d \
 ./Core/Src/sysmem.d \
 ./Core/Src/system_stm32wlxx.d \

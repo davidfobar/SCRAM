@@ -28,6 +28,7 @@
 #include "env_sensors.hpp"
 #include "expMode.h"
 #include "gpio.h"
+#include "detector.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -42,7 +43,7 @@
 // if Boot Mode pin is not drawn low by the user button
 // setting this to 1 is recommended for detector experiments
 // setting this to 0 is recommended for LoRaWAN experiments
-#define DEFAULT_DISBALE_LORA 1 
+#define DEFAULT_DISBALE_LORA 1
 
 /* USER CODE END PD */
 
@@ -56,6 +57,7 @@
 /* USER CODE BEGIN PV */
 
 EnvionmentSensors bsp_env_sensors;
+Detector detector;
 
 /* USER CODE END PV */
 
@@ -103,25 +105,27 @@ int main(void)
 
   //enable LoRaWAN or experiment mode as required
   bool experimentMode = false;
-  if (DEFAULT_DISBALE_LORA && boot_mode == 0) MX_LoRaWAN_Init();
+  //if (DEFAULT_DISBALE_LORA && boot_mode == 0) MX_LoRaWAN_Init();
   if (DEFAULT_DISBALE_LORA && boot_mode == 1) experimentMode = true;
   if (!DEFAULT_DISBALE_LORA && boot_mode == 0) experimentMode = true;
-  if (!DEFAULT_DISBALE_LORA && boot_mode == 1) MX_LoRaWAN_Init();  
-
+  //if (!DEFAULT_DISBALE_LORA && boot_mode == 1) MX_LoRaWAN_Init();
+  MX_LoRaWAN_Init();
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_I2C2_Init();
   MX_SPI2_Init();
   /* USER CODE BEGIN 2 */
-
-  APP_LOG(TS_ON, VLEVEL_M, "Hello APP_LOG \r\n");
   bsp_env_sensors.init(&hi2c2);
+  detector.init();
+  MX_ADC_Init();
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
+  HAL_GPIO_WritePin(Memory_CS_GPIO_Port, Memory_CS_Pin, GPIO_PIN_SET);
+  HAL_GPIO_WritePin(Bias_CS_GPIO_Port, Bias_CS_Pin, GPIO_PIN_SET);
   if (experimentMode) enterExperimentMode();
 
   while (1)

@@ -343,6 +343,23 @@ static UTIL_TIMER_Object_t JoinLedTimer;
 /* Exported functions ---------------------------------------------------------*/
 /* USER CODE BEGIN EF */
 
+void disableLoRaWAN(void){
+	// Determine the total number of tasks from the last value in the enum
+	int totalTasks = (int)CFG_SEQ_Task_NBR;
+
+	// Iterate through each task ID
+	for (int taskID = CFG_SEQ_Task_LmHandlerProcess; taskID < totalTasks; taskID++) {
+		UTIL_SEQ_bm_t taskMask = (1U << taskID);
+
+		UTIL_SEQ_PauseTask(taskMask);
+	}
+	UTIL_TIMER_Stop(&TxTimer);
+	UTIL_TIMER_Stop(&StopJoinTimer);
+	UTIL_TIMER_Stop(&TxLedTimer);
+	UTIL_TIMER_Stop(&RxLedTimer);
+	UTIL_TIMER_Stop(&JoinLedTimer);
+}
+
 /* USER CODE END EF */
 
 void LoRaWAN_Init(void)

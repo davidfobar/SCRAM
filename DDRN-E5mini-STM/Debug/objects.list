@@ -21,6 +21,7 @@
 "./Core/Src/usart.o"
 "./Core/Src/usart_if.o"
 "./Core/Startup/startup_stm32wle5jcix.o"
+"./Drivers/BSP/Detector/detector.o"
 "./Drivers/BSP/Environment_Sensors/BMP390/bmp3.o"
 "./Drivers/BSP/Environment_Sensors/BMP390/bmp390.o"
 "./Drivers/BSP/Environment_Sensors/LSM303/lsm303_accel.o"

@@ -2,11 +2,12 @@
 #define DETECTOR_H
 
 #include "main.h"
+#include "adc.h"
 
 #define NUM_TEMP_SAMPLES 16
 #define NUM_SiPM_SAMPLES 16
 #define STIM_STABLIZATION_ms 25
-#define STABLE_MEASUREMENT_WINDOW_ms 100
+#define STABLE_MEASUREMENT_WINDOW_ms 1000
 #define CLEARING_TIME_ms 1000
 
 extern ADC_HandleTypeDef hadc;
@@ -20,6 +21,7 @@ class Detector {
     void clearPhosphor();
     float readAccumulatedDose();
     float calcDoseRate();
+    float getSiPMtemp(bool newSample);
 
     bool setSiPM_Bias(uint8_t dacValue);
     bool sipmBias_Off();
@@ -33,7 +35,7 @@ class Detector {
     void sampleSiPM_temp();
     void sampleSiPM_signal();
 
-    bool setSiPM_Bias(float temp);
+    //bool setSiPM_Bias(float temp);
 
     uint32_t lastClearingTime;
     uint32_t integratedDoseTime_ms;

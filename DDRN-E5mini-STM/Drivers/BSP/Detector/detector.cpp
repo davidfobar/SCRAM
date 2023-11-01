@@ -1,23 +1,21 @@
 #include "detector.h"
 
+Detector::Detector() {
+  lastClearingTime      = 0;
+  integratedDoseTime_ms = 0;
+  measuredDose          = 0;
+}
+
+void Detector::init() {
+  clearPhosphor();
+  HAL_GPIO_WritePin(Bias_CS_GPIO_Port, Bias_CS_Pin, GPIO_PIN_SET);
+}
+
 static float avgSipmSignalToDose(float signal) {
 
   //TODO: calculate the dose from the signal
 
   return signal;
-}
-
-bool Detector::setSiPM_Bias(float temp) {
-  uint8_t dacValue = 0;
-
-  //TODO: calculate the dacValue from the temperature
-
-  return setSiPM_Bias(dacValue);
-}
-
-static uint32_t now() {
-  //use the HAL to get the current time in milliseconds
-  return HAL_GetTick();
 }
 
 static float avg(uint16_t *arr, uint16_t len) {
@@ -28,14 +26,22 @@ static float avg(uint16_t *arr, uint16_t len) {
     return result / len;
 }
 
-Detector::Detector() {
-  lastClearingTime      = 0;
-  integratedDoseTime_ms = 0;
-  measuredDose          = 0;
+float Detector::getSiPMtemp(bool newSample){
+	if (newSample) sampleSiPM_temp();
+	return avg(SiPM_temp_measurements, NUM_TEMP_SAMPLES);
 }
 
-void Detector::init() {
-  clearPhosphor();
+/*bool Detector::setSiPM_Bias(float temp) {
+  uint8_t dacValue = 0;
+
+  //TODO: calculate the dacValue from the temperature
+
+  return setSiPM_Bias(dacValue);
+}*/
+
+static uint32_t now() {
+  //use the HAL to get the current time in milliseconds
+  return HAL_GetTick();
 }
 
 void Detector::clearPhosphor() {
@@ -49,7 +55,7 @@ void Detector::clearPhosphor() {
 float Detector::readAccumulatedDose() {
   sampleSiPM_temp();
   float temperature = avg(SiPM_temp_measurements, NUM_TEMP_SAMPLES);
-  setSiPM_Bias(temperature);
+  setSiPM_Bias(0x0F);
   stimLED_On();
   HAL_Delay(STABLE_MEASUREMENT_WINDOW_ms);
   sampleSiPM_signal();
@@ -89,13 +95,15 @@ void Detector::clearLED_Off() {
 
 void Detector::sampleSiPM_temp() {
   //reset the temperature array to 0
-  memset(SiPM_temp_measurements, 0, NUM_TEMP_SAMPLES * sizeof(uint16_t));
+  for (uint16_t i = 0; i < NUM_TEMP_SAMPLES; i++) {
+    SiPM_temp_measurements[i] = 0;
+  }
 
   //set the adc to read from the SiPM temperature pin
   ADC_ChannelConfTypeDef sConfig = {0};
   sConfig.Channel = SiPM_TEMP_ADC_CHANNEL;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_1CYCLE_5;
   HAL_ADC_ConfigChannel(&hadc, &sConfig);
   
   //take NUM_TEMP_SAMPLES measurements
@@ -111,13 +119,15 @@ void Detector::sampleSiPM_temp() {
 
 void Detector::sampleSiPM_signal() {
   //reset the signal array to 0
-  memset(SiPM_signal_measurements, 0, NUM_SiPM_SAMPLES * sizeof(uint16_t));
+  for (uint16_t i = 0; i < NUM_SiPM_SAMPLES; i++) {
+    SiPM_signal_measurements[i] = 0;
+  }
 
   //set the adc to read from the SiPM signal pin
   ADC_ChannelConfTypeDef sConfig = {0};
   sConfig.Channel = SiPM_SIGNAL_ADC_CHANNEL;
   sConfig.Rank = ADC_REGULAR_RANK_1;
-  sConfig.SamplingTime = ADC_SAMPLETIME_2CYCLES_5;
+  sConfig.SamplingTime = ADC_SAMPLETIME_160CYCLES_5;
   HAL_ADC_ConfigChannel(&hadc, &sConfig);
   
   //take NUM_SiPM_SAMPLES measurements

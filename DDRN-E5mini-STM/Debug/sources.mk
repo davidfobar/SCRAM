@@ -34,6 +34,7 @@ CPP_DEPS :=
 SUBDIRS := \
 Core/Src \
 Core/Startup \
+Drivers/BSP/Detector \
 Drivers/BSP/Environment_Sensors/BMP390 \
 Drivers/BSP/Environment_Sensors/LSM303 \
 Drivers/BSP/Environment_Sensors \
