@@ -7,7 +7,7 @@
 #define NUM_TEMP_SAMPLES 16
 #define NUM_SiPM_SAMPLES 16
 #define STIM_STABLIZATION_ms 25
-#define STABLE_MEASUREMENT_WINDOW_ms 1000
+#define STABLE_MEASUREMENT_WINDOW_ms 100
 #define CLEARING_TIME_ms 1000
 
 extern ADC_HandleTypeDef hadc;
