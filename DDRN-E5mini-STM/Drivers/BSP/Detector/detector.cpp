@@ -1,5 +1,10 @@
 #include "detector.h"
 
+enum {
+	sipm_temp_adc,
+	sipm_signal_adc
+};
+
 Detector::Detector() {
   lastClearingTime      = 0;
   integratedDoseTime_ms = 0;
@@ -18,6 +23,14 @@ static float avgSipmSignalToDose(float signal) {
   return signal;
 }
 
+bool Detector::setSiPM_Bias(float temp) {
+  uint8_t dacValue = 0;
+
+  //TODO: calculate the dacValue from the temperature
+
+  return setSiPM_Bias(dacValue);
+}
+
 static float avg(uint16_t *arr, uint16_t len) {
     float result = 0;
     for (uint16_t i = 0; i < len; i++) {
@@ -26,18 +39,14 @@ static float avg(uint16_t *arr, uint16_t len) {
     return result / len;
 }
 
-float Detector::getSiPMtemp(bool newSample){
-	if (newSample) sampleSiPM_temp();
-	return avg(SiPM_temp_measurements, NUM_TEMP_SAMPLES);
+float Detector::sampleSiPMtemp(){
+	sampleADC(sipm_temp_adc);
+	float avgADC = avg(SiPM_temp_measurements, NUM_TEMP_SAMPLES);
+	// https://learn.adafruit.com/tmp36-temperature-sensor/overview
+	// 3.3v 12 bit dynamic range with a sensor conversion of 10mV/C and a .5v offset
+	float temp_c = ((avgADC * 3.3 / 4096)*1000 - 500) / 10;
+	return temp_c;
 }
-
-/*bool Detector::setSiPM_Bias(float temp) {
-  uint8_t dacValue = 0;
-
-  //TODO: calculate the dacValue from the temperature
-
-  return setSiPM_Bias(dacValue);
-}*/
 
 static uint32_t now() {
   //use the HAL to get the current time in milliseconds
@@ -52,13 +61,23 @@ void Detector::clearPhosphor() {
   lastClearingTime = now();
 }
 
-float Detector::readAccumulatedDose() {
-  sampleSiPM_temp();
-  float temperature = avg(SiPM_temp_measurements, NUM_TEMP_SAMPLES);
-  setSiPM_Bias(0x0F);
+float Detector::sampleSiPMsignal(){
+	stimLED_On();
+	HAL_Delay(STABLE_MEASUREMENT_WINDOW_ms);
+	sampleADC(sipm_signal_adc);
+	stimLED_Off();
+	float avgSipmSignal = avg(SiPM_signal_measurements, NUM_SiPM_SAMPLES);
+	clearPhosphor();
+
+	return avgSipmSignal;
+}
+
+float Detector::getAccumulatedDose() {
+  float temperature = sampleSiPMtemp();
+  setSiPM_Bias(temperature);
   stimLED_On();
   HAL_Delay(STABLE_MEASUREMENT_WINDOW_ms);
-  sampleSiPM_signal();
+  sampleADC(sipm_signal_adc);
   stimLED_Off();
   sipmBias_Off();
   float avgSipmSignal = avg(SiPM_signal_measurements, NUM_SiPM_SAMPLES);
@@ -93,7 +112,7 @@ void Detector::clearLED_Off() {
   HAL_GPIO_WritePin(Anneal_Enable_GPIO_Port, Anneal_Enable_Pin, GPIO_PIN_RESET);
 }
 
-void Detector::sampleSiPM_temp() {
+/*void Detector::sampleSiPM_temp() {
   //reset the temperature array to 0
   for (uint16_t i = 0; i < NUM_TEMP_SAMPLES; i++) {
     SiPM_temp_measurements[i] = 0;
@@ -139,10 +158,58 @@ void Detector::sampleSiPM_signal() {
     //read the ADC value
     SiPM_signal_measurements[i] = HAL_ADC_GetValue(&hadc);
   }
+}*/
+
+void Detector::sampleADC(uint8_t target) {
+	uint8_t n_samples = 0;
+	long unsigned int channel = 0;
+	uint16_t *buf = NULL;
+
+	switch (target){
+		case sipm_temp_adc:
+			n_samples = NUM_TEMP_SAMPLES;
+			channel = SiPM_TEMP_ADC_CHANNEL;
+			buf = SiPM_temp_measurements;
+			break;
+		case sipm_signal_adc:
+			n_samples = NUM_SiPM_SAMPLES;
+			channel = SiPM_SIGNAL_ADC_CHANNEL;
+			buf = SiPM_signal_measurements;
+			break;
+		default:
+			break;
+	}
+  //reset the buffer to 0
+  for (uint16_t i = 0; i < n_samples; i++) {
+  	buf[i] = 0;
+  }
+
+  //set the adc to read from the correct signal pin
+  ADC_ChannelConfTypeDef sConfig = {0};
+  sConfig.Channel = channel;
+  sConfig.Rank = ADC_REGULAR_RANK_1;
+  sConfig.SamplingTime = ADC_SAMPLETIME_160CYCLES_5;
+  HAL_ADC_ConfigChannel(&hadc, &sConfig);
+
+  //trash the first sample
+  //start the ADC conversion
+	HAL_ADC_Start(&hadc);
+	//wait for the conversion to complete
+	HAL_ADC_PollForConversion(&hadc, 100);
+
+  //take n_samples measurements and log into the buffer
+  for (uint16_t i = 0; i < n_samples; i++) {
+    //start the ADC conversion
+    HAL_ADC_Start(&hadc);
+    //wait for the conversion to complete
+    HAL_ADC_PollForConversion(&hadc, 100);
+    //read the ADC value
+    buf[i] = HAL_ADC_GetValue(&hadc);
+  }
 }
 
 bool Detector::sipmBias_Off() {
-  uint8_t dacValue = 0;
+  uint8_t dacValue = 0x00;
   return setSiPM_Bias(dacValue);
 }
 

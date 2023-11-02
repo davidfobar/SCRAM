@@ -13,15 +13,18 @@
 extern ADC_HandleTypeDef hadc;
 extern SPI_HandleTypeDef hspi2;
 
+
 class Detector {
   public:
     Detector();
 
     void init();
     void clearPhosphor();
-    float readAccumulatedDose();
+
+    float getAccumulatedDose();
     float calcDoseRate();
-    float getSiPMtemp(bool newSample);
+    float sampleSiPMtemp();
+    float sampleSiPMsignal();
 
     bool setSiPM_Bias(uint8_t dacValue);
     bool sipmBias_Off();
@@ -32,17 +35,19 @@ class Detector {
     void clearLED_On();
     void clearLED_Off();
 
-    void sampleSiPM_temp();
-    void sampleSiPM_signal();
+    //void sampleSiPM_temp();
+    //void sampleSiPM_signal();
 
-    //bool setSiPM_Bias(float temp);
+    bool setSiPM_Bias(float temp);
 
     uint32_t lastClearingTime;
     uint32_t integratedDoseTime_ms;
     float measuredDose;
 
-    uint16_t SiPM_temp_measurements[NUM_SiPM_SAMPLES];
+    uint16_t SiPM_temp_measurements[NUM_TEMP_SAMPLES];
     uint16_t SiPM_signal_measurements[NUM_SiPM_SAMPLES];
+
+    void sampleADC(uint8_t target);
 };
 
 #endif // DETECTOR_H 

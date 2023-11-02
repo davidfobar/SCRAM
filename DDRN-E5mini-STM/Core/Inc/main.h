@@ -95,6 +95,7 @@ void Error_Handler(void);
 
 #define SiPM_TEMP_ADC_CHANNEL ADC_CHANNEL_2
 #define SiPM_SIGNAL_ADC_CHANNEL ADC_CHANNEL_3
+#define BATT_VOLTAGE_ADC_CHANNEL ADC_CHANNEL_0
 
 /* USER CODE END Private defines */
 

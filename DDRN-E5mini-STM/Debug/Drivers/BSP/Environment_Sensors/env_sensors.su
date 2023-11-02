@@ -1,6 +1,10 @@
 ../Drivers/BSP/Environment_Sensors/env_sensors.cpp:6:1:EnvionmentSensors::EnvionmentSensors()	16	static
 ../Drivers/BSP/Environment_Sensors/env_sensors.cpp:8:6:bool EnvionmentSensors::init(I2C_HandleTypeDef*)	24	static
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:31:7:float EnvionmentSensors::getPressure()	16	static
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:35:7:float EnvionmentSensors::getTemperature()	16	static
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:39:7:float EnvionmentSensors::getAltitude(float)	16	static
-../Drivers/BSP/Environment_Sensors/env_sensors.cpp:43:17:lsm303AccelData EnvionmentSensors::getAccelData()	16	static
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:33:7:float EnvionmentSensors::getPressure()	16	static
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:37:7:float EnvionmentSensors::getTemperature()	16	static
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:41:7:float EnvionmentSensors::getAltitude(float)	16	static
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:45:17:lsm303AccelData EnvionmentSensors::getAccelData()	16	static
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:49:6:void EnvionmentSensors::enableBattMonitor()	16	static
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:54:6:void EnvionmentSensors::disableBattMonitor()	16	static
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:59:14:float avg(uint16_t*, uint16_t)	24	static
+../Drivers/BSP/Environment_Sensors/env_sensors.cpp:67:7:float EnvionmentSensors::getBattVoltage()	40	static
