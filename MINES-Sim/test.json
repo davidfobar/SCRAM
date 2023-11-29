@@ -1,0 +1,762 @@
+{
+  "id": "eea86de2-f269-4b04-a61e-bda938a3535f",
+  "name": "SCRAM test 2",
+  "classification": "CUI",
+  "metadata": [
+    {
+      "key": "618cfd21-a823-4a7f-9e1c-405494abd6f0",
+      "value": "{\"UIC\":\"BlueTarget\",\"ParentUIC\":\"\",\"Name\":\"Target\",\"Personnel\":[],\"Team\":\"Blue\",\"Service\":\"Stationary\",\"SIDC\":\"Target-B\",\"TargetType\":\"In the Open\",\"DamageLevel\":\"Immediate Transient Incapacitation\",\"TypeName\":\"Target\",\"StrokeWidth\":10,\"SymbolColor\":\"Blue\",\"CustomIcon\":true}"
+    },
+    {
+      "key": "6c8991e4-abef-4dc7-8f1e-eee3bb584b16",
+      "value": "{\"UIC\":\"BlueTarget\",\"ParentUIC\":\"\",\"Name\":\"Target\",\"Personnel\":[],\"Team\":\"Blue\",\"Service\":\"Stationary\",\"SIDC\":\"Target-B\",\"TargetType\":\"In the Open\",\"DamageLevel\":\"Immediate Transient Incapacitation\",\"TypeName\":\"Target\",\"StrokeWidth\":10,\"SymbolColor\":\"Blue\",\"CustomIcon\":true}"
+    },
+    {
+      "key": "ae7178a6-6cf3-4e9d-bc03-863f097519e8",
+      "value": "{\"UIC\":\"BlueTarget\",\"ParentUIC\":\"\",\"Name\":\"Target\",\"Personnel\":[],\"Team\":\"Blue\",\"Service\":\"Stationary\",\"SIDC\":\"Target-B\",\"TargetType\":\"In the Open\",\"DamageLevel\":\"Immediate Transient Incapacitation\",\"TypeName\":\"Target\",\"StrokeWidth\":10,\"SymbolColor\":\"Blue\",\"CustomIcon\":true}"
+    },
+    {
+      "key": "b7738118-9da1-4387-8a11-2b47bd266fb9",
+      "value": "{\"UIC\":\"BlueTarget\",\"ParentUIC\":\"\",\"Name\":\"Target\",\"Personnel\":[],\"Team\":\"Blue\",\"Service\":\"Stationary\",\"SIDC\":\"Target-B\",\"TargetType\":\"In the Open\",\"DamageLevel\":\"Immediate Transient Incapacitation\",\"TypeName\":\"Target\",\"StrokeWidth\":10,\"SymbolColor\":\"Blue\",\"CustomIcon\":true}"
+    },
+    {
+      "key": "736cfa39-e3ef-4682-9b8c-7acb0b33a59c",
+      "value": "{\"UIC\":\"BlueTarget\",\"ParentUIC\":\"\",\"Name\":\"Target\",\"Personnel\":[],\"Team\":\"Blue\",\"Service\":\"Stationary\",\"SIDC\":\"Target-B\",\"TargetType\":\"In the Open\",\"DamageLevel\":\"Immediate Transient Incapacitation\",\"TypeName\":\"Target\",\"StrokeWidth\":10,\"SymbolColor\":\"Blue\",\"CustomIcon\":true}"
+    }
+  ],
+  "owner": {
+    "name": "David G. Fobar",
+    "id": "081108a1-a245-42e3-9fd5-428ce3d44c7f"
+  },
+  "calculations": [
+    {
+      "id": "c19cdde9-3b81-414c-8ffa-4acdb2ecf197",
+      "name": "Default Calculation",
+      "startTime": "2023-11-17T17:00:00.000Z",
+      "endTime": "2023-11-18T17:00:00.000Z",
+      "interval": "PT1H",
+      "currentTime": "2023-11-17T17:00:00.000Z",
+      "status": "IDLE",
+      "requests": [
+        {
+          "contourOptions": [],
+          "name": "FALLOUT"
+        },
+        {
+          "contourOptions": [
+            {
+              "fillColor": "#d9e0df",
+              "fillOpacity": 0.4,
+              "level": 1,
+              "description": "No Adverse Effects",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#d9e0df",
+              "fillOpacity": 0.4,
+              "level": 5,
+              "description": "Radiation worker annual limit- No adverse effects",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#5ff3e7",
+              "fillOpacity": 0.4,
+              "level": 25,
+              "description": "Civilian Life Saving Operations Limit- Nausea and mild headache possible",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#f1ff08",
+              "fillOpacity": 0.4,
+              "level": 75,
+              "description": "RES 2 - Combat Effective - nausea, headache, some vomiting in 20%",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#07f831",
+              "fillOpacity": 0.4,
+              "level": 125,
+              "description": "RES 3 -  Combat Degraded  - Nausea and vomiting in 50%",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#013c0f",
+              "fillOpacity": 0.4,
+              "level": 410,
+              "description": "Combat Degraded - 50% will die within 30 days without treatment.  Vomiting, diarrhea, fatigue in 80%",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#000601",
+              "fillOpacity": 0.4,
+              "level": 1000,
+              "description": "Lethal dose. Performance degraded. Onset 30 minutes. Death 2-3 weeks",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            }
+          ],
+          "name": "FALLOUT_GSPTL"
+        },
+        {
+          "contourOptions": [],
+          "name": "DAMAGE_PROBABILITY"
+        }
+      ],
+      "snapshots": [],
+      "weapons": [
+        {
+          "id": "a2c5771a-ea77-48d2-91af-ccaab6744af5",
+          "name": "Weapon",
+          "detonationTime": "2023-11-18T18:00:00.000Z",
+          "yield": 100,
+          "location": {
+            "latitude": 40.451416,
+            "longitude": -75.564209,
+            "altitude": 0
+          }
+        }
+      ]
+    }
+  ],
+  "entities": [
+    {
+      "id": "618cfd21-a823-4a7f-9e1c-405494abd6f0",
+      "name": "Target",
+      "type": "Target",
+      "target": "In the Open",
+      "damageLevel": "Immediate Transient Incapacitation",
+      "team": "BLUE",
+      "currentLocation": {
+        "latitude": 40.451416,
+        "longitude": -75.564209
+      },
+      "path": {
+        "startTime": "00:00:00",
+        "timeLocation": [
+          {
+            "time": "00:00:00",
+            "location": {
+              "latitude": 44.451416,
+              "longitude": -71.564209
+            }
+          }
+        ]
+      },
+      "thresholds": [
+        {
+          "resultName": "Peak Overpressure",
+          "move": {
+            "yellowValue": 7,
+            "redValue": 18
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 7,
+            "redValue": 18
+          }
+        },
+        {
+          "resultName": "Total Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Prompt Radiation Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Thermal Fluence",
+          "move": {
+            "yellowValue": 6,
+            "redValue": 15
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 6,
+            "redValue": 15
+          }
+        },
+        {
+          "resultName": "Damage Probability",
+          "move": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "6c8991e4-abef-4dc7-8f1e-eee3bb584b16",
+      "name": "Target",
+      "type": "Target",
+      "target": "In the Open",
+      "damageLevel": "Immediate Transient Incapacitation",
+      "team": "BLUE",
+      "currentLocation": {
+        "latitude": 41.451416,
+        "longitude": -74.564209
+      },
+      "path": {
+        "startTime": "00:00:00",
+        "timeLocation": [
+          {
+            "time": "00:00:00",
+            "location": {
+              "latitude": 44.451416,
+              "longitude": -71.564209
+            }
+          }
+        ]
+      },
+      "thresholds": [
+        {
+          "resultName": "Peak Overpressure",
+          "move": {
+            "yellowValue": 7,
+            "redValue": 18
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 7,
+            "redValue": 18
+          }
+        },
+        {
+          "resultName": "Total Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Prompt Radiation Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Thermal Fluence",
+          "move": {
+            "yellowValue": 6,
+            "redValue": 15
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 6,
+            "redValue": 15
+          }
+        },
+        {
+          "resultName": "Damage Probability",
+          "move": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "ae7178a6-6cf3-4e9d-bc03-863f097519e8",
+      "name": "Target",
+      "type": "Target",
+      "target": "In the Open",
+      "damageLevel": "Immediate Transient Incapacitation",
+      "team": "BLUE",
+      "currentLocation": {
+        "latitude": 42.451416,
+        "longitude": -73.564209
+      },
+      "path": {
+        "startTime": "00:00:00",
+        "timeLocation": [
+          {
+            "time": "00:00:00",
+            "location": {
+              "latitude": 44.451416,
+              "longitude": -71.564209
+            }
+          }
+        ]
+      },
+      "thresholds": [
+        {
+          "resultName": "Peak Overpressure",
+          "move": {
+            "yellowValue": 7,
+            "redValue": 18
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 7,
+            "redValue": 18
+          }
+        },
+        {
+          "resultName": "Total Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Prompt Radiation Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Thermal Fluence",
+          "move": {
+            "yellowValue": 6,
+            "redValue": 15
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 6,
+            "redValue": 15
+          }
+        },
+        {
+          "resultName": "Damage Probability",
+          "move": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "b7738118-9da1-4387-8a11-2b47bd266fb9",
+      "name": "Target",
+      "type": "Target",
+      "target": "In the Open",
+      "damageLevel": "Immediate Transient Incapacitation",
+      "team": "BLUE",
+      "currentLocation": {
+        "latitude": 43.451416,
+        "longitude": -72.564209
+      },
+      "path": {
+        "startTime": "00:00:00",
+        "timeLocation": [
+          {
+            "time": "00:00:00",
+            "location": {
+              "latitude": 44.451416,
+              "longitude": -71.564209
+            }
+          }
+        ]
+      },
+      "thresholds": [
+        {
+          "resultName": "Peak Overpressure",
+          "move": {
+            "yellowValue": 7,
+            "redValue": 18
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 7,
+            "redValue": 18
+          }
+        },
+        {
+          "resultName": "Total Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Prompt Radiation Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Thermal Fluence",
+          "move": {
+            "yellowValue": 6,
+            "redValue": 15
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 6,
+            "redValue": 15
+          }
+        },
+        {
+          "resultName": "Damage Probability",
+          "move": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          }
+        }
+      ]
+    },
+    {
+      "id": "736cfa39-e3ef-4682-9b8c-7acb0b33a59c",
+      "name": "Target",
+      "type": "Target",
+      "target": "In the Open",
+      "damageLevel": "Immediate Transient Incapacitation",
+      "team": "BLUE",
+      "currentLocation": {
+        "latitude": 44.451416,
+        "longitude": -71.564209
+      },
+      "path": {
+        "startTime": "00:00:00",
+        "timeLocation": [
+          {
+            "time": "00:00:00",
+            "location": {
+              "latitude": 44.451416,
+              "longitude": -71.564209
+            }
+          }
+        ]
+      },
+      "thresholds": [
+        {
+          "resultName": "Peak Overpressure",
+          "move": {
+            "yellowValue": 7,
+            "redValue": 18
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 7,
+            "redValue": 18
+          }
+        },
+        {
+          "resultName": "Total Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Prompt Radiation Dose",
+          "move": {
+            "yellowValue": 125,
+            "redValue": 410
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 125,
+            "redValue": 410
+          }
+        },
+        {
+          "resultName": "Thermal Fluence",
+          "move": {
+            "yellowValue": 6,
+            "redValue": 15
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 6,
+            "redValue": 15
+          }
+        },
+        {
+          "resultName": "Damage Probability",
+          "move": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          },
+          "shoot": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "communicate": {
+            "yellowValue": 1.7976931348623157e+308,
+            "redValue": 1.7976931348623157e+308
+          },
+          "survive": {
+            "yellowValue": 0.15,
+            "redValue": 0.3
+          }
+        }
+      ]
+    }
+  ],
+  "weather": {
+    "windDirection": 54,
+    "windSpeed": 10,
+    "windSpeedUnits": "ft/s",
+    "historicalDataMonth": ""
+  },
+  "errors": []
+}

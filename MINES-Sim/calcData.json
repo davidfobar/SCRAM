@@ -1,0 +1,119 @@
+{
+  "calculations": [
+    {
+      "id": "{{UUID}}", 
+      "name": "Default Calculation",
+      "startTime": "2023-11-17T17:00:00.000Z",
+      "endTime": "2023-11-18T17:00:00.000Z",
+      "interval": "PT1H",
+      "currentTime": "2023-11-17T17:00:00.000Z",
+      "status": "IDLE",
+      "requests": [
+        {
+          "contourOptions": [],
+          "name": "FALLOUT"
+        },
+        {
+          "contourOptions": [
+            {
+              "fillColor": "#d9e0df",
+              "fillOpacity": 0.4,
+              "level": 1,
+              "description": "No Adverse Effects",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#d9e0df",
+              "fillOpacity": 0.4,
+              "level": 5,
+              "description": "Radiation worker annual limit- No adverse effects",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#5ff3e7",
+              "fillOpacity": 0.4,
+              "level": 25,
+              "description": "Civilian Life Saving Operations Limit- Nausea and mild headache possible",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#f1ff08",
+              "fillOpacity": 0.4,
+              "level": 75,
+              "description": "RES 2 - Combat Effective - nausea, headache, some vomiting in 20%",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#07f831",
+              "fillOpacity": 0.4,
+              "level": 125,
+              "description": "RES 3 -  Combat Degraded  - Nausea and vomiting in 50%",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#013c0f",
+              "fillOpacity": 0.4,
+              "level": 410,
+              "description": "Combat Degraded - 50% will die within 30 days without treatment.  Vomiting, diarrhea, fatigue in 80%",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            },
+            {
+              "fillColor": "#000601",
+              "fillOpacity": 0.4,
+              "level": 1000,
+              "description": "Lethal dose. Performance degraded. Onset 30 minutes. Death 2-3 weeks",
+              "outlineColor": "#000000",
+              "outlineDashStyle": [
+                0
+              ],
+              "outlineWidth": 1
+            }
+          ],
+          "name": "FALLOUT_GSPTL"
+        },
+        {
+          "contourOptions": [],
+          "name": "DAMAGE_PROBABILITY"
+        }
+      ],
+      "snapshots": [],
+      "weapons": [
+        {
+          "id": "{{WEAPON_UUID}}",
+          "name": "Weapon",
+          "detonationTime": "2023-11-17T17:00:00.000Z",
+          "yield": "{{YIELD}}",
+          "location": {
+            "latitude": "{{WEAPON_LAT}}",
+            "longitude": "{{WEAPON_LON}}",
+            "altitude": 0
+          }
+        }
+      ]
+    }
+  ]
+}
