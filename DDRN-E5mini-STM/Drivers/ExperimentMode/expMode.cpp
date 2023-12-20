@@ -15,10 +15,13 @@ enum ExpCMDS {
 	RETURN_SAMPLE = 0x02,
 	RETURN_HELLO  = 0x03,
 	SET_BIAS      = 0x04,
-	RETURN_BATT   = 0x05
+	RETURN_BATT   = 0x05,
+	TOGGLE_RED    = 0x06
 };
 
 #define EXP_MODE_ACTIVE true
+
+extern Detector detector;
 
 void uartSendFloatVal(float val_f){
 	int32_t val = (int32_t)(val_f * 100.0);
@@ -76,6 +79,9 @@ void enterExperimentMode(void){
 				case RETURN_BATT:
 					uartSendFloatVal( bsp_env_sensors.getBattVoltage() );
 					break;
+
+				case TOGGLE_RED:
+				  detector.toggleStimLED();
 
 				default:
 					sprintf(msg, "BAD\r\n");

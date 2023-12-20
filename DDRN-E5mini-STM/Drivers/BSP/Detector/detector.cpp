@@ -92,6 +92,12 @@ float Detector::calcDoseRate() {
   return measuredDose / (integratedDoseTime_ms / 1000.0);
 }
 
+void Detector::toggleStimLED() {
+  stimLED_On();
+  HAL_Delay(1000);
+  stimLED_Off();
+}
+
 void Detector::stimLED_On() {
   //use the HAL to turn on the LED
   HAL_GPIO_WritePin(Stim_Enable_GPIO_Port, Stim_Enable_Pin, GPIO_PIN_SET);

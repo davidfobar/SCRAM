@@ -28,6 +28,7 @@ class Detector {
 
     bool setSiPM_Bias(uint8_t dacValue);
     bool sipmBias_Off();
+    void toggleStimLED();
   private:
     void stimLED_On();
     void stimLED_Off();
