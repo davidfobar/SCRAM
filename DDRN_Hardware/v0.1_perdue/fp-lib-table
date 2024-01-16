@@ -1,0 +1,9 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "BMP390L")(type "KiCad")(uri "${KIPRJMOD}/libraries/BMP390L")(options "")(descr ""))
+  (lib (name "LoRa-E5_kicad")(type "KiCad")(uri "${KIPRJMOD}/libraries/LoRa-E5_kicad")(options "")(descr ""))
+  (lib (name "MAX1932")(type "KiCad")(uri "${KIPRJMOD}/libraries/MAX1932")(options "")(descr ""))
+  (lib (name "LSM303AGR")(type "KiCad")(uri "${KIPRJMOD}/libraries/LSM303AGR")(options "")(descr ""))
+  (lib (name "Library")(type "KiCad")(uri "${KIPRJMOD}/libraries/Library.pretty")(options "")(descr ""))
+  (lib (name "LoRa-E5")(type "KiCad")(uri "${KIPRJMOD}/libraries/LoRa-E5_kicad/LoRa-E5.pretty")(options "")(descr ""))
+)
