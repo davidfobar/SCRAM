@@ -1,0 +1,151 @@
+
+(kicad_symbol_lib (version 20211014) (generator kicad_symbol_editor)
+  (symbol "SST-10-IRD-B130-S940" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (property "Reference" "D" (id 0) (at -7.62 6.35 0)
+      (effects (font (size 1.27 1.27)) (justify bottom left))
+    )
+    (property "Value" "SST-10-IRD-B130-S940" (id 1) (at -7.62 -8.89 0)
+      (effects (font (size 1.27 1.27)) (justify top left))
+    )
+    (property "Footprint" "SST-10-IRD-B130-S940:LED_SST-10-IRD-B130-S940" (id 2) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MF" "Luminus Devices Inc." (id 4) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MAXIMUM_PACKAGE_HEIGHT" "2.03 mm" (id 5) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Package" "None" (id 6) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Price" "None" (id 7) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Check_prices" "https://www.snapeda.com/parts/SST-10-IRD-B130-S940/Luminus+Devices+Inc./view-part/?ref=eda" (id 8) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "STANDARD" "Manufacturer Recommendations" (id 9) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "PARTREV" "01" (id 10) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "SnapEDA_Link" "https://www.snapeda.com/parts/SST-10-IRD-B130-S940/Luminus+Devices+Inc./view-part/?ref=snap" (id 11) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MP" "SST-10-IRD-B130-S940" (id 12) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=4889797&manufacturer=Luminus Devices Inc.&part_name=SST-10-IRD-B130-S940&search_term=None" (id 13) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Description" "\nInfrared (IR) Emitter 950nm 2.8V 1.5A 410mW/sr @ 1A (Typ) 130° 1414 (3535 Metric)\n" (id 14) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "Availability" "In Stock" (id 15) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (property "MANUFACTURER" "Luminus" (id 16) (at 0 0 0)
+      (effects (font (size 1.27 1.27)) (justify bottom) hide)
+    )
+    (symbol "SST-10-IRD-B130-S940_0_0"
+      (polyline
+        (pts (xy -2.54 1.524) (xy -2.54 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 0.0) (xy -2.54 -1.524)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 -1.524) (xy 0.0 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 0.0) (xy -2.54 1.524)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 1.524) (xy 0.0 0.0)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.0 0.0) (xy 0.0 -1.524)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -2.54 0.0) (xy -7.62 0.0)) (stroke (width 0.1524))
+      )
+      (text "IR" (at 1.016 2.032 0)
+        (effects (font (size 1.016 1.016)) (justify bottom left))
+      )
+      (polyline
+        (pts (xy 1.016 4.064) (xy -0.762 2.032)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.6858 3.0988) (xy 0.127 3.5814)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.127 3.5814) (xy 1.016 4.064)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 1.016 4.064) (xy 0.6858 3.0988)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.6858 3.0988) (xy 0.7112 3.8354)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.7112 3.8354) (xy 0.5842 3.8354)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 0.3048 3.5052) (xy 0.5334 3.6576)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.2286 4.1656) (xy -2.0066 2.1336)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.5588 3.2004) (xy -1.1176 3.683)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -1.1176 3.683) (xy -0.2286 4.1656)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.2286 4.1656) (xy -0.5588 3.2004)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.5588 3.2004) (xy -0.5334 3.937)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.5334 3.937) (xy -0.6604 3.937)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy -0.9398 3.6068) (xy -0.7112 3.7592)) (stroke (width 0.254))
+      )
+      (polyline
+        (pts (xy 5.08 0.0) (xy 0.0 0.0)) (stroke (width 0.1524))
+      )
+      (rectangle (start -7.62 -7.62) (end 5.08 5.08)
+        (stroke (width 0.254)) (fill (type background))
+      )
+      (pin passive line (at 10.16 0.0 180.0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "1"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at -12.7 0.0 0) (length 5.08)
+        (name "~"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "2"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+      (pin passive line (at 10.16 -5.08 180.0) (length 5.08)
+        (name "EXP"
+          (effects (font (size 1.016 1.016)))
+        )
+        (number "3"
+          (effects (font (size 1.016 1.016)))
+        )
+      )
+    )
+  )
+)
