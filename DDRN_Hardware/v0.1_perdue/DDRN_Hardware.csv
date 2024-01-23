@@ -1,34 +1,31 @@
-#,Reference,Qty,Value,Footprint,DNP,
-1,"C1, C2",2,4.7u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,1
-2,C3,1,1u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,1
-3,"C4, C5",2,0.01u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,1
-4,C6,1,220n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,1
-5,"C7, C9",2,10u,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,1
-6,"C8, C10",2,100n,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,1
-7,"C11, C12",2,DNP,Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,,
-8,D1,1,CDBW46-G,Diode_SMD:D_SOD-123,,1
-9,D2,1,LED,LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder,,1
-10,"H1, H2, H3, H4",4,MountingHole,MountingHole:MountingHole_3.2mm_M3_DIN965,,
-11,J2,1,Conn_Coaxial,Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical,,1
-12,J3,1,Conn_01x02_Pin,Library:JST-PH-RH-SM,,1
-13,J4,1,Conn_01x04_Pin,Library:SLW4S-1C7LF,,1
-14,J5,1,Conn_01x06_Pin,Library:SLW6S-1C7LF,,1
-15,J8,1,Conn_02x05_Top_Bottom,Library:STLINK-V3MINIE,,1
-16,L1,1,150uH,Library:SRN4026,,1
-17,"Q1, Q2",2,BSS119,Package_TO_SOT_SMD:SOT-23,,1
-18,R1,1,4.02k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,1
-19,R2,1,32.4k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,1
-20,R3,1,2.0k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,1
-21,R4,1,205k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,1
-22,"R5, R6, R7, R8, R11, R12",6,10k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,1
-23,"R9, R10",2,4.7k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,1
-24,R13,1,100,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,1
-25,"R14, R15",2,1k,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,1
-26,R16,1,0R,Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,,1
-27,SW1,1,SW_Push,Button_Switch_SMD:SW_SPST_PTS810,,1
-28,U1,1,LoRa-E5,LoRa-E5:LoRa-E5,,1
-29,U2,1,MAX1932,Library:MAX1932_handsolder,,1
-30,U3,1,BMP390L,Library:bmp390_handsolder,,1
-31,U4,1,W25Q32JVSS,Package_SO:SOIC-8_5.23x5.23mm_P1.27mm,,1
-32,U5,1,LSM303AGR,Library:lsm303_handsolder,,1
-33,U6,1,AP2112K-3.3,Package_TO_SOT_SMD:SOT-23-5,,1
+"Source:","C:\Users\david.fobar\Documents\GitHub\SCRAM\DDRN_Hardware\v0.1_perdue\DDRN_Hardware.kicad_sch"
+"Date:","1/18/2024 2:12:58 PM"
+"Tool:","Eeschema 7.0.7"
+"Generator:","C:\Program Files\KiCad\7.0\bin\scripting\plugins/bom_csv_grouped_by_value.py"
+"Component Count:","29"
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","DNP"
+"1","1","C2","4.7u","Device:C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~",""
+"2","1","C3","1u","Device:C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~",""
+"3","2","C4, C5","0.01u","Device:C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~",""
+"4","2","C7, C9","10u","Device:C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~",""
+"5","2","C8, C10","100n","Device:C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~",""
+"6","2","C11, C12","DNP","Device:C_Small","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~",""
+"7","1","D1","CDBW46-G","Device:D_Schottky","Diode_SMD:D_SOD-123","~",""
+"8","4","H1, H2, H3, H4","MountingHole","Mechanical:MountingHole","MountingHole:MountingHole_3.2mm_M3_DIN965","~",""
+"9","1","J1","Conn_01x14_Pin","Connector:Conn_01x14_Pin","Connector:Tag-Connect_TC2070-IDC-FP_2x07_P1.27mm_Vertical","~",""
+"10","1","J2","Conn_Coaxial","Connector:Conn_Coaxial","Connector_Coaxial:U.FL_Hirose_U.FL-R-SMT-1_Vertical"," ~",""
+"11","1","J5","Conn_01x06_Pin","Connector:Conn_01x06_Pin","Connector:Tag-Connect_TC2030-IDC-FP_2x03_P1.27mm_Vertical","~",""
+"12","1","L1","150uH","Device:L_Iron","Library:SRN4026","~",""
+"13","1","Q1","BSS119","Transistor_FET:BSS138","Package_TO_SOT_SMD:SOT-23","https://www.onsemi.com/pub/Collateral/BSS138-D.PDF",""
+"14","1","R1","4.02k","Device:R_Small_US","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~",""
+"15","1","R2","32.4k","Device:R_Small_US","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~",""
+"16","1","R3","2.0k","Device:R_Small_US","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~",""
+"17","1","R4","205k","Device:R_Small_US","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~",""
+"18","1","R5","10k","Device:R_Small_US","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~",""
+"19","1","R16","0R","Device:R_Small_US","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~",""
+"20","1","U1","LoRa-E5","LoRa-E5:LoRa-E5","LoRa-E5:LoRa-E5","",""
+"21","1","U2","MAX1932","MAX1932:MAX1932","Library:MAX1932_handsolder","",""
+"22","1","U6","AP2112K-3.3","Regulator_Linear:AP2112K-3.3","Package_TO_SOT_SMD:SOT-23-5","https://www.diodes.com/assets/Datasheets/AP2112.pdf",""

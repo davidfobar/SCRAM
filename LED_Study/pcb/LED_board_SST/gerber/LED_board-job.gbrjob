@@ -5,7 +5,7 @@
       "Application": "Pcbnew",
       "Version": "7.0.7"
     },
-    "CreationDate": "2024-01-18T12:21:34-05:00"
+    "CreationDate": "2024-01-19T08:54:33-05:00"
   },
   "GeneralSpecs": {
     "ProjectId": {
@@ -27,7 +27,8 @@
       "PadToPad": 0.2,
       "PadToTrack": 0.2,
       "TrackToTrack": 0.2,
-      "MinLineWidth": 0.75
+      "TrackToRegion": 0.5,
+      "RegionToRegion": 0.5
     }
   ],
   "FilesAttributes": [
@@ -37,18 +38,8 @@
       "FilePolarity": "Positive"
     },
     {
-      "Path": "LED_board-B_Cu.gbr",
-      "FileFunction": "Copper,L2,Bot",
-      "FilePolarity": "Positive"
-    },
-    {
       "Path": "LED_board-F_Paste.gbr",
       "FileFunction": "SolderPaste,Top",
-      "FilePolarity": "Positive"
-    },
-    {
-      "Path": "LED_board-B_Paste.gbr",
-      "FileFunction": "SolderPaste,Bot",
       "FilePolarity": "Positive"
     },
     {
@@ -57,18 +48,8 @@
       "FilePolarity": "Positive"
     },
     {
-      "Path": "LED_board-B_Silkscreen.gbr",
-      "FileFunction": "Legend,Bot",
-      "FilePolarity": "Positive"
-    },
-    {
       "Path": "LED_board-F_Mask.gbr",
       "FileFunction": "SolderMask,Top",
-      "FilePolarity": "Negative"
-    },
-    {
-      "Path": "LED_board-B_Mask.gbr",
-      "FileFunction": "SolderMask,Bot",
       "FilePolarity": "Negative"
     },
     {
