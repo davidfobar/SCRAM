@@ -20,6 +20,8 @@ max_pulses = input("Enter max pulses:")
 step_pulse = input("Enter pulse step:")
 
 # set variables 
+temp = range(min_temp,max_temp,step_temp)
+bias = range(min_bias,max_bias,step_bias)
 pulses = range(min_pulses,max_pulses,step_pulse)
 
 # Function to perform the detector startup sequence
@@ -45,8 +47,8 @@ def run_experiment(start_temp, end_temp, temp_step, min_pulses, max_pulses, puls
             print("Error: Failed to save initial parameters.")
 
         # Loop through temperature range
-        for temperature in range(start_temp, end_temp + 1, temp_step):
-            print(f"Temperature: {temperature} °C")
+        for t in temp):
+            print(f"Temperature: {temp} °C")
 
             # Perform detector startup sequence
             detector_startup()
@@ -64,7 +66,7 @@ def run_experiment(start_temp, end_temp, temp_step, min_pulses, max_pulses, puls
                 baseline_dose = 0  # Replace with actual baseline calculation
 
                 # Loop through bias range
-                for bias in range(min_bias, max_bias + 1, bias_step):
+                for b in bias:
                     print(f"Bias: {bias}")
 
                     # X-ray generator and bias setting code here
@@ -90,10 +92,10 @@ def run_experiment(start_temp, end_temp, temp_step, min_pulses, max_pulses, puls
                     # ...
 
             # Record temperature and set equal to "Last Temperature"
-            last_temperature = temperature
+            last_temperature = temp
 
             # If NOT at the end of the temperature range, wait for some time
-            if temperature < end_temp:
+            if temp < max_temp:
                 wait_time = 10  # Replace with the desired wait time
                 print(f"Waiting for {wait_time} seconds before the next temperature iteration...")
                 time.sleep(wait_time)
