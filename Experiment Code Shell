@@ -1,6 +1,13 @@
 import time
 import csv
 
+
+# calling XRS4 class into code
+import XRS4_driver as XRS4
+xray = XRS4
+
+pulses = range(min_pulses,max_pulses,pulse_step)
+
 # Function to perform the detector startup sequence
 def detector_startup():
     print("Initiating detector startup sequence...")
@@ -31,10 +38,12 @@ def run_experiment(start_temp, end_temp, temp_step, min_pulses, max_pulses, puls
             detector_startup()
 
             # Loop through pulses
-            for pulses in range(min_pulses, max_pulses + 1, pulse_step):
+            for p in pulses:
                 print(f"Number of Pulses: {pulses}")
+                #X-ray generator code
+                xray.set_pulse_count(p)
 
-                # Your X-ray generator and bias setting code here
+                # bias setting code here
                 # ...
 
                 # Placeholder for phosphor reading and calculations
@@ -86,4 +95,3 @@ def run_experiment(start_temp, end_temp, temp_step, min_pulses, max_pulses, puls
 run_experiment(start_temp=25, end_temp=100, temp_step=5,
                min_pulses=10, max_pulses=50, pulse_step=10,
                detector_distance=2, min_bias=0, max_bias=20, bias_step=5)
-
