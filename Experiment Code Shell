@@ -1,12 +1,26 @@
 import time
 import csv
-
-
+#
 # calling XRS4 class into code
 import XRS4_driver as XRS4
 xray = XRS4
+# call temp. chamber class
 
-pulses = range(min_pulses,max_pulses,pulse_step)
+# call detector class
+
+# get parameters
+min_temp = input("Enter starting temp:")
+max_temp = input("Enter final temp:")
+step_temp = input("Enter temp. step:")
+min_bias = input("Enter initial bias:")
+max_bias = input("Enter final bias:")
+step_bias = input("Enter bias step:")
+min_pulses = input("Enter min. pusles:")
+max_pulses = input("Enter max pulses:")
+step_pulse = input("Enter pulse step:")
+
+# set variables 
+pulses = range(min_pulses,max_pulses,step_pulse)
 
 # Function to perform the detector startup sequence
 def detector_startup():
