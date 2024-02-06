@@ -78,6 +78,13 @@ class XRS4:
         print(self.ser.readline())
         self.ser.flush()
 
+
+    def fire_no_delay(self):
+        #get the program version
+        self.ser.write(b'?START_NO\r\n')
+        print(self.ser.readline())
+        self.ser.flush()
+
     def set_pulse_count(self, count):
         if count > 200:
             print("Error: Pulse count must be less than 200")
