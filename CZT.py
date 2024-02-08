@@ -1,8 +1,6 @@
 from pyModbusTCP.client import ModbusClient
 from time import sleep
 
-c = ModbusClient(host="169.254.112.221", port=502, auto_open=True)
-ip = 
 #this is a list of relative addresses for the registers
 PROCESS = 0x0F
 TEMP_SP = 0x24 #temperature setpoint
