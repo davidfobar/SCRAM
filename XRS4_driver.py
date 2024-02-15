@@ -80,6 +80,7 @@ class XRS4:
             return
         self.ser.write(b'#PLSCNT|' + str(count).encode() + b'\n')
         print(self.ser.readline())
+        time.sleep(1)
 
     def set_delay(self, seconds):
         if seconds < 15 or seconds > 240:
@@ -90,3 +91,4 @@ class XRS4:
     def fire_xray(self):
         self.ser.write(b'#START_NO\n')
         print(self.ser.readline())
+        time.sleep(2)
