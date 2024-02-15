@@ -1,4 +1,3 @@
-import serial
 import time
 '''
 Command, Description, Return, Value(s)
@@ -64,34 +63,30 @@ Error Number, Description
 # - get_unit()
 # - get_error()
 class XRS4:
-    def __init__(self, port):
-        self.ser = serial.Serial(port, 57600, timeout=1)
-        self.ser.flush()
+    def __init__(self, xray_serial):
+        self.ser = xray_serial
 
         #get the serial number and head code of the unit
-        self.ser.write(b'?PID\r\n')
+        self.ser.write(b'?PID\n')
         print(self.ser.readline())
-        self.ser.flush()
 
         #get the program version
-        self.ser.write(b'?VER\r\n')
+        self.ser.write(b'?VER\n')
         print(self.ser.readline())
-        self.ser.flush()
 
     def set_pulse_count(self, count):
         if count > 200:
             print("Error: Pulse count must be less than 200")
             return
-        self.ser.write(b'#PLSCNT|' + str(count).encode() + b'\r\n')
-        self.ser.flush()
-        self.ser.flushInput()
-        self.ser.flushOutput()
-        self.ser.reset_input_buffer()
-        self.ser.reset_output_buffer()
+        self.ser.write(b'#PLSCNT|' + str(count).encode() + b'\n')
+        print(self.ser.readline())
 
     def set_delay(self, seconds):
         if seconds < 15 or seconds > 240:
             print("Error: Delay must be between 15 and 240 seconds")
             return
-        self.ser.write(b'#DLY|' + str(seconds).encode() + b'\r\n')
-        self
+        self.ser.write(b'#DLY|' + str(seconds).encode() + b'\n')
+
+    def fire_xray(self):
+        self.ser.write(b'#START_NO\n')
+        print(self.ser.readline())

@@ -199,7 +199,7 @@
       (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp 5b79fceb-1992-41c7-9b4c-a1274e64475f))
     (fp_line (start 0.635 0.5) (end -0.635 0.5)
       (stroke (width 0.1) (type solid)) (layer "F.Fab") (tstamp df11ca57-609e-4149-9b18-f2847b853716))
-    (pad "1" thru_hole rect (at 0 0) (size 0.85 0.85) (drill 0.5) (layers "*.Cu" "*.Mask")
+    (pad "1" thru_hole rect (at 0 0) (size 0.85 0.85) (drill 0.8) (layers "*.Cu" "*.Mask")
       (net 4 "/GND") (pinfunction "Pin_1") (pintype "passive") (tstamp 3f387835-adf0-4ef3-9053-3cc9c7100246))
     (model "${KICAD6_3DMODEL_DIR}/Connector_PinHeader_1.00mm.3dshapes/PinHeader_1x01_P1.00mm_Vertical.wrl"
       (offset (xyz 0 0 0))
