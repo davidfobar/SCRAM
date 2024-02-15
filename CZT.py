@@ -8,8 +8,8 @@ TEMP = 0x23 #temperature
 HUM_SP = 0x29 #humidity setpoint
 HUM = 0x28 #humidity
 
-class CZT(ip = "169.254.112.221", p=502):
-    def __init__(self, ip):
+class CZT():
+    def __init__(self, ip = "169.254.112.221", p=502):
         self.c = ModbusClient(host=ip, port=p, auto_open=True)
 
     def setTemperatureSP(self, temperature):
