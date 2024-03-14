@@ -69,12 +69,15 @@ with Serial(xray_serialport, 57600, timeout=1) as xray_ser:
     with Serial(det_serialport, 115200, timeout=2) as det_ser:
         for i, setTemp in enumerate(Temp_Range):
             print(f'set temp {setTemp}')
-            curTemp = getFloatValue(det_ser, RETURN_TEMP)
-            diff = setTemp*0.05
+            tempChamber.setTemperatureSP(setTemp)
+            curTemp = tempChamber.getTemperature()
+            diff = 0.5
             while curTemp > setTemp+diff or curTemp < setTemp-diff:
-                curTemp = getFloatValue(det_ser, RETURN_TEMP)
+                curTemp = tempChamber.getTemperature()
                 time.sleep(5)
-                print("  Current temperature is:", curTemp, datetime.now())
+                print("  Current chamber temperature is:", curTemp, datetime.now())
+            time.sleep(600)
+            
             #setting the temperature
             #if temp <= 5:
                 #print("temp is less than 5")
@@ -109,10 +112,10 @@ with Serial(xray_serialport, 57600, timeout=1) as xray_ser:
                     print(f'    measure bias {bias}')
                 
 
-with open(f'data_{timestamp}') as outfile:
+with open(f'data_{timestamp}', 'wb') as outfile:
     np.save(outfile, data)
 
-with open(f'temp_record_{timestamp}') as outfile: 
+with open(f'temp_record_{timestamp}', 'wb') as outfile: 
     np.save(outfile, np.array(temp_record))
 
 print(f' file saved to {outfile}.npy')
