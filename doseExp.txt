@@ -1,0 +1,10 @@
+activation analysis post dosing using HPGe
+
+Low voltage power supply - confirm 3.3v
+high voltage 25-30v
+
+test for HV fluctuation
+command change of HV and verify
+verify flash integrity
+verify ram integrity
+verify GPIO and ADC function
