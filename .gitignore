@@ -93,3 +93,6 @@ DDRN-E5mini-STM/RemoteSystemsTempFiles/
 
 # Ignore STM32CubeIDE generated ProjectBuilders folder only if it's in DDRN-E5mini-STM
 DDRN-E5mini-STM/ProjectBuilders/
+
+#Ignore .npy files in MINES-Sim folder
+MINES-Sim/*.npy
