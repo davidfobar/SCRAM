@@ -97,3 +97,6 @@ DDRN-E5mini-STM/ProjectBuilders/
 #Ignore .npy files in MINES-Sim folder
 MINES-Sim/*.npy
 MINES-Sim/*.pkl
+
+#ignore pip_cache folder
+pip_cache/
