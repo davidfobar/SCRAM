@@ -126,7 +126,8 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   HAL_GPIO_WritePin(Memory_CS_GPIO_Port, Memory_CS_Pin, GPIO_PIN_SET);
   HAL_GPIO_WritePin(Bias_CS_GPIO_Port, Bias_CS_Pin, GPIO_PIN_SET);
-  if (experimentMode) enterExperimentMode();
+  //if (experimentMode)
+  enterExperimentMode();
 
   while (1)
   {
