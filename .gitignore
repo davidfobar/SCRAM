@@ -100,3 +100,6 @@ MINES-Sim/*.pkl
 
 #ignore pip_cache folder
 pip_cache/
+
+#ignore delfic_test folder
+delfic_test/
