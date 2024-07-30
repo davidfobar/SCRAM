@@ -43,21 +43,26 @@ class DelficField(RadiationField):
     plt.imshow(self.fieldData[timestep], origin='lower', cmap=cmap, vmin=0, vmax=np.max(self.fieldData), alpha=0.5)
     plt.colorbar(label='Fallout Exposure Rate')
 
-    # add a 1km square grid to the plot, 10 units per km
+    # add a 1km square grid to the plot, 10 units per km, 
     plt.grid(which='both', color='black', linestyle='-', linewidth=0.5)
     ax = plt.gca()
     ax.set_xticks(np.arange(0, self.fieldData[timestep].shape[1], 10))
     ax.set_yticks(np.arange(0, self.fieldData[timestep].shape[0], 10))
+    ax.set_xticklabels(np.arange(0, self.fieldData[timestep].shape[1], 10)//10)
+    ax.set_yticklabels(np.arange(0, self.fieldData[timestep].shape[0], 10)//10)
 
     plt.xlim(self.fieldData[timestep].shape[1]//2 - plotLimits/2, self.fieldData[timestep].shape[1]//2 + plotLimits/2)
     plt.ylim(self.fieldData[timestep].shape[0]//2 - plotLimits/2, self.fieldData[timestep].shape[0]//2 + plotLimits/2)
     plt.show()
 
   def getDoseRate(self, x: float, y: float, time: float): 
-    #2d interpolation, x and y are floats with scale of 100m per unit
+    #2d interpolation, x and y are floats with units of km, delfic is in 100m increments
     #timestep is an integer, 0 is the first timestep 1-hour post burst
     #returns the dose rate at the point x, y at the given time post burst
     #time is in hours, i.e. 0.5 is 30 minutes post burst
+
+    x = x * 10
+    y = y * 10
 
     x_lower = int(x)
     x_upper = x_lower + 1

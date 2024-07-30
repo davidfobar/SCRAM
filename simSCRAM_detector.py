@@ -31,10 +31,8 @@ class SimDetector(SCRAM_field.Detector):
     #calculate the time of flight to each gateway in ns, then add noise
     tofs = []
 
-    #gateway locations are in 100's of meters to convert to meters
-
     for gateway in gateways:
-      distance = np.sqrt((self.trueX - gateway.x)**2 + (self.trueY - gateway.y)**2) * 10
+      distance = np.sqrt((self.trueX - gateway.x)**2 + (self.trueY - gateway.y)**2) * 1000
 
       tof = distance / 299792458 * 1e9 #ns
       tof += np.random.normal(0, self.ToFvariance)

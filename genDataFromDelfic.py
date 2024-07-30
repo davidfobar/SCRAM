@@ -214,6 +214,8 @@ def getSCRAMfield(idx=None, plot=False, numArtyShells=10):
         ax = plt.gca()
         ax.set_xticks(np.arange(0, data.shape[1], 10))
         ax.set_yticks(np.arange(0, data.shape[0], 10))
+        ax.set_xticklabels(np.arange(0, data.shape[1], 10)//10)
+        ax.set_yticklabels(np.arange(0, data.shape[0], 10)//10)
 
         plotLimits = 100
         plt.xlim(data.shape[1]//2 - plotLimits/2, data.shape[1]//2 + plotLimits/2)
@@ -261,13 +263,16 @@ def getSCRAMfield(idx=None, plot=False, numArtyShells=10):
         ax = plt.gca()
         ax.set_xticks(np.arange(0, data.shape[1], 10))
         ax.set_yticks(np.arange(0, data.shape[0], 10))
+        ax.set_xticklabels(np.arange(0, data.shape[1], 10)//10)
+        ax.set_yticklabels(np.arange(0, data.shape[0], 10)//10)
 
         plotLimits = 25
         plt.xlim(detectorFieldCenterX - plotLimits/2, detectorFieldCenterX + plotLimits/2)
         plt.ylim(detectorFieldCenterY - plotLimits/2, detectorFieldCenterY + plotLimits/2)
         plt.show()
 
-    detectors = [SimDetector(detector[0], detector[1], radField, i, len(gatewayLocations)) for i, detector in enumerate(detectors)]
-    gateways = [Gateway(gateway[0], gateway[1]) for gateway in gatewayLocations]
+    #divide x and y by 10 to convert from 100m units to km
+    detectors = [SimDetector(detector[0]/10, detector[1]/10, radField, i, len(gatewayLocations)) for i, detector in enumerate(detectors)]
+    gateways = [Gateway(gateway[0]/10, gateway[1]/10) for gateway in gatewayLocations]
 
     return radField, gateways, detectors
