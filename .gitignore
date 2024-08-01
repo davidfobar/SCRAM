@@ -103,3 +103,4 @@ pip_cache/
 
 #ignore delfic_test folder
 delfic_test/
+data/
