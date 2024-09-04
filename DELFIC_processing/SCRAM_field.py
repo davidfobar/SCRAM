@@ -123,9 +123,7 @@ class Detector:
     self.updateIdx += 1
   
   def getFeatures(self, idx):
-    return np.array([self.measuredX[:idx], self.measuredY[:idx], 
-                     self.posUncertainty[:idx], self.estimatedDoseRateMeasurements[:idx], 
-                     self.estimatedDoseRateUncertainties[:idx]])
+    return np.array([self.measuredX[:idx], self.measuredY[:idx], self.posUncertainty[:idx], self.estimatedDoseRateMeasurements[:idx], self.estimatedDoseRateUncertainties[:idx]])
 
 class Gateway:
   def __init__(self, x, y, id):
