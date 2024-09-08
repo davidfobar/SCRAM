@@ -19,7 +19,7 @@ class SimDetector(SCRAM_field.Detector):
 
     ToFs = np.zeros(len(gateways))
     for g, gateway in enumerate(gateways):
-      distance = np.sqrt((self.trueX - gateway.x)**2 + (self.trueY - gateway.y)**2) * 1000 #km to m
+      distance = np.sqrt(abs((self.trueX - gateway.x)**2 + (self.trueY - gateway.y)**2)) * 1000 #km to m
       ToF = distance / 299792458 * 1e9 #ns
       ToF += np.random.normal(0, self.ToFvariance)
       ToFs[g] = ToF

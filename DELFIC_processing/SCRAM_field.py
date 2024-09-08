@@ -49,8 +49,8 @@ class Detector:
     ax.errorbar(self.predictionTimes[:self.updateIdx], self.estimatedDoseRateMeasurements[:self.updateIdx], yerr=self.estimatedDoseRateUncertainties[:self.updateIdx], fmt='o', label='Predicted Dose Rate')
     ax.plot(self.predictionTimes[:self.updateIdx], trueDoseRates[:self.updateIdx], 'r', label='True Dose Rate')
     ax.set_xlabel('Time') 
-    ax.set_ylabel('Dose Rate')
-    ax.set_title('Dose Rate vs Time')
+    ax.set_ylabel('Exposure Rate [R/hr]')
+    ax.set_title('Exposure Rate vs Time for a Single Dose Monitor')
     ax.legend()
     plt.show()
 
@@ -60,7 +60,7 @@ class Detector:
     skip = 6
 
     #calculate the distance between the true position and the predicted position
-    distance = np.sqrt((np.array(self.measuredX) - trueX)**2 + (np.array(self.measuredY) - trueY)**2)
+    distance = np.sqrt(abs((np.array(self.measuredX) - trueX)**2 + (np.array(self.measuredY) - trueY)**2))
     posUncertainty = np.array(self.posUncertainty)
     plt.errorbar(self.predictionTimes[skip:self.updateIdx], distance[skip:self.updateIdx]*1000, yerr=posUncertainty[skip:self.updateIdx], fmt='o', color='k')
     plt.plot(self.predictionTimes[skip:self.updateIdx], np.zeros(len(self.predictionTimes[skip:self.updateIdx])), 'k--')
@@ -82,7 +82,7 @@ class Detector:
     self.doseRateFilter.update(doseMeasurement)
     self.estimatedDoseRateMeasurements[self.updateIdx] = self.doseRateFilter.x[0]
     try:
-      self.estimatedDoseRateUncertainties[self.updateIdx] = np.sqrt(self.doseRateFilter.P[0,0])
+      self.estimatedDoseRateUncertainties[self.updateIdx] = np.sqrt(abs(self.doseRateFilter.P[0,0]))
     except:
       self.estimatedDoseRateUncertainties[self.updateIdx] = 0
 
@@ -116,8 +116,8 @@ class Detector:
     self.measuredY[self.updateIdx] = measuredY
 
     #use the latest ToF filter uncertainty to estimate the uncertainty in the position
-    timeUncertainties = np.sqrt(np.diag(self.timeOfFlightFilter.P))
-    posUncertainty = np.sqrt(np.sum(timeUncertainties**2))*3e2
+    timeUncertainties = np.sqrt(abs(np.diag(self.timeOfFlightFilter.P)))
+    posUncertainty = np.sqrt(abs(np.sum(timeUncertainties**2)))*3e2
     self.posUncertainty[self.updateIdx] = posUncertainty
 
     self.updateIdx += 1
