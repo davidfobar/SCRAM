@@ -1,8 +1,10 @@
+from os import times
+import time
 import SCRAM_field
 import numpy as np
 
 class SimDetector(SCRAM_field.Detector):
-  def __init__(self, x, y, trueDoseRates, id, gateways, timesteps, positionMeasurementNoise=0.2, positionProcessVariance=1e-6, expectedDecayRate=1, 
+  def __init__(self, x, y, trueDoseRates, id, gateways, nTimesteps, timeScale, positionMeasurementNoise=0.2, positionProcessVariance=1e-6, expectedDecayRate=1, 
                decayProcessVariance=0.1, detMeasurementUncertainty=0.2, minimumNoise=0.2, minimumNoiseUncertainty=0.01, ToFvariance=100):
     super().__init__(id, gateways, positionMeasurementNoise, positionProcessVariance, expectedDecayRate, decayProcessVariance)
     self.trueX = x
@@ -11,7 +13,8 @@ class SimDetector(SCRAM_field.Detector):
     self.trueDoseRates = trueDoseRates
     self.doseMeasurements = trueDoseRates + np.random.normal(0, trueDoseRates*detMeasurementUncertainty) + minimumNoise*np.random.normal(0, minimumNoiseUncertainty, len(trueDoseRates))
     self.detMeasurementUncertainty = detMeasurementUncertainty
-    self.timesteps = timesteps
+    self.nTimesteps = nTimesteps
+    self.timeScale = timeScale
   
   def updateSim(self, time, timeIdx, gateways):
     doseMeasurement = self.doseMeasurements[timeIdx]
@@ -32,5 +35,6 @@ class SimDetector(SCRAM_field.Detector):
     self.update(doseMeasurement, doseSigma, dToFs, time)
 
   def mp(self):
-    for t, time in enumerate(self.timesteps):
+    for t in range(self.nTimesteps):
+      time = t*self.timeScale
       self.updateSim(time, t, self.gateways)
