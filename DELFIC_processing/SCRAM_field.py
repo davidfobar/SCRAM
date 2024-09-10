@@ -82,7 +82,7 @@ class Detector:
     self.doseRateFilter.update(doseMeasurement)
     self.estimatedDoseRateMeasurements[self.updateIdx] = self.doseRateFilter.x[0]
     try:
-      self.estimatedDoseRateUncertainties[self.updateIdx] = np.sqrt(self.doseRateFilter.P[0,0])
+      self.estimatedDoseRateUncertainties[self.updateIdx] = np.sqrt(np.abs(self.doseRateFilter.P[0,0]))
     except:
       self.estimatedDoseRateUncertainties[self.updateIdx] = 0
 
