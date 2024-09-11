@@ -103,14 +103,14 @@ class Detector:
     self.timeOfFlightFilter.update(dToFs)
     dToFs = self.timeOfFlightFilter.x
      
-    if self.updateIdx > 5:
-      initial_guess = [self.measuredX[-1], self.measuredY[-1], self.measuredR]
+    if self.updateIdx > 0:
+      initial_guess = [self.measuredX[self.updateIdx-1], self.measuredY[self.updateIdx-1], self.measuredR]
       result = minimize(diffToFerror, initial_guess, args=(dToFs, self.gateways), method='SLSQP', options={'ftol': 1e-6, 'disp': False})
-
-      measuredX, measuredY, self.measuredR = result.x
     else:
-      measuredX = 0
-      measuredY = 0
+      initial_guess = [0, 0, 1]
+      result = minimize(diffToFerror, initial_guess, args=(dToFs, self.gateways), method='SLSQP', options={'ftol': 1e-6, 'disp': False})
+  
+    measuredX, measuredY, self.measuredR = result.x
     
     self.measuredX[self.updateIdx] = measuredX
     self.measuredY[self.updateIdx] = measuredY
